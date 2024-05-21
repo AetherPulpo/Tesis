@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="7500000fs"></ZoomStartTime>
-      <ZoomEndTime time="53335001fs"></ZoomEndTime>
-      <Cursor1Time time="36015000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="129969fs"></ZoomEndTime>
+      <Cursor1Time time="11613fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="305"></NameColumnWidth>
-      <ValueColumnWidth column_width="149"></ValueColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="21" />
    <wvobject type="logic" fp_name="/fft_tb/aclk_0">
@@ -28,13 +28,15 @@
       <obj_property name="ElementShortName">aresetn_0</obj_property>
       <obj_property name="ObjectShortName">aresetn_0</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tready_0">
-      <obj_property name="ElementShortName">m_axis_data_tready_0</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tready_0</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/fft_tb/s_axis_config_tdata_0">
       <obj_property name="ElementShortName">s_axis_config_tdata_0[15:0]</obj_property>
       <obj_property name="ObjectShortName">s_axis_config_tdata_0[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fft_tb/s_axis_config_tready_0">
+      <obj_property name="ElementShortName">s_axis_config_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tready_0</obj_property>
       <obj_property name="CustomSignalColor">#808000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
@@ -47,18 +49,56 @@
    <wvobject type="array" fp_name="/fft_tb/s_axis_data_tdata_0">
       <obj_property name="ElementShortName">s_axis_data_tdata_0[63:0]</obj_property>
       <obj_property name="ObjectShortName">s_axis_data_tdata_0[63:0]</obj_property>
-      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fft_tb/s_axis_data_tready_0">
+      <obj_property name="ElementShortName">s_axis_data_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_0</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/fft_tb/s_axis_data_tlast_0">
       <obj_property name="ElementShortName">s_axis_data_tlast_0</obj_property>
       <obj_property name="ObjectShortName">s_axis_data_tlast_0</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/fft_tb/s_axis_data_tvalid_0">
       <obj_property name="ElementShortName">s_axis_data_tvalid_0</obj_property>
       <obj_property name="ObjectShortName">s_axis_data_tvalid_0</obj_property>
-      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fft_tb/m_axis_data_tdata_0">
+      <obj_property name="ElementShortName">m_axis_data_tdata_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_0[63:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tready_0">
+      <obj_property name="ElementShortName">m_axis_data_tready_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready_0</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tvalid_0">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_0</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tlast_0">
+      <obj_property name="ElementShortName">m_axis_data_tlast_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_0</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fft_tb/m_axis_data_tuser_0">
+      <obj_property name="ElementShortName">m_axis_data_tuser_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tuser_0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/fft_tb/event_data_in_channel_halt_0">
       <obj_property name="ElementShortName">event_data_in_channel_halt_0</obj_property>
@@ -83,34 +123,6 @@
    <wvobject type="logic" fp_name="/fft_tb/event_tlast_unexpected_0">
       <obj_property name="ElementShortName">event_tlast_unexpected_0</obj_property>
       <obj_property name="ObjectShortName">event_tlast_unexpected_0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/fft_tb/m_axis_data_tdata_0">
-      <obj_property name="ElementShortName">m_axis_data_tdata_0[63:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata_0[63:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#800080</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tlast_0">
-      <obj_property name="ElementShortName">m_axis_data_tlast_0</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tlast_0</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/fft_tb/m_axis_data_tuser_0">
-      <obj_property name="ElementShortName">m_axis_data_tuser_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tuser_0[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/fft_tb/m_axis_data_tvalid_0">
-      <obj_property name="ElementShortName">m_axis_data_tvalid_0</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tvalid_0</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/fft_tb/s_axis_config_tready_0">
-      <obj_property name="ElementShortName">s_axis_config_tready_0</obj_property>
-      <obj_property name="ObjectShortName">s_axis_config_tready_0</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/fft_tb/s_axis_data_tready_0">
-      <obj_property name="ElementShortName">s_axis_data_tready_0</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tready_0</obj_property>
    </wvobject>
    <wvobject type="other" fp_name="/fft_tb/clock_period">
       <obj_property name="ElementShortName">clock_period</obj_property>
