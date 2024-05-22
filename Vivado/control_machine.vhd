@@ -70,8 +70,9 @@ constant fifo_write_latency : natural := fifo_read_latency;
 signal sg_sample_counter : natural range 0 to samples_size;
 signal sg_counter : natural range 0 to next_sample_latency;
 signal sg_counter_1 : natural range 0 to 16;
-signal ok_wait_counter : std_logic;
-signal ok_hold_counter : std_logic;
+--signal ok_wait_counter : std_logic;
+--signal ok_hold_counter : std_logic;
+signal ok_counter_0 : std_logic;
 signal ok_counter_1 : std_logic;
 --------------------------------------------------------
 
@@ -88,62 +89,108 @@ begin
         end if;
     end process process_out_start;
     
-    process_ok_counter : process (clk, enable, reset, in_idle_mv)
+    process_ok_counter : process (clk, enable, reset) --in_idle_mv
     begin
         if(reset = '1') then
-            ok_wait_counter <= '0';
-            ok_hold_counter <='0';
-        elsif(enable ='1' and falling_edge(in_idle_mv))then
-                ok_wait_counter <= '0';
-                ok_hold_counter <='1'; 
-        elsif (rising_edge(clk) and enable ='1' and sg_counter = next_sample_latency - 2) then
-                ok_wait_counter <= '0';
-                ok_hold_counter <='1';  
-        elsif(rising_edge(clk) and enable ='1' and sg_counter = mv_latency-1) then
-                ok_wait_counter <= '1';
-                ok_hold_counter <= '0';
+            ok_counter_0 <= '0';
+        elsif (enable = '1') then
+            ok_counter_0 <= '1';
         else
-            ok_wait_counter <= ok_wait_counter;
-            ok_hold_counter <= ok_hold_counter;               
+            ok_counter_0 <= '0';
         end if;
     end process process_ok_counter;
     
-    process_counter: process(clk, reset, ok_wait_counter, ok_hold_counter)
+    
+--    process_ok_counter : process (clk, enable, reset, in_idle_mv)
+--    begin
+--        if(reset = '1') then
+--            ok_wait_counter <= '0';
+--            ok_hold_counter <='0';
+--        elsif(enable ='1' and falling_edge(in_idle_mv))then
+--                ok_wait_counter <= '0';
+--                ok_hold_counter <='1'; 
+--        elsif (rising_edge(clk) and enable ='1' and sg_counter = next_sample_latency - 2) then
+--                ok_wait_counter <= '0';
+--                ok_hold_counter <='1';  
+--        elsif(rising_edge(clk) and enable ='1' and sg_counter = mv_latency-1) then
+--                ok_wait_counter <= '1';
+--                ok_hold_counter <= '0';
+--       -- else
+--      --     ok_wait_counter <= ok_wait_counter;
+--       --     ok_hold_counter <= ok_hold_counter;               
+--        end if;
+--    end process process_ok_counter;
+    
+    process_counter: process(clk, reset)
     begin
         if(reset = '1') then
             sg_counter <= 0;
        -- elsif (enable = '1' and ok_wait_counter = '1' and rising_edge(in_vld_mv)) then
        --     sg_wait_counter <= sg_wait_counter + 1;
-        elsif (rising_edge(clk) and sg_counter = (next_sample_latency-1) ) then
-            sg_counter <= 0;    
-        elsif (rising_edge(clk) and enable = '1' and (ok_wait_counter = '1' or ok_hold_counter = '1') ) then
-            sg_counter <= sg_counter + 1;
-        else
-            sg_counter <= sg_counter;       
+        elsif (rising_edge(clk)) then
+            if(sg_counter = (next_sample_latency-1)) then
+                sg_counter <= 0;
+            elsif (enable = '1' and ok_counter_0 = '1') then 
+                sg_counter <= sg_counter + 1;
+--            else
+--                sg_counter <= sg_counter;  
+            end if;     
         end if;
     end process process_counter;
     
+--    process_counter: process(clk, reset, ok_wait_counter, ok_hold_counter)
+--    begin
+--        if(reset = '1') then
+--            sg_counter <= 0;
+--       -- elsif (enable = '1' and ok_wait_counter = '1' and rising_edge(in_vld_mv)) then
+--       --     sg_wait_counter <= sg_wait_counter + 1;
+--        elsif (rising_edge(clk) and sg_counter = (next_sample_latency-1) ) then
+--            sg_counter <= 0;    
+--        elsif (rising_edge(clk) and enable = '1' and (ok_wait_counter = '1' or ok_hold_counter = '1') ) then
+--            sg_counter <= sg_counter + 1;
+--        --else
+--        --    sg_counter <= sg_counter;       
+--        end if;
+--    end process process_counter;
+   
     process_counter_a: process(clk, reset, enable, ok_counter_1)
     begin
         if(reset = '1') then
             sg_counter_1 <= 0;
-        elsif (rising_edge(clk) and sg_counter_1 = norm_latency) then
-            sg_counter_1 <= 0;    
-        elsif (rising_edge(clk) and enable = '1' and ok_counter_1 = '1'  ) then
-            sg_counter_1 <= sg_counter_1 + 1;
-        else
-            sg_counter_1 <= sg_counter_1;       
+        elsif (rising_edge(clk)) then
+            if (sg_counter_1 = norm_latency) then
+                sg_counter_1 <= 0;
+            elsif (enable = '1' and ok_counter_1 = '1') then    
+                sg_counter_1 <= sg_counter_1 + 1;
+--            else
+--                sg_counter_1 <= sg_counter_1;
+            end if;       
         end if;
     end process process_counter_a;
     
+--    process_counter_a: process(clk, reset, enable, ok_counter_1)
+--    begin
+--        if(reset = '1') then
+--            sg_counter_1 <= 0;
+--        elsif (rising_edge(clk) and sg_counter_1 = norm_latency) then
+--            sg_counter_1 <= 0;    
+--        elsif (rising_edge(clk) and enable = '1' and ok_counter_1 = '1'  ) then
+--            sg_counter_1 <= sg_counter_1 + 1;
+----        else
+----            sg_counter_1 <= sg_counter_1;       
+--        end if;
+--    end process process_counter_a;
     
-    process_mv_continue : process(clk,reset,ok_wait_counter, ok_hold_counter)
+    
+    process_mv_continue : process(clk,reset)
     begin
         if(reset = '1') then
             out_continue_mv <= '0';
-        elsif (enable ='1' and ok_hold_counter = '1' and  (sg_counter <= (mv_latency - 1) or sg_counter = (next_sample_latency-1) ) ) then
+--        elsif (enable ='1' and ok_hold_counter = '1' and  (sg_counter <= (mv_latency - 1) or sg_counter = (next_sample_latency-1) ) ) then
+        elsif (enable ='1' and  (sg_counter <= (mv_latency - 1) or sg_counter = (next_sample_latency-1) ) ) then
             out_continue_mv <= '1';
-        elsif (enable ='1' and ok_wait_counter = '1' and sg_counter > (mv_latency - 1) and sg_counter <(next_sample_latency-1) ) then
+--        elsif (enable ='1' and ok_wait_counter = '1' and sg_counter > (mv_latency - 1) and sg_counter <(next_sample_latency-1) ) then
+        elsif (enable ='1' and sg_counter > (mv_latency - 1) and sg_counter <(next_sample_latency-1) ) then
             out_continue_mv <= '0';
         else
             out_continue_mv <= '0';
@@ -266,8 +313,8 @@ begin
             else
                 out_rst_mv <= '0';
             end if;
-        else
-            out_rst_mv <= '0';
+--        else
+--            out_rst_mv <= '0';
         end if;
     end process process_sample_counter;
     
