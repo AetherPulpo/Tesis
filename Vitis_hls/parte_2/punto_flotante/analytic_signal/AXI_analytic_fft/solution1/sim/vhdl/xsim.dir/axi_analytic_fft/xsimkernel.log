@@ -1,0 +1,7 @@
+Running: xsim.dir/axi_analytic_fft/xsimk -simmode gui -wdb axi_analytic_fft.wdb -simrunnum 0 -socket 35529
+Design successfully loaded
+Design Loading Memory Usage: 39484 KB (Peak: 39492 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 121416 KB (Peak: 178752 KB)
+Simulation CPU Usage: 50 ms

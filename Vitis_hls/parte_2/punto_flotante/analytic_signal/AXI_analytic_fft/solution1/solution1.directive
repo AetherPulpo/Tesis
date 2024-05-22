@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="axi_analytic_fft" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="axi_analytic_fft"/>
+            </pragma>
+        </directive>
+        <directive functionName="axi_analytic_fft" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="axi_analytic_fft"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
