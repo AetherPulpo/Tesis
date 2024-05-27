@@ -1,0 +1,7 @@
+Running: xsim.dir/AXI_Real2Complex/xsimk -simmode gui -wdb AXI_Real2Complex.wdb -simrunnum 0 -socket 47789
+Design successfully loaded
+Design Loading Memory Usage: 37540 KB (Peak: 37548 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 119472 KB (Peak: 176808 KB)
+Simulation CPU Usage: 40 ms

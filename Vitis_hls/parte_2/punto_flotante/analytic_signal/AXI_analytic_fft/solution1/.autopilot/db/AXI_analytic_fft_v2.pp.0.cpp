@@ -33495,7 +33495,7 @@ class stream : public stream<__STREAM_T__, 0> {
 }
 # 62 "/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream.h" 2
 # 3 "AXI_analytic_fft/AXI_analytic_fft.h" 2
-const int DATA_SIZE = 512;
+const int DATA_SIZE = 1024;
 
 
 

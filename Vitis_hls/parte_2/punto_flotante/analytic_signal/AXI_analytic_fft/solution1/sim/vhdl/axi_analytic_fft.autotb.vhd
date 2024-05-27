@@ -19,14 +19,11 @@ entity apatb_axi_analytic_fft_top is
        AUTOTB_TVIN_in_data_V_out_wrapc : STRING := "../tv/rtldatafile/rtl.axi_analytic_fft.autotvin_in_data_V.dat";
        AUTOTB_TVIN_out_data_V_out_wrapc : STRING := "../tv/rtldatafile/rtl.axi_analytic_fft.autotvin_out_data_V.dat";
        AUTOTB_TVOUT_out_data_V : STRING := "../tv/cdatafile/c.axi_analytic_fft.autotvout_out_data_V.dat";
-       AUTOTB_TVOUT_TLAST : STRING := "../tv/cdatafile/c.axi_analytic_fft.autotvout_TLAST.dat";
        AUTOTB_TVOUT_out_data_V_out_wrapc : STRING := "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_out_data_V.dat";
-       AUTOTB_TVOUT_TLAST_out_wrapc : STRING := "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_TLAST.dat";
       AUTOTB_LAT_RESULT_FILE    : STRING  := "axi_analytic_fft.result.lat.rb";
       AUTOTB_PER_RESULT_TRANS_FILE    : STRING  := "axi_analytic_fft.performance.result.transaction.xml";
-      LENGTH_in_data_V     : INTEGER := 512;
-      LENGTH_out_data_V     : INTEGER := 512;
-      LENGTH_TLAST     : INTEGER := 1;
+      LENGTH_in_data_V     : INTEGER := 1024;
+      LENGTH_out_data_V     : INTEGER := 1024;
 	    AUTOTB_TRANSACTION_NUM    : INTEGER := 1
 );
 
@@ -64,7 +61,6 @@ architecture behav of apatb_axi_analytic_fft_top is
   signal out_data_V_TDATA :  STD_LOGIC_VECTOR (63 DOWNTO 0);
   signal out_data_V_TVALID :  STD_LOGIC;
   signal out_data_V_TREADY :  STD_LOGIC;
-  signal TLAST :  STD_LOGIC;
 
   signal ready_cnt : STD_LOGIC_VECTOR(31 DOWNTO 0);
   signal done_cnt	: STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -104,12 +100,9 @@ port (
     in_data_V_TREADY :  OUT STD_LOGIC;
     out_data_V_TDATA :  OUT STD_LOGIC_VECTOR (63 DOWNTO 0);
     out_data_V_TVALID :  OUT STD_LOGIC;
-    out_data_V_TREADY :  IN STD_LOGIC;
-    TLAST :  OUT STD_LOGIC);
+    out_data_V_TREADY :  IN STD_LOGIC);
 end component;
 
--- The signal of port TLAST
-shared variable AESL_REG_TLAST : STD_LOGIC_VECTOR(0 downto 0) := (others => '0');
 signal in_data_V_ready :   STD_LOGIC := '0';
 signal in_data_V_done  :   STD_LOGIC := '0';
 signal axi_s_in_data_V_TVALID :   STD_LOGIC := '0';
@@ -479,8 +472,7 @@ AESL_inst_axi_analytic_fft    :   axi_analytic_fft port map (
    in_data_V_TREADY  =>  in_data_V_TREADY,
    out_data_V_TDATA  =>  out_data_V_TDATA,
    out_data_V_TVALID  =>  out_data_V_TVALID,
-   out_data_V_TREADY  =>  out_data_V_TREADY,
-   TLAST  =>  TLAST
+   out_data_V_TREADY  =>  out_data_V_TREADY
 );
 
 -- Assignment for control signal
@@ -518,60 +510,6 @@ begin
     end if;
   end if;
 end process;
-gen_out_TLAST_proc : process(AESL_clock)
-begin
-  if (AESL_clock'event and AESL_clock = '1') then
-    if(AESL_reset = '0') then
-        AESL_REG_TLAST := (others => '0'); 
-    else
-        AESL_REG_TLAST(0) := TLAST;
-    end if;
-  end if;
-end process;
-
-write_file_process_TLAST : process
-    file      fp              :   TEXT;
-    file      fp_size         :   TEXT;
-    variable  fstatus         :   FILE_OPEN_STATUS;
-    variable  token_line      :   LINE;
-    variable  token           :   STRING(1 to 160);
-    variable  str             :   STRING(1 to 40);
-    variable  transaction_idx :   INTEGER;
-    variable  TLAST_count   :   INTEGER;
-    variable  hls_stream_size :   INTEGER;
-    variable  i               :   INTEGER;
-    variable  rand            :   T_RANDINT     := init_rand(0);
-    variable  rint            :   INTEGER;
-begin
-    wait until AESL_reset = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_TLAST_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_TLAST_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    transaction_idx := 0;
-    while (transaction_idx /= AUTOTB_TRANSACTION_NUM) loop
-        wait until AESL_clock'event and AESL_clock = '1';
-	      while(AESL_done /= '1') loop
-            wait until AESL_clock'event and AESL_clock = '1';
-	      end loop;
-        wait for 0.4 ns;
-        write(token_line, string'("[[transaction]]    ") & integer'image(transaction_idx));
-        writeline(fp, token_line);
-        write(token_line, "0x" & esl_conv_string_hex(AESL_REG_TLAST));
-        writeline(fp, token_line);
-        transaction_idx := transaction_idx + 1;
-        write(token_line, string'("[[/transaction]]"));
-        writeline(fp, token_line);
-    end loop;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
-end process;
-
 AESL_axi_s_inst_in_data_V : AESL_axi_s_in_data_V port map (
     clk   =>   AESL_clock,
     reset =>   AESL_reset,
@@ -875,7 +813,7 @@ begin
               reported_stuck <= '0';
           elsif (reported_stuck = '0' and reported_stuck_cnt < 4) then
               if ( AESL_mLatCnterIn_addr > AESL_mLatCnterOut_addr ) then
-                  -- if ( AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10000 and AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10 * 517 ) then
+                  -- if ( AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10000 and AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10 * 1029 ) then
                   if ( AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10000 and AESL_clk_counter - AESL_mLatCnterIn(AESL_mLatCnterOut_addr) > 10000000 ) then
                       report "WARNING: The latency is much larger than expected. Simulation may be stuck.";
                       reported_stuck <= '1';

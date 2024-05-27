@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 23 18:47:03 2024
+# Process ID: 6424
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_Real2Complex/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/AXI_Real2Complex/xsim_script.tcl}
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_Real2Complex/solution1/sim/vhdl/xsim.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_Real2Complex/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/AXI_Real2Complex/xsim_script.tcl
+# xsim {AXI_Real2Complex} -autoloadwcfg -tclbatch {AXI_Real2Complex.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source AXI_Real2Complex.tcl
+## run all
+Note: simulation done!
+Time: 5325 ns  Iteration: 1  Process: /apatb_AXI_Real2Complex_top/generate_sim_done_proc  File: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_Real2Complex/solution1/sim/vhdl/AXI_Real2Complex.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 5325 ns  Iteration: 1  Process: /apatb_AXI_Real2Complex_top/generate_sim_done_proc  File: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_Real2Complex/solution1/sim/vhdl/AXI_Real2Complex.autotb.vhd
+$finish called at time : 5325 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu May 23 18:47:24 2024...

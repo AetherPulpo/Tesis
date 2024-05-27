@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'AXI_norm_float'
+================================================================
++ General Information: 
+    * Date:           Fri May 24 11:26:17 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        AXI_norm_float
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+    |      Modules     | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |    |          |          |     |
+    |      & Loops     | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT   | URAM|
+    +------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+    |+ AXI_norm_float  |     -|  -1.22|      530|  5.300e+03|         -|      531|     -|        no|     -|   -|  72 (~0%)|  94 (~0%)|    -|
+    | o loop           |     -|  -7.30|      528|  5.280e+03|        18|        1|   512|       yes|     -|   -|         -|         -|    -|
+    +------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+

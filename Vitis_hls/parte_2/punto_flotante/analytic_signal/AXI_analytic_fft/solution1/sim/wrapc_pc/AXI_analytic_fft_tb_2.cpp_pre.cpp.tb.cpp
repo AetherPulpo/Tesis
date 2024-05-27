@@ -49599,7 +49599,7 @@ public:
 }
 # 62 "/opt/Xilinx/Vitis_HLS/2020.2/include/hls_stream.h" 2
 # 3 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft.h" 2
-const int DATA_SIZE = 512;
+const int DATA_SIZE = 1024;
 
 
 
@@ -49610,7 +49610,7 @@ using ComplexType = std::complex<float>;
 
 
 
-void axi_analytic_fft (hls::stream<ComplexType>& in_data ,hls::stream<ComplexType>& out_data, bool* TLAST);
+void axi_analytic_fft (hls::stream<ComplexType>& in_data ,hls::stream<ComplexType>& out_data);
 # 2 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 2
 
 # 1 "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cassert" 1 3
@@ -49653,43 +49653,90 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_axi_analytic_fft_sw(hls::stream<std::complex<float>, 0> &, hls::stream<std::complex<float>, 0> &, bool *);
+void apatb_axi_analytic_fft_sw(hls::stream<std::complex<float>, 0> &, hls::stream<std::complex<float>, 0> &);
 # 6 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
 int main(){
     int counter;
     ComplexType input_read[DATA_SIZE];
-    ComplexType X_m = {1,1};
-    bool test_last;
-    ComplexType test = X_m;
+
+    ComplexType test;
     ComplexType Z_m [DATA_SIZE];
     ComplexType expected_result [DATA_SIZE];
     ComplexType result;
 
      std::cout << "Sea X_m la FFT de una senal de entrada x_n en el dominio de las frecuencias" << std::endl;
-        std::cout << "y en "<<DATA_SIZE<< " X_m siempre es "<< X_m << std::endl;
+
         std::cout << "Y sea Z_m la FFT de la senal analitica z_n que corresponde a x_n" << std::endl;
 
     hls::stream<ComplexType> test_input("stream_entrada");
     hls::stream<ComplexType> test_output ("stream_salida");
     ComplexType test_result[DATA_SIZE];
 
+ FILE *fpr1;
+ FILE *fpr2;
+ FILE *fpw;
+ fpr1 = fopen("../../../../../fft_1024_2_re_rtl.txt","r");
+ fpr2 = fopen("../../../../../fft_1024_2_im_rtl.txt","r");
+ fpw = fopen("../../../../../axiAnalyticFFT_1024_values.dat","w");
+ 
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+(static_cast <bool> (
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+fpr1 != 
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+__null 
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+&& "Error al abrir el archivo fpr1"
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+) ? void (0) : __assert_fail (
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+"fpr1 != NULL && \"Error al abrir el archivo fpr1\""
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+, "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp", 29, __extension__ __PRETTY_FUNCTION__))
+# 29 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+                                                        ;
+ 
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+(static_cast <bool> (
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+fpr2 != 
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+__null 
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+&& "Error al abrir el archivo fpr2"
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+) ? void (0) : __assert_fail (
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+"fpr2 != NULL && \"Error al abrir el archivo fpr2\""
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+, "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp", 30, __extension__ __PRETTY_FUNCTION__))
+# 30 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+                                                        ;
  float real_value;
  float imag_value;
 
 
     for (int i = 0; i < DATA_SIZE; i++){
-     test_input.write(X_m);
+     fscanf(fpr1, "%f", &real_value);
+     fscanf(fpr2, "%f", &imag_value);
+     test = {real_value, imag_value};
+     input_read[i] = {real_value, imag_value};
+     test_input.write(test);
     }
+
+    fclose(fpr1);
+    fclose(fpr2);
+
 
 
     
 #ifndef HLS_FASTSIM
 #define axi_analytic_fft apatb_axi_analytic_fft_sw
 #endif
-# 33 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
-axi_analytic_fft (test_input, test_output, &test_last);
+# 48 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+axi_analytic_fft (test_input, test_output);
 #undef axi_analytic_fft
-# 33 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+# 48 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
 
 
 
@@ -49697,43 +49744,43 @@ axi_analytic_fft (test_input, test_output, &test_last);
     for(int i = 0; i < DATA_SIZE; i++){
        result = test_output.read();
        test_result[i] = result;
-
+       fprintf(fpw, "%f\n", result);
     }
-
+    fclose(fpw);
 
 
     for (int i = 0; i < DATA_SIZE; i++){
 
-        std::cout << "FFT Entrada X[" << i <<"]: "<< X_m << " FFT analitica Z[" << i <<"]: " << test_result[i] << std::endl;
+        std::cout << "FFT Entrada X[" << i <<"]: "<< input_read[i] << " FFT analitica Z[" << i <<"]: " << test_result[i] << std::endl;
 
         if(i == 0 || i == (DATA_SIZE/2) ){
-            expected_result[i] = X_m;
+            expected_result[i] = input_read[i];
         }
         else if( i > (DATA_SIZE/2)){
             expected_result[i] = {0,0};
         }
         else{
-            expected_result[i] = {static_cast<float>(X_m.real()*2.0) , static_cast<float>(X_m.imag() * 2.0)};
+            expected_result[i] = {static_cast<float>(input_read[i].real()*2.0) , static_cast<float>(input_read[i].imag() * 2.0)};
 
         }
 
         
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
        (static_cast <bool> (
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
        test_result[i] == expected_result[i]
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
        ) ? void (0) : __assert_fail (
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
        "test_result[i] == expected_result[i]"
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
-       , "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp", 60, __extension__ __PRETTY_FUNCTION__))
-# 60 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp" 3 4
+       , "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp", 75, __extension__ __PRETTY_FUNCTION__))
+# 75 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
                                                    ;
     }
     std::cout << "Testbench exitoso!" << std::endl;
     return 0;
 }
 #endif
-# 64 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
+# 79 "/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/AXI_analytic_fft_tb_2.cpp"
 

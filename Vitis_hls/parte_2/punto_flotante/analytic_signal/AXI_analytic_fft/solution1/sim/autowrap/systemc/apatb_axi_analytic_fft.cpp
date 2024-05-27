@@ -27,9 +27,6 @@ using namespace sc_dt;
 #define AUTOTB_TVOUT_out_data_V "../tv/cdatafile/c.axi_analytic_fft.autotvout_out_data_V.dat"
 #define WRAPC_STREAM_SIZE_OUT_out_data_V "../tv/stream_size/stream_size_out_out_data_V.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_out_data_V "../tv/stream_size/stream_egress_status_out_data_V.dat"
-// wrapc file define:
-#define AUTOTB_TVIN_TLAST "../tv/cdatafile/c.axi_analytic_fft.autotvin_TLAST.dat"
-#define AUTOTB_TVOUT_TLAST "../tv/cdatafile/c.axi_analytic_fft.autotvout_TLAST.dat"
 
 #define INTER_TCL "../tv/cdatafile/ref.tcl"
 
@@ -37,8 +34,6 @@ using namespace sc_dt;
 #define AUTOTB_TVOUT_PC_in_data_V "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_in_data_V.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_out_data_V "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_out_data_V.dat"
-// tvout file define:
-#define AUTOTB_TVOUT_PC_TLAST "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_TLAST.dat"
 
 class INTER_TCL_FILE {
   public:
@@ -46,7 +41,6 @@ INTER_TCL_FILE(const char* name) {
   mName = name; 
   in_data_V_depth = 0;
   out_data_V_depth = 0;
-  TLAST_depth = 0;
   trans_num =0;
 }
 ~INTER_TCL_FILE() {
@@ -66,7 +60,6 @@ string get_depth_list () {
   stringstream total_list;
   total_list << "{in_data_V " << in_data_V_depth << "}\n";
   total_list << "{out_data_V " << out_data_V_depth << "}\n";
-  total_list << "{TLAST " << TLAST_depth << "}\n";
   return total_list.str();
 }
 void set_num (int num , int* class_num) {
@@ -78,7 +71,6 @@ void set_string(std::string list, std::string* class_list) {
   public:
     int in_data_V_depth;
     int out_data_V_depth;
-    int TLAST_depth;
     int trans_num;
   private:
     ofstream mFile;
@@ -121,9 +113,9 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
   }
 }
 struct __cosim_s8__ { char data[8]; };
-extern "C" void axi_analytic_fft_hw_stub_wrapper(volatile void *, volatile void *, volatile void *);
+extern "C" void axi_analytic_fft_hw_stub_wrapper(volatile void *, volatile void *);
 
-extern "C" void apatb_axi_analytic_fft_hw(volatile void * __xlx_apatb_param_in_data, volatile void * __xlx_apatb_param_out_data, volatile void * __xlx_apatb_param_TLAST) {
+extern "C" void apatb_axi_analytic_fft_hw(volatile void * __xlx_apatb_param_in_data, volatile void * __xlx_apatb_param_out_data) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -242,49 +234,6 @@ __cosim_s8__ xlx_stream_elt;
         } // end transaction
       } // end file is good
     } // end post check logic bolck
-  {
-      static ifstream rtl_tv_out_file;
-      if (!rtl_tv_out_file.is_open()) {
-        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_TLAST);
-        if (rtl_tv_out_file.good()) {
-          rtl_tv_out_file >> AESL_token;
-          if (AESL_token != "[[[runtime]]]")
-            exit(1);
-        }
-      }
-  
-      if (rtl_tv_out_file.good()) {
-        rtl_tv_out_file >> AESL_token; 
-        rtl_tv_out_file >> AESL_num;  // transaction number
-        if (AESL_token != "[[transaction]]") {
-          cerr << "Unexpected token: " << AESL_token << endl;
-          exit(1);
-        }
-        if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
-          std::vector<sc_bv<1> > TLAST_pc_buffer(1);
-          int i = 0;
-
-          rtl_tv_out_file >> AESL_token; //data
-          while (AESL_token != "[[/transaction]]"){
-
-            RTLOutputCheckAndReplacement(AESL_token, "TLAST");
-  
-            // push token into output port buffer
-            if (AESL_token != "") {
-              TLAST_pc_buffer[i] = AESL_token.c_str();;
-              i++;
-            }
-  
-            rtl_tv_out_file >> AESL_token; //data or [[/transaction]]
-            if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
-              exit(1);
-          }
-          if (i > 0) {
-            ((char*)__xlx_apatb_param_TLAST)[0] = TLAST_pc_buffer[0].to_uint64();
-          }
-        } // end transaction
-      } // end file is good
-    } // end post check logic bolck
   
     AESL_transaction_pc++;
     return ;
@@ -304,9 +253,6 @@ aesl_fh.touch(AUTOTB_TVIN_out_data_V);
 aesl_fh.touch(AUTOTB_TVOUT_out_data_V);
 aesl_fh.touch(WRAPC_STREAM_SIZE_OUT_out_data_V);
 aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_out_data_V);
-//TLAST
-aesl_fh.touch(AUTOTB_TVIN_TLAST);
-aesl_fh.touch(AUTOTB_TVOUT_TLAST);
 CodeState = DUMP_INPUTS;
 std::vector<__cosim_s8__> __xlx_apatb_param_in_data_stream_buf;
 {
@@ -318,22 +264,8 @@ std::vector<__cosim_s8__> __xlx_apatb_param_in_data_stream_buf;
 long __xlx_apatb_param_in_data_stream_buf_size = ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_in_data)->size();
 std::vector<__cosim_s8__> __xlx_apatb_param_out_data_stream_buf;
 long __xlx_apatb_param_out_data_stream_buf_size = ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_out_data)->size();
-// print TLAST Transactions
-{
-  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_TLAST, __xlx_sprintf_buffer.data());
-  {
-    sc_bv<1> __xlx_tmp_lv = *((char*)__xlx_apatb_param_TLAST);
-
-    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_TLAST, __xlx_sprintf_buffer.data()); 
-  }
-  tcl_file.set_num(1, &tcl_file.TLAST_depth);
-  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_TLAST, __xlx_sprintf_buffer.data());
-}
 CodeState = CALL_C_DUT;
-axi_analytic_fft_hw_stub_wrapper(__xlx_apatb_param_in_data, __xlx_apatb_param_out_data, __xlx_apatb_param_TLAST);
+axi_analytic_fft_hw_stub_wrapper(__xlx_apatb_param_in_data, __xlx_apatb_param_out_data);
 CodeState = DUMP_OUTPUTS;
 long __xlx_apatb_param_in_data_stream_buf_final_size = __xlx_apatb_param_in_data_stream_buf_size - ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_in_data)->size();
 // print in_data_V Transactions
@@ -414,21 +346,7 @@ sc_bv<64> __xlx_tmp_lv = ((long long*)&__xlx_apatb_param_out_data_stream_buf[__x
 
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(WRAPC_STREAM_SIZE_OUT_out_data_V, __xlx_sprintf_buffer.data());
-}// print TLAST Transactions
-{
-  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVOUT_TLAST, __xlx_sprintf_buffer.data());
-  {
-    sc_bv<1> __xlx_tmp_lv = *((char*)__xlx_apatb_param_TLAST);
-
-    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVOUT_TLAST, __xlx_sprintf_buffer.data()); 
-  }
-  tcl_file.set_num(1, &tcl_file.TLAST_depth);
-  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVOUT_TLAST, __xlx_sprintf_buffer.data());
-}
-CodeState = DELETE_CHAR_BUFFERS;
+}CodeState = DELETE_CHAR_BUFFERS;
 AESL_transaction++;
 tcl_file.set_num(AESL_transaction , &tcl_file.trans_num);
 }

@@ -83,7 +83,6 @@ proc check_tvin_file {} {
          "c.axi_analytic_fft.autotvin_in_data_V.dat"
          "c.axi_analytic_fft.autotvin_out_data_V.dat"
          "c.axi_analytic_fft.autotvout_out_data_V.dat"
-         "c.axi_analytic_fft.autotvout_TLAST.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -109,7 +108,6 @@ proc check_tvout_file {} {
 	}
     set rtlfilelist {
          "rtl.axi_analytic_fft.autotvout_out_data_V.dat"
-         "rtl.axi_analytic_fft.autotvout_TLAST.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

@@ -29,7 +29,7 @@ end;
 architecture behav of axi_analytic_fft is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "axi_analytic_fft_axi_analytic_fft,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.400000,HLS_SYN_LAT=517,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=635,HLS_SYN_LUT=1027,HLS_VERSION=2020_2}";
+    "axi_analytic_fft_axi_analytic_fft,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.400000,HLS_SYN_LAT=1029,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=637,HLS_SYN_LUT=1026,HLS_VERSION=2020_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (2 downto 0) := "001";
@@ -41,13 +41,13 @@ architecture behav of axi_analytic_fft is
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
+    constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_lv32_40000000 : STD_LOGIC_VECTOR (31 downto 0) := "01000000000000000000000000000000";
-    constant ap_const_lv9_1 : STD_LOGIC_VECTOR (8 downto 0) := "000000001";
+    constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv32_20 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100000";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
-    constant ap_const_lv9_100 : STD_LOGIC_VECTOR (8 downto 0) := "100000000";
-    constant ap_const_lv9_1FF : STD_LOGIC_VECTOR (8 downto 0) := "111111111";
+    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_3FF : STD_LOGIC_VECTOR (9 downto 0) := "1111111111";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
 
     signal ap_rst_n_inv : STD_LOGIC;
@@ -64,9 +64,9 @@ architecture behav of axi_analytic_fft is
     signal out_data_V_TDATA_blk_n : STD_LOGIC;
     signal ap_enable_reg_pp0_iter3 : STD_LOGIC := '0';
     signal ap_enable_reg_pp0_iter4 : STD_LOGIC := '0';
-    signal inc10_reg_67 : STD_LOGIC_VECTOR (8 downto 0);
-    signal add_ln35_fu_88_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal add_ln35_reg_191 : STD_LOGIC_VECTOR (8 downto 0);
+    signal inc10_reg_67 : STD_LOGIC_VECTOR (9 downto 0);
+    signal add_ln35_fu_88_p2 : STD_LOGIC_VECTOR (9 downto 0);
+    signal add_ln35_reg_191 : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_block_state2_pp0_stage0_iter0 : BOOLEAN;
     signal ap_block_state3_pp0_stage0_iter1 : BOOLEAN;
     signal ap_block_state4_pp0_stage0_iter2 : BOOLEAN;
@@ -95,7 +95,7 @@ architecture behav of axi_analytic_fft is
     signal ap_condition_pp0_flush_enable : STD_LOGIC;
     signal ap_enable_reg_pp0_iter1 : STD_LOGIC := '0';
     signal ap_enable_reg_pp0_iter2 : STD_LOGIC := '0';
-    signal ap_phi_mux_inc10_phi_fu_71_p4 : STD_LOGIC_VECTOR (8 downto 0);
+    signal ap_phi_mux_inc10_phi_fu_71_p4 : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
     signal grp_fu_78_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_83_p0 : STD_LOGIC_VECTOR (31 downto 0);
@@ -317,7 +317,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                inc10_reg_67 <= ap_const_lv9_0;
+                inc10_reg_67 <= ap_const_lv10_0;
             elsif (((icmp_ln35_reg_220 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1))) then 
                 inc10_reg_67 <= add_ln35_reg_191;
             end if; 
@@ -386,7 +386,7 @@ begin
                 ap_NS_fsm <= "XXX";
         end case;
     end process;
-    add_ln35_fu_88_p2 <= std_logic_vector(unsigned(ap_phi_mux_inc10_phi_fu_71_p4) + unsigned(ap_const_lv9_1));
+    add_ln35_fu_88_p2 <= std_logic_vector(unsigned(ap_phi_mux_inc10_phi_fu_71_p4) + unsigned(ap_const_lv10_1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(1);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state7 <= ap_CS_fsm(2);
@@ -520,10 +520,10 @@ begin
     end process;
 
     grp_fu_83_p0 <= trunc_ln145_1_fu_103_p4;
-    icmp_ln22_1_fu_124_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv9_100) else "0";
-    icmp_ln22_2_fu_136_p2 <= "1" when (unsigned(ap_phi_mux_inc10_phi_fu_71_p4) > unsigned(ap_const_lv9_100)) else "0";
-    icmp_ln22_fu_118_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv9_0) else "0";
-    icmp_ln35_fu_142_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv9_1FF) else "0";
+    icmp_ln22_1_fu_124_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv10_200) else "0";
+    icmp_ln22_2_fu_136_p2 <= "1" when (unsigned(ap_phi_mux_inc10_phi_fu_71_p4) > unsigned(ap_const_lv10_200)) else "0";
+    icmp_ln22_fu_118_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv10_0) else "0";
+    icmp_ln35_fu_142_p2 <= "1" when (ap_phi_mux_inc10_phi_fu_71_p4 = ap_const_lv10_3FF) else "0";
 
     in_data_V_TDATA_blk_n_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0, in_data_V_TVALID_int_regslice)
     begin

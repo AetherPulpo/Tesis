@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'axi_analytic_fft'" level="0">
-<item name = "Date">Wed May 22 00:16:42 2024
+<item name = "Date">Fri May 24 10:09:24 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">AXI_analytic_fft</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">517, 517, 5.170 us, 5.170 us, 518, 518, none</column>
+<column name="">1029, 1029, 10.290 us, 10.290 us, 1030, 1030, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop">515, 515, 5, 1, 1, 512, yes</column>
+<column name="- loop">1027, 1027, 5, 1, 1, 1024, yes</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 192, -</column>
+<column name="Expression">-, -, 0, 191, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 6, 286, 642, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 65, -</column>
-<column name="Register">-, -, 349, 128, -</column>
+<column name="Register">-, -, 351, 128, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 2, ~0, 1, 0</specialColumn>
 </table>
@@ -80,11 +80,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln35_fu_88_p2">+, 0, 0, 14, 9, 1</column>
-<column name="icmp_ln22_1_fu_124_p2">icmp, 0, 0, 11, 9, 10</column>
-<column name="icmp_ln22_2_fu_136_p2">icmp, 0, 0, 11, 9, 10</column>
-<column name="icmp_ln22_fu_118_p2">icmp, 0, 0, 11, 9, 1</column>
-<column name="icmp_ln35_fu_142_p2">icmp, 0, 0, 11, 9, 2</column>
+<column name="add_ln35_fu_88_p2">+, 0, 0, 13, 10, 1</column>
+<column name="icmp_ln22_1_fu_124_p2">icmp, 0, 0, 11, 10, 11</column>
+<column name="icmp_ln22_2_fu_136_p2">icmp, 0, 0, 11, 10, 11</column>
+<column name="icmp_ln22_fu_118_p2">icmp, 0, 0, 11, 10, 1</column>
+<column name="icmp_ln35_fu_142_p2">icmp, 0, 0, 11, 10, 2</column>
 <column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln22_fu_130_p2">or, 0, 0, 2, 1, 1</column>
 <column name="select_ln174_1_fu_175_p3">select, 0, 0, 32, 1, 1</column>
@@ -98,15 +98,15 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">20, 4, 1, 4</column>
 <column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
-<column name="ap_phi_mux_inc10_phi_fu_71_p4">9, 2, 9, 18</column>
+<column name="ap_phi_mux_inc10_phi_fu_71_p4">9, 2, 10, 20</column>
 <column name="in_data_V_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="inc10_reg_67">9, 2, 9, 18</column>
+<column name="inc10_reg_67">9, 2, 10, 20</column>
 <column name="out_data_V_TDATA_blk_n">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln35_reg_191">9, 0, 9, 0</column>
+<column name="add_ln35_reg_191">10, 0, 10, 0</column>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -115,7 +115,7 @@
 <column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
 <column name="icmp_ln22_2_reg_214">1, 0, 1, 0</column>
 <column name="icmp_ln35_reg_220">1, 0, 1, 0</column>
-<column name="inc10_reg_67">9, 0, 9, 0</column>
+<column name="inc10_reg_67">10, 0, 10, 0</column>
 <column name="or_ln22_reg_208">1, 0, 1, 0</column>
 <column name="tmp_M_value_1_reg_202">32, 0, 32, 0</column>
 <column name="tmp_M_value_reg_196">32, 0, 32, 0</column>

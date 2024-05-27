@@ -1,5 +1,5 @@
    Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling AXI_analytic_fft.cpp_pre.cpp.tb.cpp
+   Compiling AXI_analytic_fft_v2.cpp_pre.cpp.tb.cpp
    Compiling apatb_axi_analytic_fft_util.cpp
    Compiling apatb_axi_analytic_fft.cpp
    Compiling AXI_analytic_fft_tb_2.cpp_pre.cpp.tb.cpp

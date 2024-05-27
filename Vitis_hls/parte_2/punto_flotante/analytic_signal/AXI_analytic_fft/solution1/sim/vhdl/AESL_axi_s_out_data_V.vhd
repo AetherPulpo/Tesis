@@ -14,7 +14,7 @@ use std.textio.all;
 entity AESL_axi_s_out_data_V is
   generic (
       constant    TV_OUT_out_data_V_TDATA : STRING (1 to 63) := "../tv/rtldatafile/rtl.axi_analytic_fft.autotvout_out_data_V.dat";
-      constant    LENGTH_out_data_V : INTEGER := 512;
+      constant    LENGTH_out_data_V : INTEGER := 1024;
       constant    INTERFACE_TYPE : STRING (1 to 5) := "axi_s";
       constant    AUTOTB_TRANSACTION_NUM : INTEGER := 1
   );
@@ -33,11 +33,11 @@ end AESL_axi_s_out_data_V;
 architecture behav of AESL_axi_s_out_data_V is
 ------------------------Local signal-------------------
   signal reg_out_data_V_TREADY :   STD_LOGIC;
-  signal  out_data_V_TDATA_mInPtr  :   STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
-  signal  out_data_V_TDATA_mOutPtr :   STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
+  signal  out_data_V_TDATA_mInPtr  :   STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
+  signal  out_data_V_TDATA_mOutPtr :   STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
   signal  out_data_V_TDATA_empty_n  :   STD_LOGIC;
   signal  out_data_V_TDATA_full_n   :   STD_LOGIC;
-  type out_data_V_TDATA_arr2D is array(0 to 512) of STD_LOGIC_VECTOR(64 - 1 downto 0);
+  type out_data_V_TDATA_arr2D is array(0 to 1024) of STD_LOGIC_VECTOR(64 - 1 downto 0);
   signal out_data_V_TDATA_mem :   out_data_V_TDATA_arr2D := (others => (others => '0'));
   signal out_data_V_TDATA_ingress_status :  INTEGER;
   signal out_data_V_TDATA_ingress_status_bit :  STD_LOGIC;
@@ -517,7 +517,7 @@ end process;
           out_data_V_TDATA_mem(0) <= TRAN_out_data_V_TDATA ;
       elsif (clk'event and clk = '1') then
           if (TRAN_out_data_V_TVALID = '1' and reg_out_data_V_TREADY = '1' ) then
-              if (CONV_INTEGER(out_data_V_TDATA_mInPtr) < 512) then
+              if (CONV_INTEGER(out_data_V_TDATA_mInPtr) < 1024) then
                   out_data_V_TDATA_mem(CONV_INTEGER(out_data_V_TDATA_mInPtr)) <= TRAN_out_data_V_TDATA ;
               end if;
           end if;
@@ -532,7 +532,7 @@ end process;
           end if;
       elsif (clk'event and clk = '1') then
           if (TRAN_out_data_V_TVALID = '1' and reg_out_data_V_TREADY = '1' ) then
-              if (CONV_INTEGER(out_data_V_TDATA_mInPtr) < 512) then
+              if (CONV_INTEGER(out_data_V_TDATA_mInPtr) < 1024) then
                   out_data_V_TDATA_mInPtr <=  esl_add(out_data_V_TDATA_mInPtr, "1");
               end if;
           end if;
@@ -557,7 +557,7 @@ end process;
       variable    i               :   INTEGER;
   begin
       transaction_idx :=  0;
-      out_data_V_TDATA_mOutPtr <=  std_logic_vector(to_unsigned(513, out_data_V_TDATA_mOutPtr'length));
+      out_data_V_TDATA_mOutPtr <=  std_logic_vector(to_unsigned(1025, out_data_V_TDATA_mOutPtr'length));
       wait until reset = '1';
       while (true) loop
           wait until clk'event and clk = '1';

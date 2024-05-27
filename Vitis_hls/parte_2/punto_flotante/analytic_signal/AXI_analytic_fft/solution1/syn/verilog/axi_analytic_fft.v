@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="axi_analytic_fft_axi_analytic_fft,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.400000,HLS_SYN_LAT=517,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=635,HLS_SYN_LUT=1027,HLS_VERSION=2020_2}" *)
+(* CORE_GENERATION_INFO="axi_analytic_fft_axi_analytic_fft,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.400000,HLS_SYN_LAT=1029,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=637,HLS_SYN_LUT=1026,HLS_VERSION=2020_2}" *)
 
 module axi_analytic_fft (
         ap_clk,
@@ -55,9 +55,9 @@ wire    ap_block_pp0_stage0;
 reg    out_data_V_TDATA_blk_n;
 reg    ap_enable_reg_pp0_iter3;
 reg    ap_enable_reg_pp0_iter4;
-reg   [8:0] inc10_reg_67;
-wire   [8:0] add_ln35_fu_88_p2;
-reg   [8:0] add_ln35_reg_191;
+reg   [9:0] inc10_reg_67;
+wire   [9:0] add_ln35_fu_88_p2;
+reg   [9:0] add_ln35_reg_191;
 reg    ap_block_state2_pp0_stage0_iter0;
 wire    ap_block_state3_pp0_stage0_iter1;
 wire    ap_block_state4_pp0_stage0_iter2;
@@ -86,7 +86,7 @@ reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_flush_enable;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_enable_reg_pp0_iter2;
-reg   [8:0] ap_phi_mux_inc10_phi_fu_71_p4;
+reg   [9:0] ap_phi_mux_inc10_phi_fu_71_p4;
 reg    ap_block_pp0_stage0_01001;
 wire   [31:0] grp_fu_78_p0;
 wire   [31:0] grp_fu_83_p0;
@@ -252,7 +252,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        inc10_reg_67 <= 9'd0;
+        inc10_reg_67 <= 10'd0;
     end else if (((icmp_ln35_reg_220 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
         inc10_reg_67 <= add_ln35_reg_191;
     end
@@ -414,7 +414,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln35_fu_88_p2 = (ap_phi_mux_inc10_phi_fu_71_p4 + 9'd1);
+assign add_ln35_fu_88_p2 = (ap_phi_mux_inc10_phi_fu_71_p4 + 10'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd1];
 
@@ -466,13 +466,13 @@ assign grp_fu_78_p0 = trunc_ln145_fu_94_p1;
 
 assign grp_fu_83_p0 = trunc_ln145_1_fu_103_p4;
 
-assign icmp_ln22_1_fu_124_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln22_1_fu_124_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 10'd512) ? 1'b1 : 1'b0);
 
-assign icmp_ln22_2_fu_136_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 > 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln22_2_fu_136_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 > 10'd512) ? 1'b1 : 1'b0);
 
-assign icmp_ln22_fu_118_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 9'd0) ? 1'b1 : 1'b0);
+assign icmp_ln22_fu_118_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 10'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln35_fu_142_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 9'd511) ? 1'b1 : 1'b0);
+assign icmp_ln35_fu_142_p2 = ((ap_phi_mux_inc10_phi_fu_71_p4 == 10'd1023) ? 1'b1 : 1'b0);
 
 assign in_data_V_TREADY = regslice_both_in_data_V_U_ack_in;
 

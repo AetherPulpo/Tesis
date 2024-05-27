@@ -35,11 +35,11 @@ architecture behav of AESL_axi_s_in_data_V is
   signal reg_in_data_V_TVALID :   STD_LOGIC;
   signal TRAN_in_data_V_TVALID_temp : STD_LOGIC;
   signal TRAN_in_data_V_TVALID_wire: STD_LOGIC;
-  signal  in_data_V_TDATA_mInPtr  :   STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
-  signal  in_data_V_TDATA_mOutPtr :   STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
+  signal  in_data_V_TDATA_mInPtr  :   STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
+  signal  in_data_V_TDATA_mOutPtr :   STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
   signal  in_data_V_TDATA_empty_n  :   STD_LOGIC;
   signal  in_data_V_TDATA_full_n   :   STD_LOGIC;
-  type in_data_V_TDATA_arr2D is array(0 to 512) of STD_LOGIC_VECTOR(64 - 1 downto 0);
+  type in_data_V_TDATA_arr2D is array(0 to 1024) of STD_LOGIC_VECTOR(64 - 1 downto 0);
   signal in_data_V_TDATA_mem :   in_data_V_TDATA_arr2D := (others => (others => '0'));
   signal in_data_V_TDATA_ingress_status :  INTEGER;
   signal in_data_V_TDATA_ingress_status_bit :  STD_LOGIC;
@@ -522,7 +522,7 @@ end process;
       variable    token_ingress_status       :   STRING(1 to 152);
       variable    ingress_status_var         :   INTEGER;
       variable    transaction_idx :   INTEGER;
-      variable    in_data_V_TDATA_mInPtr_var  :   STD_LOGIC_VECTOR (10 downto 0) := (others => '0');
+      variable    in_data_V_TDATA_mInPtr_var  :   STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
       variable    in_data_V_TDATA_mem_var :   in_data_V_TDATA_arr2D := (others => (others => '0'));
   begin
       transaction_idx :=  0;
@@ -556,7 +556,7 @@ end process;
           esl_read_token(fp_ingress_status, token_line_ingress_status, token_ingress_status);
           in_data_V_TDATA_mInPtr_var := (others => '0');
           while (token(1 to 16) /= "[[/transaction]]") loop
-              if (CONV_INTEGER(in_data_V_TDATA_mInPtr_var) > 512 - 1) then
+              if (CONV_INTEGER(in_data_V_TDATA_mInPtr_var) > 1024 - 1) then
                   assert false report "Fifo overflow!" severity failure;
               end if;
               in_data_V_TDATA_mem_var(CONV_INTEGER(in_data_V_TDATA_mInPtr_var)) := esl_str2lv_hex(token, 64);

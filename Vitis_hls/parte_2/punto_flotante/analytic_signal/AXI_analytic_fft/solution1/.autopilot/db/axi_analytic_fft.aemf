@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716347803368">
-  <ports id="1" name="in_data_V" type="PortType" originalName="in_data" coreId="49" bitwidth="64">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716556164652">
+  <ports id="1" name="in_data_V" type="PortType" originalName="in_data" coreId="1101068704" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="out_data_V" type="PortType" originalName="out_data" coreId="1365764976" bitwidth="64" direction="DirOut">
+  <ports id="2" name="out_data_V" type="PortType" originalName="out_data" coreId="49" bitwidth="64" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="39" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -49,7 +49,7 @@
   <blocks id="9" name="block_9" type="BlockType">
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>_ifconv</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln15" lineNumber="15" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="132" contextFuncName="axi_analytic_fft" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln15" lineNumber="15" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_analytic_fft" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="15" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
       <controlInputObjs>_ifconv</controlInputObjs>
     </node_objs>
@@ -60,7 +60,7 @@
   <blocks id="38" name="block_38" type="BlockType">
     <controlInputObjs>_ifconv</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln37" lineNumber="37" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="1369405520" contextFuncName="axi_analytic_fft" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln37" lineNumber="37" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_analytic_fft" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="37" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
     </node_objs>
     <fileValidLineNumbers fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp">
@@ -76,7 +76,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_38</controlOutputObjs>
       <controlOutputObjs>_ifconv</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="inc10" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="1369367576" contextFuncName="axi_analytic_fft" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="inc10" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="385" contextFuncName="axi_analytic_fft" bitwidth="10" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="35" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -88,7 +88,7 @@
         <controlInputObjs>block_9</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="add_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="add_ln35_fu_88_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_analytic_fft" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="add_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="add_ln35_fu_88_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_analytic_fft" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="35" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
@@ -100,24 +100,24 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="trunc_ln145" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="trunc_ln145_fu_94_p1" coreId="1369368793" contextFuncName="read" bitwidth="32" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="trunc_ln145" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="trunc_ln145_fu_94_p1" coreId="132" contextFuncName="read" bitwidth="32" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="read"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_M_value" lineNumber="29" originalName="tmp._M_value" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="tmp_M_value_fu_98_p1" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_M_value" lineNumber="29" originalName="tmp._M_value" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="tmp_M_value_fu_98_p1" coreId="132" contextFuncName="axi_analytic_fft" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="29" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln145_1" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="trunc_ln145_1_fu_103_p4" coreId="0" contextFuncName="read" bitwidth="32" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln145_1" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="trunc_ln145_1_fu_103_p4" coreId="1101093113" contextFuncName="read" bitwidth="32" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="read"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_M_value_1" lineNumber="29" originalName="tmp._M_value" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="tmp_M_value_1_fu_113_p1" coreId="4116" contextFuncName="axi_analytic_fft" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_M_value_1" lineNumber="29" originalName="tmp._M_value" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="tmp_M_value_1_fu_113_p1" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="29" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -135,19 +135,19 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="icmp_ln22" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_fu_118_p2" opType="icmp" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="icmp_ln22" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_fu_118_p2" opType="icmp" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln22_1" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_1_fu_124_p2" opType="icmp" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln22_1" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_1_fu_124_p2" opType="icmp" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="or_ln22" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="or_ln22_fu_130_p2" opType="or" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_delay="0.97" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="or_ln22" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="or_ln22_fu_130_p2" opType="or" coreId="1101099568" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_delay="0.97" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
@@ -161,7 +161,7 @@
         <dataInputObjs>fmul</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln22_2" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_2_fu_136_p2" opType="icmp" coreId="132" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln22_2" lineNumber="22" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln22_2_fu_136_p2" opType="icmp" coreId="1101101408" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -175,7 +175,7 @@
         <dataInputObjs>fmul</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="bitcast_ln174_1" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="bitcast_ln174_1_fu_160_p1" coreId="1769170280" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="bitcast_ln174_1" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="bitcast_ln174_1_fu_160_p1" coreId="132" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="write"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -187,7 +187,7 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="bitcast_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="bitcast_ln174_fu_171_p1" coreId="1563505457" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="bitcast_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="bitcast_ln174_fu_171_p1" coreId="1275068544" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="write"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -199,7 +199,7 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="out_data_V_TDATA_int_regslice" coreId="1601399912" contextFuncName="write" bitwidth="64" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="out_data_V_TDATA_int_regslice" coreId="758395186" contextFuncName="write" bitwidth="64" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="write"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>select</dataInputObjs>
@@ -210,13 +210,13 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>out_data_V</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln35_fu_142_p2" opType="icmp" coreId="0" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." rtlName="icmp_ln35_fu_142_p2" opType="icmp" coreId="1684959075" contextFuncName="axi_analytic_fft" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.77" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="35" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_analytic_fft" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln35" lineNumber="35" fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" fileDirectory=".." coreId="574454117" contextFuncName="axi_analytic_fft" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" linenumber="35" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal" functionName="axi_analytic_fft"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ifconv</controlInputObjs>
@@ -418,7 +418,7 @@
     </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="axi_analytic_fft" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="517" mMaxLatency="517">
+    <cfgRegions mId="1" mTag="axi_analytic_fft" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1029" mMaxLatency="1029">
       <subRegions>2</subRegions>
       <subRegions>3</subRegions>
       <subRegions>4</subRegions>
@@ -428,7 +428,7 @@
       <basicBlocks>9</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="loop" mII="1" mDepth="5" mMinTripCount="512" mMaxTripCount="512" mMinLatency="515" mMaxLatency="515" mType="1">
+    <cfgRegions mId="3" mTag="loop" mII="1" mDepth="5" mMinTripCount="1024" mMaxTripCount="1024" mMinLatency="1027" mMaxLatency="1027" mType="1">
       <basicBlocks>36</basicBlocks>
       <mDfPipe/>
     </cfgRegions>

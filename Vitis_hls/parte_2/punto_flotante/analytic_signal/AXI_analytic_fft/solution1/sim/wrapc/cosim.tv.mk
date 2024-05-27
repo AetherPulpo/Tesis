@@ -61,6 +61,6 @@ $(ObjDir)/AXI_analytic_fft_tb_2.cpp_pre.cpp.tb.o : AXI_analytic_fft_tb_2.cpp_pre
 	$(Echo) "   Compiling AXI_analytic_fft_tb_2.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/AXI_analytic_fft.cpp_pre.cpp.tb.o : AXI_analytic_fft.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling AXI_analytic_fft.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/AXI_analytic_fft_v2.cpp_pre.cpp.tb.o : AXI_analytic_fft_v2.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling AXI_analytic_fft_v2.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \

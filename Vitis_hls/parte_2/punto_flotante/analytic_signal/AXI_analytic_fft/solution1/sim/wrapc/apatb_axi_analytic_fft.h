@@ -5,5 +5,4 @@
 
 extern "C" void AESL_WRAP_axi_analytic_fft (
 hls::stream<int > in_data,
-hls::stream<int > out_data,
-volatile void* TLAST);
+hls::stream<int > out_data);

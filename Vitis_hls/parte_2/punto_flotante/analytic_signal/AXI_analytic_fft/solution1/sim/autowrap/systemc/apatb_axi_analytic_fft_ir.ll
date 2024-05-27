@@ -7,23 +7,21 @@ target triple = "fpga64-xilinx-none"
 %"struct.std::complex" = type { { float, float } }
 
 ; Function Attrs: noinline
-define void @apatb_axi_analytic_fft_ir(%"class.hls::stream"* %in_data, %"class.hls::stream"* %out_data, i1* %TLAST) local_unnamed_addr #0 {
+define void @apatb_axi_analytic_fft_ir(%"class.hls::stream"* %in_data, %"class.hls::stream"* %out_data) local_unnamed_addr #0 {
 entry:
   %in_data_copy = alloca %"class.hls::stream", align 512
   %out_data_copy = alloca %"class.hls::stream", align 512
-  %TLAST_copy = alloca i1, align 512
-  call fastcc void @copy_in(%"class.hls::stream"* %in_data, %"class.hls::stream"* nonnull align 512 %in_data_copy, %"class.hls::stream"* %out_data, %"class.hls::stream"* nonnull align 512 %out_data_copy, i1* %TLAST, i1* nonnull align 512 %TLAST_copy)
-  call void @apatb_axi_analytic_fft_hw(%"class.hls::stream"* %in_data_copy, %"class.hls::stream"* %out_data_copy, i1* %TLAST_copy)
-  call fastcc void @copy_out(%"class.hls::stream"* %in_data, %"class.hls::stream"* nonnull align 512 %in_data_copy, %"class.hls::stream"* %out_data, %"class.hls::stream"* nonnull align 512 %out_data_copy, i1* %TLAST, i1* nonnull align 512 %TLAST_copy)
+  call fastcc void @copy_in(%"class.hls::stream"* %in_data, %"class.hls::stream"* nonnull align 512 %in_data_copy, %"class.hls::stream"* %out_data, %"class.hls::stream"* nonnull align 512 %out_data_copy)
+  call void @apatb_axi_analytic_fft_hw(%"class.hls::stream"* %in_data_copy, %"class.hls::stream"* %out_data_copy)
+  call fastcc void @copy_out(%"class.hls::stream"* %in_data, %"class.hls::stream"* nonnull align 512 %in_data_copy, %"class.hls::stream"* %out_data, %"class.hls::stream"* nonnull align 512 %out_data_copy)
   ret void
 }
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_in(%"class.hls::stream"*, %"class.hls::stream"* noalias align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512, i1* readonly, i1* noalias align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in(%"class.hls::stream"*, %"class.hls::stream"* noalias align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512) unnamed_addr #1 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* align 512 %1, %"class.hls::stream"* %0)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* align 512 %3, %"class.hls::stream"* %2)
-  call fastcc void @onebyonecpy_hls.p0i1(i1* align 512 %5, i1* %4)
   ret void
 }
 
@@ -129,44 +127,25 @@ ret:                                              ; preds = %empty
   ret void
 }
 
-; Function Attrs: argmemonly noinline
-define internal fastcc void @onebyonecpy_hls.p0i1(i1* noalias align 512, i1* noalias readonly) unnamed_addr #5 {
-entry:
-  %2 = icmp eq i1* %0, null
-  %3 = icmp eq i1* %1, null
-  %4 = or i1 %2, %3
-  br i1 %4, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  %5 = bitcast i1* %0 to i8*
-  %6 = bitcast i1* %1 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %5, i8* align 1 %6, i64 1, i1 false)
-  br label %ret
-
-ret:                                              ; preds = %copy, %entry
-  ret void
-}
-
 ; Function Attrs: noinline
-define internal fastcc void @copy_out(%"class.hls::stream"*, %"class.hls::stream"* noalias align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512, i1*, i1* noalias readonly align 512) unnamed_addr #6 {
+define internal fastcc void @copy_out(%"class.hls::stream"*, %"class.hls::stream"* noalias align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512) unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* %0, %"class.hls::stream"* align 512 %1)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* %2, %"class.hls::stream"* align 512 %3)
-  call fastcc void @onebyonecpy_hls.p0i1(i1* %4, i1* align 512 %5)
   ret void
 }
 
-declare void @apatb_axi_analytic_fft_hw(%"class.hls::stream"*, %"class.hls::stream"*, i1*)
+declare void @apatb_axi_analytic_fft_hw(%"class.hls::stream"*, %"class.hls::stream"*)
 
-define void @axi_analytic_fft_hw_stub_wrapper(%"class.hls::stream"*, %"class.hls::stream"*, i1*) #7 {
+define void @axi_analytic_fft_hw_stub_wrapper(%"class.hls::stream"*, %"class.hls::stream"*) #6 {
 entry:
-  call void @copy_out(%"class.hls::stream"* null, %"class.hls::stream"* %0, %"class.hls::stream"* null, %"class.hls::stream"* %1, i1* null, i1* %2)
-  call void @axi_analytic_fft_hw_stub(%"class.hls::stream"* %0, %"class.hls::stream"* %1, i1* %2)
-  call void @copy_in(%"class.hls::stream"* null, %"class.hls::stream"* %0, %"class.hls::stream"* null, %"class.hls::stream"* %1, i1* null, i1* %2)
+  call void @copy_out(%"class.hls::stream"* null, %"class.hls::stream"* %0, %"class.hls::stream"* null, %"class.hls::stream"* %1)
+  call void @axi_analytic_fft_hw_stub(%"class.hls::stream"* %0, %"class.hls::stream"* %1)
+  call void @copy_in(%"class.hls::stream"* null, %"class.hls::stream"* %0, %"class.hls::stream"* null, %"class.hls::stream"* %1)
   ret void
 }
 
-declare void @axi_analytic_fft_hw_stub(%"class.hls::stream"*, %"class.hls::stream"*, i1*)
+declare void @axi_analytic_fft_hw_stub(%"class.hls::stream"*, %"class.hls::stream"*)
 
 declare i1 @fpga_fifo_not_empty_8(i8*)
 
@@ -179,9 +158,8 @@ attributes #1 = { noinline "fpga.wrapper.func"="copyin" }
 attributes #2 = { noinline "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #3 = { argmemonly noinline "fpga.wrapper.func"="streamcpy_hls" }
 attributes #4 = { argmemonly nounwind }
-attributes #5 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }
-attributes #6 = { noinline "fpga.wrapper.func"="copyout" }
-attributes #7 = { "fpga.wrapper.func"="stub" }
+attributes #5 = { noinline "fpga.wrapper.func"="copyout" }
+attributes #6 = { "fpga.wrapper.func"="stub" }
 
 !llvm.dbg.cu = !{}
 !llvm.ident = !{!0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0}

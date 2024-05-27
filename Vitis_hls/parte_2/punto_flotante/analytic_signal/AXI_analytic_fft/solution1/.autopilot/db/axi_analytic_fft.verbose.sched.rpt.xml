@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'axi_analytic_fft'" level="0">
-<item name = "Date">Wed May 22 00:16:42 2024
+<item name = "Date">Fri May 24 10:09:23 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">AXI_analytic_fft</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">517, 517, 5.170 us, 5.170 us, 518, 518, none</column>
+<column name="">1029, 1029, 10.290 us, 10.290 us, 1030, 1030, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop">515, 515, 5, 1, 1, 512, yes</column>
+<column name="- loop">1027, 1027, 5, 1, 1, 1024, yes</column>
 </table>
 </item>
 </section>

@@ -1,0 +1,5 @@
+AXI_zeros_regslice_both
+AXI_zeros_regslice_both
+AXI_zeros_regslice_both
+AXI_zeros_regslice_both
+AXI_zeros

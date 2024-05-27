@@ -6,8 +6,8 @@
     </Simulation>
     <files xmlns="">
         <file name="../AXI_analytic_fft_tb_2.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="AXI_analytic_fft/AXI_analytic_fft.h" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="AXI_analytic_fft/AXI_analytic_fft_v2.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>
