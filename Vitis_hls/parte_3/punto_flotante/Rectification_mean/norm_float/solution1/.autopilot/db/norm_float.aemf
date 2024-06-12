@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1714518959096">
+  <ports id="1" name="in_rect_data" type="PortType" originalName="in_rect_data" coreId="81" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in_mean" type="PortType" originalName="in_mean" coreId="145" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="out_norm_data" type="PortType" originalName="out_norm_data" coreId="1936942413" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="21" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="23" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="24" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="25" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="26" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="29" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.2"/>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <blocks id="18" name="norm_float" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="in_mean_read" lineNumber="4" originalName="in_mean" fileName="norm_float/norm_float.cpp" fileDirectory=".." coreId="1397508130" contextFuncName="norm_float" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="4" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+      <dataInputObjs>in_mean</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="in_rect_data_read" lineNumber="4" originalName="in_rect_data" fileName="norm_float/norm_float.cpp" fileDirectory=".." coreId="1230261845" contextFuncName="norm_float" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="4" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+      <dataInputObjs>in_rect_data</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="norm_data" lineNumber="17" originalName="norm_data" fileName="norm_float/norm_float.cpp" fileDirectory=".." rtlName="fdiv_32ns_32ns_32_16_no_dsp_1_U1" coreName="FDiv" implIndex="fabric" control="auto" opType="fdiv" coreId="20" contextFuncName="norm_float" bitwidth="32" opcode="fdiv" nodeLatency="15" m_display="0" m_delay="6.07" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="17" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="bitcast_ln18" lineNumber="18" fileName="norm_float/norm_float.cpp" fileDirectory=".." rtlName="bitcast_ln18_fu_51_p1" coreId="1528970616" contextFuncName="norm_float" bitwidth="32" opcode="bitcast" nodeLabel="15.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="18" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+      <dataInputObjs>fdiv</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="out_norm_data_write_ln18" lineNumber="18" fileName="norm_float/norm_float.cpp" fileDirectory=".." coreId="0" contextFuncName="norm_float" opcode="write" nodeLabel="15.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="18" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>out_norm_data</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln19" lineNumber="19" fileName="norm_float/norm_float.cpp" fileDirectory=".." coreId="0" contextFuncName="norm_float" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="norm_float/norm_float.cpp" linenumber="19" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="norm_float"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="norm_float/norm_float.cpp">
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <regnodes realName="in_mean_read_reg_56">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="in_rect_data_read_reg_61">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <expressionNodes realName="bitcast_ln18_fu_51">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_45">
+    <nodeIds>14</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln18_write_fu_38">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_mean_read_read_fu_26">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_rect_data_read_read_fu_32">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioPorts name="in_mean">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_rect_data">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_norm_data">
+    <contents name="write">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="16" latency="16"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="15" latency="16"/>
+    </states>
+    <states id="3">
+      <operations id="14" stage="14" latency="16"/>
+    </states>
+    <states id="4">
+      <operations id="14" stage="13" latency="16"/>
+    </states>
+    <states id="5">
+      <operations id="14" stage="12" latency="16"/>
+    </states>
+    <states id="6">
+      <operations id="14" stage="11" latency="16"/>
+    </states>
+    <states id="7">
+      <operations id="14" stage="10" latency="16"/>
+    </states>
+    <states id="8">
+      <operations id="14" stage="9" latency="16"/>
+    </states>
+    <states id="9">
+      <operations id="14" stage="8" latency="16"/>
+    </states>
+    <states id="10">
+      <operations id="14" stage="7" latency="16"/>
+    </states>
+    <states id="11">
+      <operations id="14" stage="6" latency="16"/>
+    </states>
+    <states id="12">
+      <operations id="14" stage="5" latency="16"/>
+    </states>
+    <states id="13">
+      <operations id="14" stage="4" latency="16"/>
+    </states>
+    <states id="14">
+      <operations id="14" stage="3" latency="16"/>
+    </states>
+    <states id="15">
+      <operations id="14" stage="2" latency="16"/>
+    </states>
+    <states id="16">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="16"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="norm_float" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="15" mMaxLatency="15">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

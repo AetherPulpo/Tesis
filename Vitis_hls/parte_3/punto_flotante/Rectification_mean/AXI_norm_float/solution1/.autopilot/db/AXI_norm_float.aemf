@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716560777613">
+  <ports id="1" name="in_rect_data" type="PortType" originalName="in_rect_data" coreName="FIFO" coreId="49" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in_mean" type="PortType" originalName="in_mean" coreId="257" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="out_norm_data_V" type="PortType" originalName="out_norm_data" coreId="49" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="31" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="32" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="35" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="37" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="38" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="43" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@ports.2"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="56" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="152" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="13" name="block_13" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_26</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="in_mean_read" originalName="in_mean" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>in_mean</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln18" lineNumber="18" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." coreId="0" contextFuncName="AXI_norm_float" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="18" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+      <controlInputObjs>block_26</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="AXI_norm_float/AXI_norm_float.cpp">
+      <validLinenumbers>18</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="28" name="mergeST" type="BlockType">
+    <controlInputObjs>block_26</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln34" lineNumber="34" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." coreId="3758096512" contextFuncName="AXI_norm_float" opcode="ret" nodeLabel="19.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="34" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="AXI_norm_float/AXI_norm_float.cpp">
+      <validLinenumbers>34</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="129" pipe_depth="18" RegionName="loop">
+    <basic_blocks id="26" name="block_26" type="BlockType">
+      <controlInputObjs>block_13</controlInputObjs>
+      <controlInputObjs>block_26</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>mergeST</controlOutputObjs>
+      <controlOutputObjs>block_26</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="counter_loc_0" lineNumber="31" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." coreId="0" contextFuncName="AXI_norm_float" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="31" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_13</controlInputObjs>
+        <controlInputObjs>block_26</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln31" lineNumber="31" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." rtlName="add_ln31_fu_84_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="AXI_norm_float" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="31" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="in_rect_data_read" lineNumber="22" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="AXI_norm_float" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.47" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>in_rect_data</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp" lineNumber="22" originalName="tmp" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." rtlName="grp_fu_80_p0" coreId="0" contextFuncName="AXI_norm_float" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="22" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>fdiv</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="norm_data" lineNumber="26" originalName="norm_data" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." rtlName="fdiv_32ns_32ns_32_16_no_dsp_1_U1" coreName="FDiv" implIndex="fabric" control="auto" opType="fdiv" coreId="20" contextFuncName="AXI_norm_float" bitwidth="32" opcode="fdiv" nodeLabel="2.0" nodeLatency="15" m_display="0" m_delay="6.07" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="bitcast_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="out_norm_data_V_TDATA_int_regslice" coreId="1030647657" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="write"/>
+        <dataInputObjs>fdiv</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="out_norm_data_V_write_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="17.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="write"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>out_norm_data_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln32" lineNumber="32" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." rtlName="icmp_ln32_fu_90_p2" opType="icmp" coreId="0" contextFuncName="AXI_norm_float" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln32" lineNumber="32" fileName="AXI_norm_float/AXI_norm_float.cpp" fileDirectory=".." coreId="0" contextFuncName="AXI_norm_float" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="AXI_norm_float/AXI_norm_float.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean" functionName="AXI_norm_float"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_26</controlInputObjs>
+        <controlInputObjs>mergeST</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="AXI_norm_float/AXI_norm_float.cpp">
+        <validLinenumbers>31</validLinenumbers>
+        <validLinenumbers>22</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <regnodes realName="add_ln31_reg_110">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="in_rect_data_read_reg_115">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln174_reg_129">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="in_mean_read_reg_105">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="counter_loc_0_reg_69">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln32_reg_120">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_124">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln31_fu_84">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln174_fu_100">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln32_fu_90">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="counter_loc_0_phi_fu_73">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_96">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_80">
+    <nodeIds>20</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="in_mean_read_read_fu_50">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_rect_data_read_read_fu_56">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_62">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioPorts name="in_mean">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_rect_data">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_norm_data_V">
+    <contents name="write">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="16" latency="16"/>
+    </states>
+    <states id="4">
+      <operations id="20" stage="15" latency="16"/>
+    </states>
+    <states id="5">
+      <operations id="20" stage="14" latency="16"/>
+    </states>
+    <states id="6">
+      <operations id="20" stage="13" latency="16"/>
+    </states>
+    <states id="7">
+      <operations id="20" stage="12" latency="16"/>
+    </states>
+    <states id="8">
+      <operations id="20" stage="11" latency="16"/>
+    </states>
+    <states id="9">
+      <operations id="20" stage="10" latency="16"/>
+    </states>
+    <states id="10">
+      <operations id="20" stage="9" latency="16"/>
+    </states>
+    <states id="11">
+      <operations id="20" stage="8" latency="16"/>
+    </states>
+    <states id="12">
+      <operations id="20" stage="7" latency="16"/>
+    </states>
+    <states id="13">
+      <operations id="20" stage="6" latency="16"/>
+    </states>
+    <states id="14">
+      <operations id="20" stage="5" latency="16"/>
+    </states>
+    <states id="15">
+      <operations id="20" stage="4" latency="16"/>
+    </states>
+    <states id="16">
+      <operations id="20" stage="3" latency="16"/>
+    </states>
+    <states id="17">
+      <operations id="20" stage="2" latency="16"/>
+    </states>
+    <states id="18">
+      <operations id="20" stage="1" latency="16"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="2" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="20">
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="AXI_norm_float" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="530" mMaxLatency="530">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>13</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="loop" mII="1" mDepth="18" mMinTripCount="512" mMaxTripCount="512" mMinLatency="528" mMaxLatency="528" mType="1">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

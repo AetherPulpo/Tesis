@@ -1,0 +1,320 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2301.688 ; gain = 0.000 ; free physical = 675 ; free virtual = 3291
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4403
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2301.789 ; gain = 0.000 ; free physical = 749 ; free virtual = 2693
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_0_hls_inst_0' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:73]
+INFO: [Synth 8-3491] module 'butterworth_double' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:12' bound to instance 'U0' of component 'butterworth_double' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_fptrunc_64ns_32_2_no_dsp_1' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fptrunc_64ns_32_2_no_dsp_1.vhd:8' bound to instance 'fptrunc_64ns_32_2_no_dsp_1_U1' of component 'butterworth_double_fptrunc_64ns_32_2_no_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:455]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double_fptrunc_64ns_32_2_no_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fptrunc_64ns_32_2_no_dsp_1.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_ap_fptrunc_0_no_dsp_64' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fptrunc_0_no_dsp_64.v:60' bound to instance 'butterworth_double_ap_fptrunc_0_no_dsp_64_u' of component 'butterworth_double_ap_fptrunc_0_no_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fptrunc_64ns_32_2_no_dsp_1.vhd:45]
+INFO: [Synth 8-6157] synthesizing module 'butterworth_double_ap_fptrunc_0_no_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fptrunc_0_no_dsp_64.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'butterworth_double_ap_fptrunc_0_no_dsp_64' (16#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fptrunc_0_no_dsp_64.v:60]
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double_fptrunc_64ns_32_2_no_dsp_1' (17#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fptrunc_64ns_32_2_no_dsp_1.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_fpext_32ns_64_2_no_dsp_1' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fpext_32ns_64_2_no_dsp_1.vhd:8' bound to instance 'fpext_32ns_64_2_no_dsp_1_U2' of component 'butterworth_double_fpext_32ns_64_2_no_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double_fpext_32ns_64_2_no_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fpext_32ns_64_2_no_dsp_1.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_ap_fpext_0_no_dsp_32' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fpext_0_no_dsp_32.v:60' bound to instance 'butterworth_double_ap_fpext_0_no_dsp_32_u' of component 'butterworth_double_ap_fpext_0_no_dsp_32' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fpext_32ns_64_2_no_dsp_1.vhd:45]
+INFO: [Synth 8-6157] synthesizing module 'butterworth_double_ap_fpext_0_no_dsp_32' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fpext_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'butterworth_double_ap_fpext_0_no_dsp_32' (18#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_fpext_0_no_dsp_32.v:60]
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double_fpext_32ns_64_2_no_dsp_1' (19#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_fpext_32ns_64_2_no_dsp_1.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1.vhd:8' bound to instance 'dadddsub_64ns_64ns_64_7_full_dsp_1_U3' of component 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_ap_dadddsub_5_full_dsp_64' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dadddsub_5_full_dsp_64.v:60' bound to instance 'butterworth_double_ap_dadddsub_5_full_dsp_64_u' of component 'butterworth_double_ap_dadddsub_5_full_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1.vhd:62]
+INFO: [Synth 8-6157] synthesizing module 'butterworth_double_ap_dadddsub_5_full_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dadddsub_5_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'butterworth_double_ap_dadddsub_5_full_dsp_64' (36#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dadddsub_5_full_dsp_64.v:60]
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' (37#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1.vhd:8' bound to instance 'dadddsub_64ns_64ns_64_7_full_dsp_1_U4' of component 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:497]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1.vhd:8' bound to instance 'dmul_64ns_64ns_64_7_max_dsp_1_U5' of component 'butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:513]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_ap_dmul_5_max_dsp_64' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dmul_5_max_dsp_64.v:60' bound to instance 'butterworth_double_ap_dmul_5_max_dsp_64_u' of component 'butterworth_double_ap_dmul_5_max_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1.vhd:56]
+INFO: [Synth 8-6157] synthesizing module 'butterworth_double_ap_dmul_5_max_dsp_64' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'butterworth_double_ap_dmul_5_max_dsp_64' (44#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/ip/butterworth_double_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1' (45#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_dmul_64ns_64ns_64_7_max_dsp_1.vhd:26]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_regslice_both' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_regslice_both.vhd:10' bound to instance 'regslice_both_in_amplitude_data_V_U' of component 'butterworth_double_regslice_both' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:528]
+INFO: [Synth 8-638] synthesizing module 'butterworth_double_regslice_both' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_regslice_both.vhd:25]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double_regslice_both' (46#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_regslice_both.vhd:25]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'butterworth_double_regslice_both' declared at '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double_regslice_both.vhd:10' bound to instance 'regslice_both_out_iir_data_V_U' of component 'butterworth_double_regslice_both' [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:542]
+INFO: [Synth 8-256] done synthesizing module 'butterworth_double' (47#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ipshared/ab4f/hdl/vhdl/butterworth_double.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'bd_0_hls_inst_0' (48#1) [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:73]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 2301.789 ; gain = 0.000 ; free physical = 697 ; free virtual = 2683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2301.789 ; gain = 0.000 ; free physical = 699 ; free virtual = 2687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 2301.789 ; gain = 0.000 ; free physical = 699 ; free virtual = 2687
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2301.789 ; gain = 0.000 ; free physical = 674 ; free virtual = 2674
+INFO: [Netlist 29-17] Analyzing 699 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/butterworth_double_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/butterworth_double_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2373.523 ; gain = 0.000 ; free physical = 536 ; free virtual = 2569
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  FDE => FDRE: 38 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2373.523 ; gain = 0.000 ; free physical = 529 ; free virtual = 2565
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 630 ; free virtual = 2670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 630 ; free virtual = 2670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:28 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 629 ; free virtual = 2670
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:35 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 614 ; free virtual = 2660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fptrunc_64ns_32_2_no_dsp_1_U1/butterworth_double_ap_fptrunc_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'U0/fpext_32ns_64_2_no_dsp_1_U2/butterworth_double_ap_fpext_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'butterworth_double_dadddsub_64ns_64ns_64_7_full_dsp_1:/butterworth_double_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/dmul_64ns_64ns_64_7_max_dsp_1_U5/butterworth_double_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'U0/dmul_64ns_64ns_64_7_max_dsp_1_U5/butterworth_double_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/dmul_64ns_64ns_64_7_max_dsp_1_U5/butterworth_double_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'U0/dmul_64ns_64ns_64_7_max_dsp_1_U5/butterworth_double_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:02:08 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 560 ; free virtual = 2629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:33 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 364 ; free virtual = 2444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:39 . Memory (MB): peak = 2373.523 ; gain = 71.734 ; free physical = 350 ; free virtual = 2430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:02:52 . Memory (MB): peak = 2396.570 ; gain = 94.781 ; free physical = 347 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:03:05 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 347 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:03:05 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 347 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:03:08 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 347 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:39 ; elapsed = 00:03:08 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 347 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:40 ; elapsed = 00:03:10 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 346 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:40 ; elapsed = 00:03:10 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 346 ; free virtual = 2427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    26|
+|2     |DSP48E1 |    17|
+|13    |LUT1    |    17|
+|14    |LUT2    |   172|
+|15    |LUT3    |   499|
+|16    |LUT4    |   364|
+|17    |LUT5    |   999|
+|18    |LUT6    |  1367|
+|19    |MUXCY   |   377|
+|20    |MUXF7   |    34|
+|21    |MUXF8   |     2|
+|22    |SRL16E  |    42|
+|23    |XORCY   |   164|
+|24    |FDE     |    38|
+|25    |FDRE    |  3604|
+|26    |FDSE    |    11|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:03:10 . Memory (MB): peak = 2403.508 ; gain = 101.719 ; free physical = 346 ; free virtual = 2427
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:27 ; elapsed = 00:02:55 . Memory (MB): peak = 2403.508 ; gain = 29.984 ; free physical = 417 ; free virtual = 2497
+Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:03:10 . Memory (MB): peak = 2403.516 ; gain = 101.719 ; free physical = 417 ; free virtual = 2497
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:08 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2403.516 ; gain = 0.000 ; free physical = 430 ; free virtual = 2582
+INFO: [Netlist 29-17] Analyzing 658 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2419.516 ; gain = 0.000 ; free physical = 367 ; free virtual = 2523
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 149 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 111 instances
+  FDE => FDRE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:03:31 . Memory (MB): peak = 2419.516 ; gain = 117.828 ; free physical = 559 ; free virtual = 2716
+INFO: [Common 17-1381] The checkpoint '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 10ce1ed73483f892
+INFO: [Coretcl 2-1174] Renamed 316 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 10:24:47 2024...

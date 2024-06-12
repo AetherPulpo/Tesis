@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vitis HLS Report for 'norm_float'
+================================================================
+* Date:           Tue Apr 30 20:15:58 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        norm_float
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.075 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       15|       15|  0.150 us|  0.150 us|   16|   16|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.07>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%in_mean_read = read i32 @_ssdm_op_Read.ap_none.float, i32 %in_mean" [norm_float/norm_float.cpp:4]   --->   Operation 17 'read' 'in_mean_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%in_rect_data_read = read i32 @_ssdm_op_Read.ap_none.float, i32 %in_rect_data" [norm_float/norm_float.cpp:4]   --->   Operation 18 'read' 'in_rect_data_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [16/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 19 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.07>
+ST_2 : Operation 20 [15/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 20 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.07>
+ST_3 : Operation 21 [14/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 21 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.07>
+ST_4 : Operation 22 [13/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 22 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.07>
+ST_5 : Operation 23 [12/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 23 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.07>
+ST_6 : Operation 24 [11/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 24 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.07>
+ST_7 : Operation 25 [10/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 25 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.07>
+ST_8 : Operation 26 [9/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 26 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.07>
+ST_9 : Operation 27 [8/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 27 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.07>
+ST_10 : Operation 28 [7/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 28 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.07>
+ST_11 : Operation 29 [6/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 29 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.07>
+ST_12 : Operation 30 [5/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 30 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.07>
+ST_13 : Operation 31 [4/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 31 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.07>
+ST_14 : Operation 32 [3/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 32 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.07>
+ST_15 : Operation 33 [2/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 33 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.07>
+ST_16 : Operation 34 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 34 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_rect_data"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_rect_data, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_mean"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_mean, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_norm_data"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_norm_data, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 42 [1/16] (6.07ns)   --->   "%norm_data = fdiv i32 %in_rect_data_read, i32 %in_mean_read" [norm_float/norm_float.cpp:17]   --->   Operation 42 'fdiv' 'norm_data' <Predicate = true> <Delay = 6.07> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 43 [1/1] (0.00ns)   --->   "%bitcast_ln18 = bitcast i32 %norm_data" [norm_float/norm_float.cpp:18]   --->   Operation 43 'bitcast' 'bitcast_ln18' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.ap_none.i32P0A, i32 %out_norm_data, i32 %bitcast_ln18" [norm_float/norm_float.cpp:18]   --->   Operation 44 'write' 'write_ln18' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln19 = ret" [norm_float/norm_float.cpp:19]   --->   Operation 45 'ret' 'ret_ln19' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 6.08ns
+The critical path consists of the following:
+	wire read on port 'in_mean' (norm_float/norm_float.cpp:4) [12]  (0 ns)
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 2>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 3>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 4>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 5>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 6>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 7>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 8>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 9>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 10>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 11>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 12>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 13>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 14>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 15>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+ <State 16>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('norm_data', norm_float/norm_float.cpp:17) [14]  (6.08 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

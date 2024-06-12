@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 10 10:02:49 2024
+# Process ID: 3793
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp/vivado.jou
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

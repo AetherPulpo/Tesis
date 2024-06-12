@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vitis HLS Report for 'axi_phase'
+================================================================
+* Date:           Tue Jun 11 13:38:24 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        axi_phase
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1090|     1090|  10.900 us|  10.900 us|  1091|  1091|     none|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |            Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_atan2_cordic_float_s_fu_78  |atan2_cordic_float_s  |       62|       62|  0.620 us|  0.620 us|    1|    1|      yes|
+        +--------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_12_1  |     1088|     1088|        66|          1|          1|  1024|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     38|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    4|   14807|  20769|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     65|    -|
+|Register         |        -|    -|     209|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    4|   15016|  20904|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    1|      14|     39|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+----------------------+---------+----+-------+-------+-----+
+    |            Instance            |        Module        | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +--------------------------------+----------------------+---------+----+-------+-------+-----+
+    |grp_atan2_cordic_float_s_fu_78  |atan2_cordic_float_s  |        0|   4|  14807|  20769|    0|
+    +--------------------------------+----------------------+---------+----+-------+-------+-----+
+    |Total                           |                      |        0|   4|  14807|  20769|    0|
+    +--------------------------------+----------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |i_1_fu_84_p2                      |         +|   0|  0|  12|          11|           1|
+    |ap_block_state2_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state66_io               |       and|   0|  0|   2|           1|           1|
+    |ap_block_state67_io               |       and|   0|  0|   2|           1|           1|
+    |icmp_ln12_fu_90_p2                |      icmp|   0|  0|  12|          11|          12|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |       xor|   0|  0|   2|           2|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  38|          30|          21|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  20|          4|    1|          4|
+    |ap_enable_reg_pp0_iter1        |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter65       |   9|          2|    1|          2|
+    |i_reg_67                       |   9|          2|   11|         22|
+    |in_complex_data_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |out_phase_V_TDATA_blk_n        |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  65|         14|   16|         34|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |   3|   0|    3|          0|
+    |ap_enable_reg_pp0_iter0   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter18  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter19  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter20  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter21  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter22  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter23  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter24  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter25  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter26  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter27  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter28  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter29  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter30  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter31  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter32  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter33  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter34  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter35  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter36  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter37  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter38  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter39  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter40  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter41  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter42  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter43  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter44  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter45  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter46  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter47  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter48  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter49  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter50  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter51  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter52  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter53  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter54  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter55  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter56  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter57  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter58  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter59  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter60  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter61  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter62  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter63  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter64  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter65  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9   |   1|   0|    1|          0|
+    |i_reg_67                  |  11|   0|   11|          0|
+    |icmp_ln12_reg_128         |   1|   0|    1|          0|
+    |trunc_ln145_1_reg_137     |  32|   0|   32|          0|
+    |trunc_ln145_reg_132       |  32|   0|   32|          0|
+    |icmp_ln12_reg_128         |  64|  32|    1|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 209|  32|  146|          0|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++--------------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|ap_rst_n                  |   in|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|          axi_phase|  return value|
+|in_complex_data_V_TDATA   |   in|   64|        axis|  in_complex_data_V|       pointer|
+|in_complex_data_V_TVALID  |   in|    1|        axis|  in_complex_data_V|       pointer|
+|in_complex_data_V_TREADY  |  out|    1|        axis|  in_complex_data_V|       pointer|
+|out_phase_V_TDATA         |  out|   32|        axis|        out_phase_V|       pointer|
+|out_phase_V_TVALID        |  out|    1|        axis|        out_phase_V|       pointer|
+|out_phase_V_TREADY        |   in|    1|        axis|        out_phase_V|       pointer|
++--------------------------+-----+-----+------------+-------------------+--------------+
+

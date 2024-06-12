@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 10 10:04:32 2024
+# Process ID: 3923
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/sim/vhdl
+# Command line: wbtcv -mode batch -source /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/sim/vhdl/xsim.dir/butterworth_double/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/sim/vhdl/webtalk.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/sim/vhdl/webtalk.jou
+#-----------------------------------------------------------
+source /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/sim/vhdl/xsim.dir/butterworth_double/webtalk/xsim_webtalk.tcl -notrace

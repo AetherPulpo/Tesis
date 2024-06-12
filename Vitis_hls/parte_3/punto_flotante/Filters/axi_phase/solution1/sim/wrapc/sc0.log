@@ -1,0 +1,7 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling axi_phase.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axi_phase_util.cpp
+   Compiling apatb_axi_phase.cpp
+   Compiling axi_phase_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axi_phase_ir.ll
+   Generating cosim.tv.exe

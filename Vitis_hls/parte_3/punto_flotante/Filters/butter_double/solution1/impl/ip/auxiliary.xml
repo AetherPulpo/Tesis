@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="butterworth_double" xd:componentRef="butterworth_double" xd:initiationInterval="21561" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="in_amplitude_data" xd:originalName="in_amplitude_data" xd:direction="in" xd:interfaceRef="in_amplitude_data_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out_iir_data" xd:originalName="out_iir_data" xd:direction="out" xd:interfaceRef="out_iir_data_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="21560" xd:worst-case="21560" xd:average-case="21560"/>
+  <xd:resourceEstimates xd:LUT="3407" xd:FF="3380" xd:BRAM="0" xd:DSP="17"/>
+</xd:acceleratorMap>

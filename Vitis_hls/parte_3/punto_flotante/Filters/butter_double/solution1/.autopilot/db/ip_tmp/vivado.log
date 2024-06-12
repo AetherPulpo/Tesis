@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 10 10:02:49 2024
+# Process ID: 3793
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/butter_double/solution1/.autopilot/db/ip_tmp/vivado.jou
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'butterworth_double_ap_dadddsub_5_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2266.332 ; gain = 43.016 ; free physical = 483 ; free virtual = 3676
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'butterworth_double_ap_dadddsub_5_full_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'butterworth_double_ap_dadddsub_5_full_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'butterworth_double_ap_dmul_5_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2266.336 ; gain = 0.004 ; free physical = 456 ; free virtual = 3667
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'butterworth_double_ap_dmul_5_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'butterworth_double_ap_dmul_5_max_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'butterworth_double_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2266.336 ; gain = 0.000 ; free physical = 443 ; free virtual = 3661
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'butterworth_double_ap_fpext_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'butterworth_double_ap_fpext_0_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'butterworth_double_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2266.336 ; gain = 0.000 ; free physical = 430 ; free virtual = 3657
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'butterworth_double_ap_fptrunc_0_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'butterworth_double_ap_fptrunc_0_no_dsp_64'...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 10:03:52 2024...

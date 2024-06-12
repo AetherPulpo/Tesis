@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'axi_N_zeroes'
+================================================================
++ General Information: 
+    * Date:           Tue Jun 11 22:56:26 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        axi_N_zeroes
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |     Modules    | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |    |          |           |     |
+    |     & Loops    | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +----------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ axi_N_zeroes  |     -|  -5.42|     1231|  1.231e+04|         -|     1232|     -|        no|     -|   -|  51 (~0%)|  120 (~0%)|    -|
+    | o loop_stream  |     -|  -7.30|     1229|  1.229e+04|         3|        1|  1228|       yes|     -|   -|         -|          -|    -|
+    +----------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
