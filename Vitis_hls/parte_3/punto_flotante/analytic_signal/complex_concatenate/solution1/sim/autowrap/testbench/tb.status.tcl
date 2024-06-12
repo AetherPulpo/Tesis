@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/complex_concatenate/solution1/./sim/autowrap/testbench/complex_concatenate.cpp_pre.cpp.tb.cpp

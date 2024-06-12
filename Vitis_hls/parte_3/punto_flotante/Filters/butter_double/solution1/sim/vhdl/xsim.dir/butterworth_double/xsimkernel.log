@@ -1,7 +1,0 @@
-Running: xsim.dir/butterworth_double/xsimk -simmode gui -wdb butterworth_double.wdb -simrunnum 0 -socket 34421
-Design successfully loaded
-Design Loading Memory Usage: 44152 KB (Peak: 44152 KB)
-Design Loading CPU Usage: 20 ms
-Simulation completed
-Simulation Memory Usage: 125956 KB (Peak: 183420 KB)
-Simulation CPU Usage: 45660 ms

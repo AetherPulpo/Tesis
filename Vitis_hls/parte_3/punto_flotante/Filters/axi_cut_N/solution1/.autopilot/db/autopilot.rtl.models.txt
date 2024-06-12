@@ -1,3 +1,0 @@
-axi_cut_N_regslice_both
-axi_cut_N_regslice_both
-axi_cut_N

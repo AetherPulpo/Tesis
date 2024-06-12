@@ -1,4 +1,0 @@
-axi_scale_fmul_32ns_32ns_32_4_max_dsp_1
-axi_scale_regslice_both
-axi_scale_regslice_both
-axi_scale

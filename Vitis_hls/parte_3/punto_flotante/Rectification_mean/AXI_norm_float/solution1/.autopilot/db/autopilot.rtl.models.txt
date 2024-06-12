@@ -1,3 +1,0 @@
-AXI_norm_float_fdiv_32ns_32ns_32_16_no_dsp_1
-AXI_norm_float_regslice_both
-AXI_norm_float

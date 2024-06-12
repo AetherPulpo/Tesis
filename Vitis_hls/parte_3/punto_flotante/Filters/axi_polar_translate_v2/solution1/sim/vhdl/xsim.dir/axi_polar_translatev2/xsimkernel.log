@@ -1,7 +1,0 @@
-Running: xsim.dir/axi_polar_translatev2/xsimk -simmode gui -wdb axi_polar_translatev2.wdb -simrunnum 0 -socket 41297
-Design successfully loaded
-Design Loading Memory Usage: 47592 KB (Peak: 47592 KB)
-Design Loading CPU Usage: 50 ms
-Simulation completed
-Simulation Memory Usage: 130308 KB (Peak: 186860 KB)
-Simulation CPU Usage: 9940 ms

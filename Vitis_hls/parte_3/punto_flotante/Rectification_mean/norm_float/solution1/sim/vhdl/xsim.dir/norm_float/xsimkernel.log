@@ -1,7 +1,0 @@
-Running: xsim.dir/norm_float/xsimk -simmode gui -wdb norm_float.wdb -simrunnum 0 -socket 38841
-Design successfully loaded
-Design Loading Memory Usage: 39540 KB (Peak: 39548 KB)
-Design Loading CPU Usage: 40 ms
-Simulation completed
-Simulation Memory Usage: 121472 KB (Peak: 178808 KB)
-Simulation CPU Usage: 1010 ms

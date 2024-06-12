@@ -1,7 +1,0 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling axi_config.cpp_pre.cpp.tb.cpp
-   Compiling apatb_axi_config_util.cpp
-   Compiling apatb_axi_config.cpp
-   Compiling axi_config_tb.cpp_pre.cpp.tb.cpp
-   Compiling apatb_axi_config_ir.ll
-   Generating cosim.tv.exe

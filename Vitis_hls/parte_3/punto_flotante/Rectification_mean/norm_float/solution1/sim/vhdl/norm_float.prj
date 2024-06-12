@@ -1,7 +1,0 @@
-vhdl xil_defaultlib "AESL_sim_pkg.vhd"
-sv xil_defaultlib "ip/xil_defaultlib/norm_float_ap_fdiv_14_no_dsp_32.v"
-sv work "glbl.v"
-vhdl xil_defaultlib "norm_float.autotb.vhd"
-vhdl xil_defaultlib "norm_float.vhd"
-vhdl xil_defaultlib "norm_float_fdiv_32ns_32ns_32_16_no_dsp_1.vhd"
-

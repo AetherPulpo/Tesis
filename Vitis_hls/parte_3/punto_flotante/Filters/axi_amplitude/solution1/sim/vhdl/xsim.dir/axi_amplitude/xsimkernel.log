@@ -1,7 +1,0 @@
-Running: xsim.dir/axi_amplitude/xsimk -simmode gui -wdb axi_amplitude.wdb -simrunnum 0 -socket 45035
-Design successfully loaded
-Design Loading Memory Usage: 39308 KB (Peak: 39316 KB)
-Design Loading CPU Usage: 20 ms
-Simulation completed
-Simulation Memory Usage: 121240 KB (Peak: 178576 KB)
-Simulation CPU Usage: 670 ms

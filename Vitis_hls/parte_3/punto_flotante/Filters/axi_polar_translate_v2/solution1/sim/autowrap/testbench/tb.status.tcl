@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_polar_translate_v2/solution1/./sim/autowrap/testbench/axi_polar_translate_v2.cpp_pre.cpp.tb.cpp

@@ -1,6 +1,0 @@
-<VitisHLS:BurstInfo>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="mean_float/mean_float.cpp:21:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by _ZZ10mean_floatfbPfE3sum" ID="bb0.load.4" VarName="_ZZ10mean_floatfbPfE3sum"/>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="mean_float/mean_float.cpp:21:9" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by _ZZ10mean_floatfbPfE3sum" ID="bb0.store.6" VarName="_ZZ10mean_floatfbPfE3sum"/>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="mean_float/mean_float.cpp:30:15" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by out_mean" ID="bb0.store.11" VarName="out_mean"/>
-</VitisHLS:BurstInfo>
-

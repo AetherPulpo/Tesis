@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_analytic_fft/solution1/./sim/autowrap/testbench/AXI_analytic_fft_v2.cpp_pre.cpp.tb.cpp

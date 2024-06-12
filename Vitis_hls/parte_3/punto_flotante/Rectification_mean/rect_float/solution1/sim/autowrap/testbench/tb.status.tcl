@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Rectification_mean/rect_float/solution1/./sim/autowrap/testbench/rect_float.cpp_pre.cpp.tb.cpp

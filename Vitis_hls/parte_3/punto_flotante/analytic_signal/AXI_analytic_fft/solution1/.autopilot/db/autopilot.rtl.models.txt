@@ -1,4 +1,0 @@
-axi_analytic_fft_fmul_32ns_32ns_32_4_max_dsp_1
-axi_analytic_fft_regslice_both
-axi_analytic_fft_regslice_both
-axi_analytic_fft

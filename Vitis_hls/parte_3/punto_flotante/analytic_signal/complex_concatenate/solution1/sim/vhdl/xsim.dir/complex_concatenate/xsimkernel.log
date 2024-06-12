@@ -1,7 +1,0 @@
-Running: xsim.dir/complex_concatenate/xsimk -simmode gui -wdb complex_concatenate.wdb -simrunnum 0 -socket 58641
-Design successfully loaded
-Design Loading Memory Usage: 37672 KB (Peak: 37680 KB)
-Design Loading CPU Usage: 10 ms
-Simulation completed
-Simulation Memory Usage: 119604 KB (Peak: 176940 KB)
-Simulation CPU Usage: 70 ms

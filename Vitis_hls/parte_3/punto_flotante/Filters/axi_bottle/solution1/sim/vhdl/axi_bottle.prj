@@ -1,9 +1,0 @@
-vhdl xil_defaultlib "AESL_sim_pkg.vhd"
-sv work "glbl.v"
-vhdl xil_defaultlib "axi_bottle.vhd"
-vhdl xil_defaultlib "AESL_axi_s_out_complex_data_2_V.vhd"
-vhdl xil_defaultlib "AESL_axi_s_out_complex_data_1_V.vhd"
-vhdl xil_defaultlib "axi_bottle.autotb.vhd"
-vhdl xil_defaultlib "AESL_axi_s_in_complex_data_V.vhd"
-vhdl xil_defaultlib "axi_bottle_regslice_both.vhd"
-

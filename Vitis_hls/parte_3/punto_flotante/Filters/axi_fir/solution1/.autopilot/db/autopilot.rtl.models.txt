@@ -1,7 +1,0 @@
-axi_fir_fmul_32ns_32ns_32_4_max_dsp_1
-axi_fir_facc_32ns_32ns_1ns_32_6_no_dsp_1
-axi_fir_shift_reg_a
-axi_fir_taps
-axi_fir_regslice_both
-axi_fir_regslice_both
-axi_fir

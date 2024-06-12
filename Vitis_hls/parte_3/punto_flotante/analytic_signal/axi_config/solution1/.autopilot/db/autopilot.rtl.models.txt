@@ -1,5 +1,0 @@
-axi_config_regslice_both
-axi_config_regslice_both
-axi_config_regslice_both
-axi_config_regslice_both
-axi_config

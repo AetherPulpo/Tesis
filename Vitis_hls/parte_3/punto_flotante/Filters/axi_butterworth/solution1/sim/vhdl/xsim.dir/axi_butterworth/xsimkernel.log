@@ -1,7 +1,0 @@
-Running: xsim.dir/axi_butterworth/xsimk -simmode gui -wdb axi_butterworth.wdb -simrunnum 0 -socket 57825
-Design successfully loaded
-Design Loading Memory Usage: 40668 KB (Peak: 40676 KB)
-Design Loading CPU Usage: 50 ms
-Simulation completed
-Simulation Memory Usage: 122600 KB (Peak: 179936 KB)
-Simulation CPU Usage: 25680 ms

@@ -1,3 +1,0 @@
-AXI_Real2Complex_regslice_both
-AXI_Real2Complex_regslice_both
-AXI_Real2Complex
