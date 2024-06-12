@@ -1,0 +1,5 @@
+axi_butterworth_faddfsub_32ns_32ns_32_5_full_dsp_1
+axi_butterworth_fmul_32ns_32ns_32_4_max_dsp_1
+axi_butterworth_regslice_both
+axi_butterworth_regslice_both
+axi_butterworth

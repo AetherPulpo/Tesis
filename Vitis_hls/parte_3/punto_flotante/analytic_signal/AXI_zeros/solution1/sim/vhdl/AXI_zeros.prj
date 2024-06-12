@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "AXI_zeros.autotb.vhd"
+vhdl xil_defaultlib "AESL_axi_s_out_stream.vhd"
+vhdl xil_defaultlib "AXI_zeros.vhd"
+vhdl xil_defaultlib "AXI_zeros_regslice_both.vhd"
+

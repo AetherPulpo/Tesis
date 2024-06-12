@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 10 18:49:01 2024
+# Process ID: 11817
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_zeros/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_zeros/solution1/impl/ip/vivado.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_zeros/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

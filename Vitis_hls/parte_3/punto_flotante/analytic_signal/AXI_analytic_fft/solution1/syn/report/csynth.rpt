@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'axi_analytic_fft'
+================================================================
++ General Information: 
+    * Date:           Fri May 24 10:09:24 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        AXI_analytic_fft
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |       Modules      | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |        |           |           |     |
+    |       & Loops      | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |+ axi_analytic_fft  |     -|  -0.90|     1029|  1.029e+04|         -|     1030|     -|        no|     -|  6 (2%)|  637 (~0%)|  1026 (1%)|    -|
+    | o loop             |     -|  -7.30|     1027|  1.027e+04|         5|        1|  1024|       yes|     -|       -|          -|          -|    -|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+

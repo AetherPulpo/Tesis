@@ -1,0 +1,2057 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../axi_amplitude_tb.cpp in debug mode
+   Compiling ../../../axi_amplitude.cpp in debug mode
+   Generating csim.exe
+Modulo y fase[0]: 0.0204002; -0.748922
+Amplitud:[0]: 0.0149416Valor esperado: 0.0149416
+Modulo y fase[1]: 0.0214369; -0.773213
+Amplitud:[1]: 0.0153417Valor esperado: 0.0153417
+Modulo y fase[2]: 0.0225048; -0.79752
+Amplitud:[2]: 0.0157193Valor esperado: 0.0157193
+Modulo y fase[3]: 0.023604; -0.821811
+Amplitud:[3]: 0.0160719Valor esperado: 0.0160719
+Modulo y fase[4]: 0.0247343; -0.846055
+Amplitud:[4]: 0.0163974Valor esperado: 0.0163974
+Modulo y fase[5]: 0.0258956; -0.87022
+Amplitud:[5]: 0.0166938Valor esperado: 0.0166938
+Modulo y fase[6]: 0.0270877; -0.894275
+Amplitud:[6]: 0.0169592Valor esperado: 0.0169592
+Modulo y fase[7]: 0.0283105; -0.918189
+Amplitud:[7]: 0.0171918Valor esperado: 0.0171918
+Modulo y fase[8]: 0.0295637; -0.941932
+Amplitud:[8]: 0.0173902Valor esperado: 0.0173902
+Modulo y fase[9]: 0.0308471; -0.965473
+Amplitud:[9]: 0.0175528Valor esperado: 0.0175528
+Modulo y fase[10]: 0.0321603; -0.988784
+Amplitud:[10]: 0.0176787Valor esperado: 0.0176787
+Modulo y fase[11]: 0.033503; -1.01184
+Amplitud:[11]: 0.0177668Valor esperado: 0.0177668
+Modulo y fase[12]: 0.0348748; -1.0346
+Amplitud:[12]: 0.0178165Valor esperado: 0.0178165
+Modulo y fase[13]: 0.0362755; -1.05705
+Amplitud:[13]: 0.0178273Valor esperado: 0.0178273
+Modulo y fase[14]: 0.0377044; -1.07916
+Amplitud:[14]: 0.0177989Valor esperado: 0.0177989
+Modulo y fase[15]: 0.0391613; -1.10091
+Amplitud:[15]: 0.0177315Valor esperado: 0.0177315
+Modulo y fase[16]: 0.0406456; -1.12228
+Amplitud:[16]: 0.0176253Valor esperado: 0.0176253
+Modulo y fase[17]: 0.0421568; -1.14323
+Amplitud:[17]: 0.0174807Valor esperado: 0.0174807
+Modulo y fase[18]: 0.0436945; -1.16375
+Amplitud:[18]: 0.0172986Valor esperado: 0.0172986
+Modulo y fase[19]: 0.045258; -1.18382
+Amplitud:[19]: 0.0170799Valor esperado: 0.0170799
+Modulo y fase[20]: 0.0468468; -1.20342
+Amplitud:[20]: 0.0168258Valor esperado: 0.0168258
+Modulo y fase[21]: 0.0484603; -1.22254
+Amplitud:[21]: 0.0165377Valor esperado: 0.0165377
+Modulo y fase[22]: 0.050098; -1.24115
+Amplitud:[22]: 0.0162171Valor esperado: 0.0162171
+Modulo y fase[23]: 0.0517593; -1.25925
+Amplitud:[23]: 0.0158658Valor esperado: 0.0158658
+Modulo y fase[24]: 0.0534434; -1.27682
+Amplitud:[24]: 0.0154857Valor esperado: 0.0154857
+Modulo y fase[25]: 0.0551499; -1.29385
+Amplitud:[25]: 0.0150788Valor esperado: 0.0150788
+Modulo y fase[26]: 0.0568781; -1.31034
+Amplitud:[26]: 0.0146474Valor esperado: 0.0146474
+Modulo y fase[27]: 0.0586273; -1.32627
+Amplitud:[27]: 0.0141937Valor esperado: 0.0141937
+Modulo y fase[28]: 0.0603969; -1.34163
+Amplitud:[28]: 0.0137201Valor esperado: 0.0137201
+Modulo y fase[29]: 0.0621862; -1.35643
+Amplitud:[29]: 0.0132289Valor esperado: 0.0132289
+Modulo y fase[30]: 0.0639947; -1.37065
+Amplitud:[30]: 0.0127227Valor esperado: 0.0127227
+Modulo y fase[31]: 0.0658217; -1.38431
+Amplitud:[31]: 0.012204Valor esperado: 0.012204
+Modulo y fase[32]: 0.0676665; -1.39739
+Amplitud:[32]: 0.0116753Valor esperado: 0.0116753
+Modulo y fase[33]: 0.0695286; -1.4099
+Amplitud:[33]: 0.011139Valor esperado: 0.011139
+Modulo y fase[34]: 0.0714072; -1.42183
+Amplitud:[34]: 0.0105977Valor esperado: 0.0105977
+Modulo y fase[35]: 0.0733018; -1.43321
+Amplitud:[35]: 0.0100539Valor esperado: 0.0100539
+Modulo y fase[36]: 0.0752118; -1.44402
+Amplitud:[36]: 0.0095098Valor esperado: 0.0095098
+Modulo y fase[37]: 0.0771366; -1.45427
+Amplitud:[37]: 0.00896784Valor esperado: 0.00896784
+Modulo y fase[38]: 0.0790756; -1.46398
+Amplitud:[38]: 0.00843022Valor esperado: 0.00843022
+Modulo y fase[39]: 0.0810283; -1.47316
+Amplitud:[39]: 0.00789907Valor esperado: 0.00789907
+Modulo y fase[40]: 0.082994; -1.4818
+Amplitud:[40]: 0.00737644Valor esperado: 0.00737644
+Modulo y fase[41]: 0.0849723; -1.48993
+Amplitud:[41]: 0.00686422Valor esperado: 0.00686422
+Modulo y fase[42]: 0.0869627; -1.49755
+Amplitud:[42]: 0.00636422Valor esperado: 0.00636422
+Modulo y fase[43]: 0.0889646; -1.50468
+Amplitud:[43]: 0.00587808Valor esperado: 0.00587808
+Modulo y fase[44]: 0.0909776; -1.51133
+Amplitud:[44]: 0.00540735Valor esperado: 0.00540735
+Modulo y fase[45]: 0.0930012; -1.51751
+Amplitud:[45]: 0.00495337Valor esperado: 0.00495337
+Modulo y fase[46]: 0.0950349; -1.52324
+Amplitud:[46]: 0.00451742Valor esperado: 0.00451742
+Modulo y fase[47]: 0.0970785; -1.52854
+Amplitud:[47]: 0.00410053Valor esperado: 0.00410053
+Modulo y fase[48]: 0.0991314; -1.53343
+Amplitud:[48]: 0.00370368Valor esperado: 0.00370368
+Modulo y fase[49]: 0.101193; -1.53791
+Amplitud:[49]: 0.00332763Valor esperado: 0.00332763
+Modulo y fase[50]: 0.103264; -1.542
+Amplitud:[50]: 0.00297301Valor esperado: 0.00297301
+Modulo y fase[51]: 0.105343; -1.54573
+Amplitud:[51]: 0.00264032Valor esperado: 0.00264032
+Modulo y fase[52]: 0.10743; -1.54911
+Amplitud:[52]: 0.00232989Valor esperado: 0.00232989
+Modulo y fase[53]: 0.109524; -1.55215
+Amplitud:[53]: 0.00204191Valor esperado: 0.00204191
+Modulo y fase[54]: 0.111626; -1.55488
+Amplitud:[54]: 0.00177643Valor esperado: 0.00177643
+Modulo y fase[55]: 0.113735; -1.55731
+Amplitud:[55]: 0.0015334Valor esperado: 0.0015334
+Modulo y fase[56]: 0.115852; -1.55947
+Amplitud:[56]: 0.00131257Valor esperado: 0.00131257
+Modulo y fase[57]: 0.117975; -1.56136
+Amplitud:[57]: 0.00111365Valor esperado: 0.00111365
+Modulo y fase[58]: 0.120105; -1.563
+Amplitud:[58]: 0.000936198Valor esperado: 0.000936198
+Modulo y fase[59]: 0.122241; -1.56442
+Amplitud:[59]: 0.000779661Valor esperado: 0.000779661
+Modulo y fase[60]: 0.124383; -1.56562
+Amplitud:[60]: 0.000643362Valor esperado: 0.000643362
+Modulo y fase[61]: 0.126532; -1.56663
+Amplitud:[61]: 0.000526597Valor esperado: 0.000526597
+Modulo y fase[62]: 0.128687; -1.56747
+Amplitud:[62]: 0.000428519Valor esperado: 0.000428519
+Modulo y fase[63]: 0.130847; -1.56813
+Amplitud:[63]: 0.000348255Valor esperado: 0.000348255
+Modulo y fase[64]: 0.133014; -1.56865
+Amplitud:[64]: 0.000284841Valor esperado: 0.000284841
+Modulo y fase[65]: 0.135187; -1.56904
+Amplitud:[65]: 0.000237247Valor esperado: 0.000237247
+Modulo y fase[66]: 0.137365; -1.56931
+Amplitud:[66]: 0.000204422Valor esperado: 0.000204422
+Modulo y fase[67]: 0.13955; -1.56947
+Amplitud:[67]: 0.000185265Valor esperado: 0.000185265
+Modulo y fase[68]: 0.14174; -1.56954
+Amplitud:[68]: 0.000178642Valor esperado: 0.000178642
+Modulo y fase[69]: 0.143935; -1.56952
+Amplitud:[69]: 0.000183366Valor esperado: 0.000183366
+Modulo y fase[70]: 0.146137; -1.56944
+Amplitud:[70]: 0.000198312Valor esperado: 0.000198312
+Modulo y fase[71]: 0.148344; -1.5693
+Amplitud:[71]: 0.000222299Valor esperado: 0.000222299
+Modulo y fase[72]: 0.150557; -1.56911
+Amplitud:[72]: 0.000254152Valor esperado: 0.000254152
+Modulo y fase[73]: 0.152777; -1.56888
+Amplitud:[73]: 0.000292757Valor esperado: 0.000292757
+Modulo y fase[74]: 0.155002; -1.56862
+Amplitud:[74]: 0.000336971Valor esperado: 0.000336971
+Modulo y fase[75]: 0.157234; -1.56834
+Amplitud:[75]: 0.000385721Valor esperado: 0.000385721
+Modulo y fase[76]: 0.159472; -1.56805
+Amplitud:[76]: 0.000437919Valor esperado: 0.000437919
+Modulo y fase[77]: 0.161716; -1.56775
+Amplitud:[77]: 0.000492526Valor esperado: 0.000492526
+Modulo y fase[78]: 0.163966; -1.56745
+Amplitud:[78]: 0.00054848Valor esperado: 0.00054848
+Modulo y fase[79]: 0.166223; -1.56716
+Amplitud:[79]: 0.000604894Valor esperado: 0.000604894
+Modulo y fase[80]: 0.168487; -1.56687
+Amplitud:[80]: 0.000660915Valor esperado: 0.000660915
+Modulo y fase[81]: 0.170758; -1.56661
+Amplitud:[81]: 0.000715663Valor esperado: 0.000715663
+Modulo y fase[82]: 0.173036; -1.56636
+Amplitud:[82]: 0.000768384Valor esperado: 0.000768384
+Modulo y fase[83]: 0.175321; -1.56613
+Amplitud:[83]: 0.000818388Valor esperado: 0.000818388
+Modulo y fase[84]: 0.177614; -1.56593
+Amplitud:[84]: 0.000865021Valor esperado: 0.000865021
+Modulo y fase[85]: 0.179914; -1.56575
+Amplitud:[85]: 0.000907664Valor esperado: 0.000907664
+Modulo y fase[86]: 0.182222; -1.56561
+Amplitud:[86]: 0.000945788Valor esperado: 0.000945788
+Modulo y fase[87]: 0.184538; -1.56549
+Amplitud:[87]: 0.000978973Valor esperado: 0.000978973
+Modulo y fase[88]: 0.186863; -1.56541
+Amplitud:[88]: 0.00100679Valor esperado: 0.00100679
+Modulo y fase[89]: 0.189197; -1.56536
+Amplitud:[89]: 0.00102897Valor esperado: 0.00102897
+Modulo y fase[90]: 0.191539; -1.56534
+Amplitud:[90]: 0.00104523Valor esperado: 0.00104523
+Modulo y fase[91]: 0.193892; -1.56535
+Amplitud:[91]: 0.0010554Valor esperado: 0.0010554
+Modulo y fase[92]: 0.196253; -1.5654
+Amplitud:[92]: 0.00105934Valor esperado: 0.00105934
+Modulo y fase[93]: 0.198624; -1.56548
+Amplitud:[93]: 0.00105692Valor esperado: 0.00105692
+Modulo y fase[94]: 0.201006; -1.56558
+Amplitud:[94]: 0.00104817Valor esperado: 0.00104817
+Modulo y fase[95]: 0.203399; -1.56572
+Amplitud:[95]: 0.00103311Valor esperado: 0.00103311
+Modulo y fase[96]: 0.205803; -1.56588
+Amplitud:[96]: 0.00101183Valor esperado: 0.00101183
+Modulo y fase[97]: 0.208219; -1.56607
+Amplitud:[97]: 0.000984487Valor esperado: 0.000984487
+Modulo y fase[98]: 0.210647; -1.56628
+Amplitud:[98]: 0.000951244Valor esperado: 0.000951244
+Modulo y fase[99]: 0.213087; -1.56651
+Amplitud:[99]: 0.000912375Valor esperado: 0.000912375
+Modulo y fase[100]: 0.21554; -1.56677
+Amplitud:[100]: 0.000868073Valor esperado: 0.000868073
+Modulo y fase[101]: 0.218007; -1.56704
+Amplitud:[101]: 0.000818651Valor esperado: 0.000818651
+Modulo y fase[102]: 0.220488; -1.56733
+Amplitud:[102]: 0.000764439Valor esperado: 0.000764439
+Modulo y fase[103]: 0.222984; -1.56763
+Amplitud:[103]: 0.000705787Valor esperado: 0.000705787
+Modulo y fase[104]: 0.225494; -1.56794
+Amplitud:[104]: 0.000643064Valor esperado: 0.000643064
+Modulo y fase[105]: 0.228021; -1.56827
+Amplitud:[105]: 0.000576687Valor esperado: 0.000576687
+Modulo y fase[106]: 0.230564; -1.5686
+Amplitud:[106]: 0.000507012Valor esperado: 0.000507012
+Modulo y fase[107]: 0.233124; -1.56893
+Amplitud:[107]: 0.000434522Valor esperado: 0.000434522
+Modulo y fase[108]: 0.235701; -1.56927
+Amplitud:[108]: 0.000359585Valor esperado: 0.000359585
+Modulo y fase[109]: 0.238297; -1.56961
+Amplitud:[109]: 0.00028267Valor esperado: 0.00028267
+Modulo y fase[110]: 0.240912; -1.56995
+Amplitud:[110]: 0.00020421Valor esperado: 0.00020421
+Modulo y fase[111]: 0.243547; -1.57028
+Amplitud:[111]: 0.000124686Valor esperado: 0.000124686
+Modulo y fase[112]: 0.246202; -1.57062
+Amplitud:[112]: 4.45712e-05Valor esperado: 4.45712e-05
+Modulo y fase[113]: 0.248877; -1.57094
+Amplitud:[113]: -3.58504e-05Valor esperado: -3.58504e-05
+Modulo y fase[114]: 0.251575; -1.57126
+Amplitud:[114]: -0.000116013Valor esperado: -0.000116013
+Modulo y fase[115]: 0.254295; -1.57157
+Amplitud:[115]: -0.000195508Valor esperado: -0.000195508
+Modulo y fase[116]: 0.257037; -1.57186
+Amplitud:[116]: -0.000273975Valor esperado: -0.000273975
+Modulo y fase[117]: 0.259804; -1.57215
+Amplitud:[117]: -0.000350975Valor esperado: -0.000350975
+Modulo y fase[118]: 0.262595; -1.57242
+Amplitud:[118]: -0.000426086Valor esperado: -0.000426086
+Modulo y fase[119]: 0.26541; -1.57268
+Amplitud:[119]: -0.000498964Valor esperado: -0.000498964
+Modulo y fase[120]: 0.268251; -1.57292
+Amplitud:[120]: -0.000569315Valor esperado: -0.000569315
+Modulo y fase[121]: 0.271118; -1.57314
+Amplitud:[121]: -0.00063671Valor esperado: -0.00063671
+Modulo y fase[122]: 0.274011; -1.57335
+Amplitud:[122]: -0.000700865Valor esperado: -0.000700865
+Modulo y fase[123]: 0.276932; -1.57355
+Amplitud:[123]: -0.000761453Valor esperado: -0.000761453
+Modulo y fase[124]: 0.27988; -1.57372
+Amplitud:[124]: -0.000818171Valor esperado: -0.000818171
+Modulo y fase[125]: 0.282857; -1.57387
+Amplitud:[125]: -0.000870774Valor esperado: -0.000870774
+Modulo y fase[126]: 0.285862; -1.57401
+Amplitud:[126]: -0.000918975Valor esperado: -0.000918975
+Modulo y fase[127]: 0.288895; -1.57413
+Amplitud:[127]: -0.000962546Valor esperado: -0.000962546
+Modulo y fase[128]: 0.291958; -1.57423
+Amplitud:[128]: -0.00100129Valor esperado: -0.00100129
+Modulo y fase[129]: 0.29505; -1.5743
+Amplitud:[129]: -0.00103497Valor esperado: -0.00103497
+Modulo y fase[130]: 0.298171; -1.57436
+Amplitud:[130]: -0.00106344Valor esperado: -0.00106344
+Modulo y fase[131]: 0.301323; -1.5744
+Amplitud:[131]: -0.0010865Valor esperado: -0.0010865
+Modulo y fase[132]: 0.304504; -1.57442
+Amplitud:[132]: -0.00110403Valor esperado: -0.00110403
+Modulo y fase[133]: 0.307715; -1.57442
+Amplitud:[133]: -0.00111585Valor esperado: -0.00111585
+Modulo y fase[134]: 0.310955; -1.5744
+Amplitud:[134]: -0.00112193Valor esperado: -0.00112193
+Modulo y fase[135]: 0.314224; -1.57437
+Amplitud:[135]: -0.00112219Valor esperado: -0.00112219
+Modulo y fase[136]: 0.317522; -1.57431
+Amplitud:[136]: -0.00111652Valor esperado: -0.00111652
+Modulo y fase[137]: 0.320849; -1.57424
+Amplitud:[137]: -0.00110496Valor esperado: -0.00110496
+Modulo y fase[138]: 0.324205; -1.57415
+Amplitud:[138]: -0.00108746Valor esperado: -0.00108746
+Modulo y fase[139]: 0.327588; -1.57404
+Amplitud:[139]: -0.00106397Valor esperado: -0.00106397
+Modulo y fase[140]: 0.331; -1.57392
+Amplitud:[140]: -0.00103457Valor esperado: -0.00103457
+Modulo y fase[141]: 0.334438; -1.57378
+Amplitud:[141]: -0.000999309Valor esperado: -0.000999309
+Modulo y fase[142]: 0.337903; -1.57363
+Amplitud:[142]: -0.000958223Valor esperado: -0.000958223
+Modulo y fase[143]: 0.341394; -1.57347
+Amplitud:[143]: -0.000911513Valor esperado: -0.000911513
+Modulo y fase[144]: 0.34491; -1.57329
+Amplitud:[144]: -0.000859226Valor esperado: -0.000859226
+Modulo y fase[145]: 0.348451; -1.5731
+Amplitud:[145]: -0.000801626Valor esperado: -0.000801626
+Modulo y fase[146]: 0.352016; -1.5729
+Amplitud:[146]: -0.000738783Valor esperado: -0.000738783
+Modulo y fase[147]: 0.355603; -1.57268
+Amplitud:[147]: -0.000671068Valor esperado: -0.000671068
+Modulo y fase[148]: 0.359213; -1.57246
+Amplitud:[148]: -0.00059849Valor esperado: -0.00059849
+Modulo y fase[149]: 0.362845; -1.57223
+Amplitud:[149]: -0.000521406Valor esperado: -0.000521406
+Modulo y fase[150]: 0.366498; -1.572
+Amplitud:[150]: -0.000440324Valor esperado: -0.000440324
+Modulo y fase[151]: 0.370172; -1.57176
+Amplitud:[151]: -0.000355334Valor esperado: -0.000355334
+Modulo y fase[152]: 0.373865; -1.57151
+Amplitud:[152]: -0.000267024Valor esperado: -0.000267024
+Modulo y fase[153]: 0.377578; -1.57126
+Amplitud:[153]: -0.000175603Valor esperado: -0.000175603
+Modulo y fase[154]: 0.381309; -1.57101
+Amplitud:[154]: -8.16094e-05Valor esperado: -8.16094e-05
+Modulo y fase[155]: 0.385059; -1.57076
+Amplitud:[155]: 1.45802e-05Valor esperado: 1.45802e-05
+Modulo y fase[156]: 0.388828; -1.57051
+Amplitud:[156]: 0.000112433Valor esperado: 0.000112433
+Modulo y fase[157]: 0.392615; -1.57026
+Amplitud:[157]: 0.000211347Valor esperado: 0.000211347
+Modulo y fase[158]: 0.39642; -1.57001
+Amplitud:[158]: 0.000310839Valor esperado: 0.000310839
+Modulo y fase[159]: 0.400245; -1.56977
+Amplitud:[159]: 0.000410313Valor esperado: 0.000410313
+Modulo y fase[160]: 0.404088; -1.56954
+Amplitud:[160]: 0.000509247Valor esperado: 0.000509247
+Modulo y fase[161]: 0.407952; -1.56931
+Amplitud:[161]: 0.000606905Valor esperado: 0.000606905
+Modulo y fase[162]: 0.411836; -1.56909
+Amplitud:[162]: 0.000702674Valor esperado: 0.000702674
+Modulo y fase[163]: 0.415743; -1.56888
+Amplitud:[163]: 0.000795971Valor esperado: 0.000795971
+Modulo y fase[164]: 0.419673; -1.56868
+Amplitud:[164]: 0.000886142Valor esperado: 0.000886142
+Modulo y fase[165]: 0.423628; -1.5685
+Amplitud:[165]: 0.000972467Valor esperado: 0.000972467
+Modulo y fase[166]: 0.427611; -1.56833
+Amplitud:[166]: 0.0010544Valor esperado: 0.0010544
+Modulo y fase[167]: 0.431623; -1.56818
+Amplitud:[167]: 0.00113118Valor esperado: 0.00113118
+Modulo y fase[168]: 0.435668; -1.56804
+Amplitud:[168]: 0.00120229Valor esperado: 0.00120229
+Modulo y fase[169]: 0.439749; -1.56791
+Amplitud:[169]: 0.00126718Valor esperado: 0.00126718
+Modulo y fase[170]: 0.443869; -1.56781
+Amplitud:[170]: 0.00132514Valor esperado: 0.00132514
+Modulo y fase[171]: 0.448031; -1.56773
+Amplitud:[171]: 0.0013757Valor esperado: 0.0013757
+Modulo y fase[172]: 0.452241; -1.56766
+Amplitud:[172]: 0.00141844Valor esperado: 0.00141844
+Modulo y fase[173]: 0.456503; -1.56761
+Amplitud:[173]: 0.00145292Valor esperado: 0.00145292
+Modulo y fase[174]: 0.460822; -1.56759
+Amplitud:[174]: 0.00147875Valor esperado: 0.00147875
+Modulo y fase[175]: 0.465203; -1.56758
+Amplitud:[175]: 0.00149558Valor esperado: 0.00149558
+Modulo y fase[176]: 0.469652; -1.5676
+Amplitud:[176]: 0.00150339Valor esperado: 0.00150339
+Modulo y fase[177]: 0.474176; -1.56763
+Amplitud:[177]: 0.00150199Valor esperado: 0.00150199
+Modulo y fase[178]: 0.478782; -1.56768
+Amplitud:[178]: 0.00149158Valor esperado: 0.00149158
+Modulo y fase[179]: 0.483477; -1.56775
+Amplitud:[179]: 0.00147232Valor esperado: 0.00147232
+Modulo y fase[180]: 0.488267; -1.56784
+Amplitud:[180]: 0.00144447Valor esperado: 0.00144447
+Modulo y fase[181]: 0.493162; -1.56794
+Amplitud:[181]: 0.00140834Valor esperado: 0.00140834
+Modulo y fase[182]: 0.498169; -1.56806
+Amplitud:[182]: 0.00136485Valor esperado: 0.00136485
+Modulo y fase[183]: 0.503298; -1.56818
+Amplitud:[183]: 0.00131477Valor esperado: 0.00131477
+Modulo y fase[184]: 0.508557; -1.56832
+Amplitud:[184]: 0.00125897Valor esperado: 0.00125897
+Modulo y fase[185]: 0.513956; -1.56846
+Amplitud:[185]: 0.001199Valor esperado: 0.001199
+Modulo y fase[186]: 0.519504; -1.56861
+Amplitud:[186]: 0.0011362Valor esperado: 0.0011362
+Modulo y fase[187]: 0.525212; -1.56875
+Amplitud:[187]: 0.00107236Valor esperado: 0.00107236
+Modulo y fase[188]: 0.53109; -1.5689
+Amplitud:[188]: 0.00100966Valor esperado: 0.00100966
+Modulo y fase[189]: 0.537148; -1.56903
+Amplitud:[189]: 0.000950482Valor esperado: 0.000950482
+Modulo y fase[190]: 0.543396; -1.56914
+Amplitud:[190]: 0.000897603Valor esperado: 0.000897603
+Modulo y fase[191]: 0.549846; -1.56924
+Amplitud:[191]: 0.000853854Valor esperado: 0.000853854
+Modulo y fase[192]: 0.556509; -1.56932
+Amplitud:[192]: 0.000822936Valor esperado: 0.000822936
+Modulo y fase[193]: 0.563395; -1.56936
+Amplitud:[193]: 0.000808805Valor esperado: 0.000808805
+Modulo y fase[194]: 0.570514; -1.56937
+Amplitud:[194]: 0.000815626Valor esperado: 0.000815626
+Modulo y fase[195]: 0.577879; -1.56933
+Amplitud:[195]: 0.000848405Valor esperado: 0.000848405
+Modulo y fase[196]: 0.585499; -1.56924
+Amplitud:[196]: 0.000912428Valor esperado: 0.000912428
+Modulo y fase[197]: 0.593384; -1.56909
+Amplitud:[197]: 0.00101378Valor esperado: 0.00101378
+Modulo y fase[198]: 0.601546; -1.56887
+Amplitud:[198]: 0.0011588Valor esperado: 0.0011588
+Modulo y fase[199]: 0.609994; -1.56858
+Amplitud:[199]: 0.00135462Valor esperado: 0.00135462
+Modulo y fase[200]: 0.618738; -1.5682
+Amplitud:[200]: 0.00160903Valor esperado: 0.00160903
+Modulo y fase[201]: 0.627786; -1.56772
+Amplitud:[201]: 0.00193064Valor esperado: 0.00193064
+Modulo y fase[202]: 0.637148; -1.56714
+Amplitud:[202]: 0.00232856Valor esperado: 0.00232856
+Modulo y fase[203]: 0.646833; -1.56645
+Amplitud:[203]: 0.00281311Valor esperado: 0.00281311
+Modulo y fase[204]: 0.656846; -1.56563
+Amplitud:[204]: 0.00339514Valor esperado: 0.00339514
+Modulo y fase[205]: 0.667196; -1.56467
+Amplitud:[205]: 0.00408626Valor esperado: 0.00408626
+Modulo y fase[206]: 0.677889; -1.56357
+Amplitud:[206]: 0.00489891Valor esperado: 0.00489891
+Modulo y fase[207]: 0.688929; -1.56231
+Amplitud:[207]: 0.00584716Valor esperado: 0.00584716
+Modulo y fase[208]: 0.700323; -1.56088
+Amplitud:[208]: 0.00694547Valor esperado: 0.00694547
+Modulo y fase[209]: 0.712073; -1.55927
+Amplitud:[209]: 0.00820908Valor esperado: 0.00820908
+Modulo y fase[210]: 0.724183; -1.55746
+Amplitud:[210]: 0.00965466Valor esperado: 0.00965466
+Modulo y fase[211]: 0.736654; -1.55546
+Amplitud:[211]: 0.0112999Valor esperado: 0.0112999
+Modulo y fase[212]: 0.749487; -1.55323
+Amplitud:[212]: 0.0131632Valor esperado: 0.0131632
+Modulo y fase[213]: 0.762682; -1.55078
+Amplitud:[213]: 0.0152646Valor esperado: 0.0152646
+Modulo y fase[214]: 0.776238; -1.54809
+Amplitud:[214]: 0.0176245Valor esperado: 0.0176245
+Modulo y fase[215]: 0.790152; -1.54515
+Amplitud:[215]: 0.0202644Valor esperado: 0.0202644
+Modulo y fase[216]: 0.80442; -1.54194
+Amplitud:[216]: 0.0232072Valor esperado: 0.0232072
+Modulo y fase[217]: 0.819038; -1.53846
+Amplitud:[217]: 0.0264764Valor esperado: 0.0264764
+Modulo y fase[218]: 0.834; -1.5347
+Amplitud:[218]: 0.0300965Valor esperado: 0.0300965
+Modulo y fase[219]: 0.849298; -1.53064
+Amplitud:[219]: 0.0340927Valor esperado: 0.0340927
+Modulo y fase[220]: 0.864923; -1.52628
+Amplitud:[220]: 0.038491Valor esperado: 0.038491
+Modulo y fase[221]: 0.880867; -1.5216
+Amplitud:[221]: 0.0433179Valor esperado: 0.0433179
+Modulo y fase[222]: 0.897117; -1.5166
+Amplitud:[222]: 0.0486006Valor esperado: 0.0486006
+Modulo y fase[223]: 0.913662; -1.51126
+Amplitud:[223]: 0.0543663Valor esperado: 0.0543663
+Modulo y fase[224]: 0.930488; -1.50558
+Amplitud:[224]: 0.0606431Valor esperado: 0.0606431
+Modulo y fase[225]: 0.94758; -1.49955
+Amplitud:[225]: 0.0674587Valor esperado: 0.0674587
+Modulo y fase[226]: 0.964923; -1.49316
+Amplitud:[226]: 0.0748408Valor esperado: 0.0748408
+Modulo y fase[227]: 0.9825; -1.4864
+Amplitud:[227]: 0.0828167Valor esperado: 0.0828167
+Modulo y fase[228]: 1.00029; -1.47928
+Amplitud:[228]: 0.0914133Valor esperado: 0.0914133
+Modulo y fase[229]: 1.01828; -1.47178
+Amplitud:[229]: 0.100657Valor esperado: 0.100657
+Modulo y fase[230]: 1.03644; -1.46391
+Amplitud:[230]: 0.110572Valor esperado: 0.110572
+Modulo y fase[231]: 1.05476; -1.45565
+Amplitud:[231]: 0.121184Valor esperado: 0.121184
+Modulo y fase[232]: 1.07321; -1.44701
+Amplitud:[232]: 0.132515Valor esperado: 0.132515
+Modulo y fase[233]: 1.09177; -1.43797
+Amplitud:[233]: 0.144586Valor esperado: 0.144586
+Modulo y fase[234]: 1.11042; -1.42856
+Amplitud:[234]: 0.157414Valor esperado: 0.157414
+Modulo y fase[235]: 1.12913; -1.41875
+Amplitud:[235]: 0.171019Valor esperado: 0.171019
+Modulo y fase[236]: 1.14787; -1.40856
+Amplitud:[236]: 0.185412Valor esperado: 0.185412
+Modulo y fase[237]: 1.16663; -1.39798
+Amplitud:[237]: 0.200607Valor esperado: 0.200607
+Modulo y fase[238]: 1.18537; -1.38703
+Amplitud:[238]: 0.216612Valor esperado: 0.216612
+Modulo y fase[239]: 1.20407; -1.37569
+Amplitud:[239]: 0.233431Valor esperado: 0.233431
+Modulo y fase[240]: 1.22271; -1.36399
+Amplitud:[240]: 0.251068Valor esperado: 0.251068
+Modulo y fase[241]: 1.24125; -1.35192
+Amplitud:[241]: 0.26952Valor esperado: 0.26952
+Modulo y fase[242]: 1.25967; -1.33949
+Amplitud:[242]: 0.288781Valor esperado: 0.288781
+Modulo y fase[243]: 1.27794; -1.32671
+Amplitud:[243]: 0.308844Valor esperado: 0.308844
+Modulo y fase[244]: 1.29604; -1.31358
+Amplitud:[244]: 0.329694Valor esperado: 0.329694
+Modulo y fase[245]: 1.31395; -1.30013
+Amplitud:[245]: 0.351314Valor esperado: 0.351314
+Modulo y fase[246]: 1.33162; -1.28635
+Amplitud:[246]: 0.373682Valor esperado: 0.373682
+Modulo y fase[247]: 1.34905; -1.27227
+Amplitud:[247]: 0.396772Valor esperado: 0.396772
+Modulo y fase[248]: 1.3662; -1.25789
+Amplitud:[248]: 0.420555Valor esperado: 0.420555
+Modulo y fase[249]: 1.38306; -1.24322
+Amplitud:[249]: 0.444996Valor esperado: 0.444996
+Modulo y fase[250]: 1.39959; -1.22829
+Amplitud:[250]: 0.470057Valor esperado: 0.470057
+Modulo y fase[251]: 1.41578; -1.21309
+Amplitud:[251]: 0.495696Valor esperado: 0.495696
+Modulo y fase[252]: 1.4316; -1.19766
+Amplitud:[252]: 0.521869Valor esperado: 0.521869
+Modulo y fase[253]: 1.44704; -1.18201
+Amplitud:[253]: 0.548526Valor esperado: 0.548526
+Modulo y fase[254]: 1.46207; -1.16615
+Amplitud:[254]: 0.575615Valor esperado: 0.575615
+Modulo y fase[255]: 1.47668; -1.15009
+Amplitud:[255]: 0.603082Valor esperado: 0.603082
+Modulo y fase[256]: 1.49086; -1.13387
+Amplitud:[256]: 0.630868Valor esperado: 0.630868
+Modulo y fase[257]: 1.50457; -1.11749
+Amplitud:[257]: 0.658916Valor esperado: 0.658916
+Modulo y fase[258]: 1.51782; -1.10097
+Amplitud:[258]: 0.687164Valor esperado: 0.687164
+Modulo y fase[259]: 1.53058; -1.08433
+Amplitud:[259]: 0.715549Valor esperado: 0.715549
+Modulo y fase[260]: 1.54285; -1.0676
+Amplitud:[260]: 0.744009Valor esperado: 0.744009
+Modulo y fase[261]: 1.55462; -1.05078
+Amplitud:[261]: 0.77248Valor esperado: 0.77248
+Modulo y fase[262]: 1.56588; -1.0339
+Amplitud:[262]: 0.800898Valor esperado: 0.800898
+Modulo y fase[263]: 1.57662; -1.01698
+Amplitud:[263]: 0.8292Valor esperado: 0.8292
+Modulo y fase[264]: 1.58683; -1.00003
+Amplitud:[264]: 0.857325Valor esperado: 0.857325
+Modulo y fase[265]: 1.59652; -0.983078
+Amplitud:[265]: 0.885211Valor esperado: 0.885211
+Modulo y fase[266]: 1.60568; -0.966136
+Amplitud:[266]: 0.9128Valor esperado: 0.9128
+Modulo y fase[267]: 1.61431; -0.949224
+Amplitud:[267]: 0.940034Valor esperado: 0.940034
+Modulo y fase[268]: 1.62241; -0.93236
+Amplitud:[268]: 0.96686Valor esperado: 0.96686
+Modulo y fase[269]: 1.62999; -0.91556
+Amplitud:[269]: 0.993226Valor esperado: 0.993226
+Modulo y fase[270]: 1.63704; -0.898842
+Amplitud:[270]: 1.01908Valor esperado: 1.01908
+Modulo y fase[271]: 1.64358; -0.882222
+Amplitud:[271]: 1.04439Valor esperado: 1.04439
+Modulo y fase[272]: 1.6496; -0.865716
+Amplitud:[272]: 1.0691Valor esperado: 1.0691
+Modulo y fase[273]: 1.65513; -0.849339
+Amplitud:[273]: 1.09318Valor esperado: 1.09318
+Modulo y fase[274]: 1.66015; -0.833105
+Amplitud:[274]: 1.11659Valor esperado: 1.11659
+Modulo y fase[275]: 1.6647; -0.817028
+Amplitud:[275]: 1.13931Valor esperado: 1.13931
+Modulo y fase[276]: 1.66878; -0.801121
+Amplitud:[276]: 1.1613Valor esperado: 1.1613
+Modulo y fase[277]: 1.67239; -0.785397
+Amplitud:[277]: 1.18256Valor esperado: 1.18256
+Modulo y fase[278]: 1.67556; -0.769866
+Amplitud:[278]: 1.20306Valor esperado: 1.20306
+Modulo y fase[279]: 1.6783; -0.75454
+Amplitud:[279]: 1.22278Valor esperado: 1.22278
+Modulo y fase[280]: 1.68061; -0.739428
+Amplitud:[280]: 1.24173Valor esperado: 1.24173
+Modulo y fase[281]: 1.68253; -0.72454
+Amplitud:[281]: 1.25989Valor esperado: 1.25989
+Modulo y fase[282]: 1.68406; -0.709883
+Amplitud:[282]: 1.27726Valor esperado: 1.27726
+Modulo y fase[283]: 1.68522; -0.695464
+Amplitud:[283]: 1.29384Valor esperado: 1.29384
+Modulo y fase[284]: 1.68602; -0.68129
+Amplitud:[284]: 1.30964Valor esperado: 1.30964
+Modulo y fase[285]: 1.68649; -0.667366
+Amplitud:[285]: 1.32466Valor esperado: 1.32466
+Modulo y fase[286]: 1.68664; -0.653697
+Amplitud:[286]: 1.33893Valor esperado: 1.33893
+Modulo y fase[287]: 1.68649; -0.640287
+Amplitud:[287]: 1.35244Valor esperado: 1.35244
+Modulo y fase[288]: 1.68605; -0.627138
+Amplitud:[288]: 1.36521Valor esperado: 1.36521
+Modulo y fase[289]: 1.68534; -0.614252
+Amplitud:[289]: 1.37727Valor esperado: 1.37727
+Modulo y fase[290]: 1.68438; -0.601631
+Amplitud:[290]: 1.38863Valor esperado: 1.38863
+Modulo y fase[291]: 1.68318; -0.589275
+Amplitud:[291]: 1.3993Valor esperado: 1.3993
+Modulo y fase[292]: 1.68176; -0.577184
+Amplitud:[292]: 1.40932Valor esperado: 1.40932
+Modulo y fase[293]: 1.68014; -0.565357
+Amplitud:[293]: 1.4187Valor esperado: 1.4187
+Modulo y fase[294]: 1.67832; -0.553792
+Amplitud:[294]: 1.42747Valor esperado: 1.42747
+Modulo y fase[295]: 1.67632; -0.542488
+Amplitud:[295]: 1.43565Valor esperado: 1.43565
+Modulo y fase[296]: 1.67416; -0.531441
+Amplitud:[296]: 1.44326Valor esperado: 1.44326
+Modulo y fase[297]: 1.67185; -0.520648
+Amplitud:[297]: 1.45033Valor esperado: 1.45033
+Modulo y fase[298]: 1.6694; -0.510105
+Amplitud:[298]: 1.45687Valor esperado: 1.45687
+Modulo y fase[299]: 1.66681; -0.499808
+Amplitud:[299]: 1.46292Valor esperado: 1.46292
+Modulo y fase[300]: 1.66411; -0.489753
+Amplitud:[300]: 1.46849Valor esperado: 1.46849
+Modulo y fase[301]: 1.66129; -0.479934
+Amplitud:[301]: 1.47361Valor esperado: 1.47361
+Modulo y fase[302]: 1.65837; -0.470346
+Amplitud:[302]: 1.47829Valor esperado: 1.47829
+Modulo y fase[303]: 1.65535; -0.460984
+Amplitud:[303]: 1.48255Valor esperado: 1.48255
+Modulo y fase[304]: 1.65223; -0.451842
+Amplitud:[304]: 1.48642Valor esperado: 1.48642
+Modulo y fase[305]: 1.64903; -0.442915
+Amplitud:[305]: 1.4899Valor esperado: 1.4899
+Modulo y fase[306]: 1.64574; -0.434196
+Amplitud:[306]: 1.49303Valor esperado: 1.49303
+Modulo y fase[307]: 1.64236; -0.42568
+Amplitud:[307]: 1.49579Valor esperado: 1.49579
+Modulo y fase[308]: 1.63891; -0.417361
+Amplitud:[308]: 1.49823Valor esperado: 1.49823
+Modulo y fase[309]: 1.63537; -0.409233
+Amplitud:[309]: 1.50033Valor esperado: 1.50033
+Modulo y fase[310]: 1.63175; -0.40129
+Amplitud:[310]: 1.50212Valor esperado: 1.50212
+Modulo y fase[311]: 1.62805; -0.393528
+Amplitud:[311]: 1.5036Valor esperado: 1.5036
+Modulo y fase[312]: 1.62426; -0.38594
+Amplitud:[312]: 1.50479Valor esperado: 1.50479
+Modulo y fase[313]: 1.62038; -0.378522
+Amplitud:[313]: 1.50568Valor esperado: 1.50568
+Modulo y fase[314]: 1.61641; -0.371268
+Amplitud:[314]: 1.50628Valor esperado: 1.50628
+Modulo y fase[315]: 1.61234; -0.364175
+Amplitud:[315]: 1.5066Valor esperado: 1.5066
+Modulo y fase[316]: 1.60818; -0.357238
+Amplitud:[316]: 1.50664Valor esperado: 1.50664
+Modulo y fase[317]: 1.6039; -0.350453
+Amplitud:[317]: 1.50641Valor esperado: 1.50641
+Modulo y fase[318]: 1.59951; -0.343817
+Amplitud:[318]: 1.50589Valor esperado: 1.50589
+Modulo y fase[319]: 1.59499; -0.337327
+Amplitud:[319]: 1.5051Valor esperado: 1.5051
+Modulo y fase[320]: 1.59035; -0.330979
+Amplitud:[320]: 1.50404Valor esperado: 1.50404
+Modulo y fase[321]: 1.58558; -0.324772
+Amplitud:[321]: 1.50269Valor esperado: 1.50269
+Modulo y fase[322]: 1.58067; -0.318703
+Amplitud:[322]: 1.50107Valor esperado: 1.50107
+Modulo y fase[323]: 1.5756; -0.312772
+Amplitud:[323]: 1.49916Valor esperado: 1.49916
+Modulo y fase[324]: 1.57039; -0.306976
+Amplitud:[324]: 1.49697Valor esperado: 1.49697
+Modulo y fase[325]: 1.56501; -0.301316
+Amplitud:[325]: 1.4945Valor esperado: 1.4945
+Modulo y fase[326]: 1.55946; -0.29579
+Amplitud:[326]: 1.49173Valor esperado: 1.49173
+Modulo y fase[327]: 1.55373; -0.290399
+Amplitud:[327]: 1.48868Valor esperado: 1.48868
+Modulo y fase[328]: 1.54783; -0.285144
+Amplitud:[328]: 1.48533Valor esperado: 1.48533
+Modulo y fase[329]: 1.54174; -0.280024
+Amplitud:[329]: 1.48168Valor esperado: 1.48168
+Modulo y fase[330]: 1.53545; -0.275041
+Amplitud:[330]: 1.47774Valor esperado: 1.47774
+Modulo y fase[331]: 1.52897; -0.270197
+Amplitud:[331]: 1.4735Valor esperado: 1.4735
+Modulo y fase[332]: 1.52229; -0.265493
+Amplitud:[332]: 1.46896Valor esperado: 1.46896
+Modulo y fase[333]: 1.51541; -0.26093
+Amplitud:[333]: 1.46411Valor esperado: 1.46411
+Modulo y fase[334]: 1.50832; -0.256511
+Amplitud:[334]: 1.45897Valor esperado: 1.45897
+Modulo y fase[335]: 1.50103; -0.252239
+Amplitud:[335]: 1.45353Valor esperado: 1.45353
+Modulo y fase[336]: 1.49352; -0.248115
+Amplitud:[336]: 1.44779Valor esperado: 1.44779
+Modulo y fase[337]: 1.48581; -0.244142
+Amplitud:[337]: 1.44175Valor esperado: 1.44175
+Modulo y fase[338]: 1.4779; -0.240323
+Amplitud:[338]: 1.43542Valor esperado: 1.43542
+Modulo y fase[339]: 1.46978; -0.236661
+Amplitud:[339]: 1.42881Valor esperado: 1.42881
+Modulo y fase[340]: 1.46146; -0.233158
+Amplitud:[340]: 1.42191Valor esperado: 1.42191
+Modulo y fase[341]: 1.45294; -0.229817
+Amplitud:[341]: 1.41474Valor esperado: 1.41474
+Modulo y fase[342]: 1.44423; -0.226641
+Amplitud:[342]: 1.4073Valor esperado: 1.4073
+Modulo y fase[343]: 1.43534; -0.223632
+Amplitud:[343]: 1.3996Valor esperado: 1.3996
+Modulo y fase[344]: 1.42627; -0.220792
+Amplitud:[344]: 1.39165Valor esperado: 1.39165
+Modulo y fase[345]: 1.41703; -0.218125
+Amplitud:[345]: 1.38345Valor esperado: 1.38345
+Modulo y fase[346]: 1.40763; -0.215632
+Amplitud:[346]: 1.37503Valor esperado: 1.37503
+Modulo y fase[347]: 1.39808; -0.213315
+Amplitud:[347]: 1.36639Valor esperado: 1.36639
+Modulo y fase[348]: 1.38839; -0.211176
+Amplitud:[348]: 1.35754Valor esperado: 1.35754
+Modulo y fase[349]: 1.37857; -0.209216
+Amplitud:[349]: 1.34851Valor esperado: 1.34851
+Modulo y fase[350]: 1.36863; -0.207438
+Amplitud:[350]: 1.33929Valor esperado: 1.33929
+Modulo y fase[351]: 1.3586; -0.205841
+Amplitud:[351]: 1.32992Valor esperado: 1.32992
+Modulo y fase[352]: 1.34848; -0.204426
+Amplitud:[352]: 1.3204Valor esperado: 1.3204
+Modulo y fase[353]: 1.33828; -0.203194
+Amplitud:[353]: 1.31075Valor esperado: 1.31075
+Modulo y fase[354]: 1.32803; -0.202145
+Amplitud:[354]: 1.30099Valor esperado: 1.30099
+Modulo y fase[355]: 1.31773; -0.201279
+Amplitud:[355]: 1.29113Valor esperado: 1.29113
+Modulo y fase[356]: 1.30741; -0.200594
+Amplitud:[356]: 1.2812Valor esperado: 1.2812
+Modulo y fase[357]: 1.29709; -0.20009
+Amplitud:[357]: 1.27121Valor esperado: 1.27121
+Modulo y fase[358]: 1.28677; -0.199765
+Amplitud:[358]: 1.26118Valor esperado: 1.26118
+Modulo y fase[359]: 1.27647; -0.199618
+Amplitud:[359]: 1.25113Valor esperado: 1.25113
+Modulo y fase[360]: 1.26623; -0.199646
+Amplitud:[360]: 1.24108Valor esperado: 1.24108
+Modulo y fase[361]: 1.25604; -0.199848
+Amplitud:[361]: 1.23104Valor esperado: 1.23104
+Modulo y fase[362]: 1.24594; -0.20022
+Amplitud:[362]: 1.22105Valor esperado: 1.22105
+Modulo y fase[363]: 1.23593; -0.20076
+Amplitud:[363]: 1.21111Valor esperado: 1.21111
+Modulo y fase[364]: 1.22604; -0.201463
+Amplitud:[364]: 1.20124Valor esperado: 1.20124
+Modulo y fase[365]: 1.21628; -0.202327
+Amplitud:[365]: 1.19147Valor esperado: 1.19147
+Modulo y fase[366]: 1.20667; -0.203347
+Amplitud:[366]: 1.18181Valor esperado: 1.18181
+Modulo y fase[367]: 1.19723; -0.204519
+Amplitud:[367]: 1.17228Valor esperado: 1.17228
+Modulo y fase[368]: 1.18797; -0.205838
+Amplitud:[368]: 1.1629Valor esperado: 1.1629
+Modulo y fase[369]: 1.17892; -0.207301
+Amplitud:[369]: 1.15368Valor esperado: 1.15368
+Modulo y fase[370]: 1.17008; -0.208901
+Amplitud:[370]: 1.14464Valor esperado: 1.14464
+Modulo y fase[371]: 1.16147; -0.210634
+Amplitud:[371]: 1.1358Valor esperado: 1.1358
+Modulo y fase[372]: 1.15311; -0.212494
+Amplitud:[372]: 1.12718Valor esperado: 1.12718
+Modulo y fase[373]: 1.14502; -0.214477
+Amplitud:[373]: 1.11878Valor esperado: 1.11878
+Modulo y fase[374]: 1.13719; -0.216576
+Amplitud:[374]: 1.11063Valor esperado: 1.11063
+Modulo y fase[375]: 1.12965; -0.218785
+Amplitud:[375]: 1.10273Valor esperado: 1.10273
+Modulo y fase[376]: 1.12242; -0.2211
+Amplitud:[376]: 1.09509Valor esperado: 1.09509
+Modulo y fase[377]: 1.11549; -0.223513
+Amplitud:[377]: 1.08774Valor esperado: 1.08774
+Modulo y fase[378]: 1.10888; -0.22602
+Amplitud:[378]: 1.08068Valor esperado: 1.08068
+Modulo y fase[379]: 1.10261; -0.228614
+Amplitud:[379]: 1.07392Valor esperado: 1.07392
+Modulo y fase[380]: 1.09667; -0.23129
+Amplitud:[380]: 1.06747Valor esperado: 1.06747
+Modulo y fase[381]: 1.09108; -0.234041
+Amplitud:[381]: 1.06134Valor esperado: 1.06134
+Modulo y fase[382]: 1.08585; -0.236862
+Amplitud:[382]: 1.05553Valor esperado: 1.05553
+Modulo y fase[383]: 1.08097; -0.239747
+Amplitud:[383]: 1.05006Valor esperado: 1.05006
+Modulo y fase[384]: 1.07647; -0.24269
+Amplitud:[384]: 1.04492Valor esperado: 1.04492
+Modulo y fase[385]: 1.07233; -0.245685
+Amplitud:[385]: 1.04013Valor esperado: 1.04013
+Modulo y fase[386]: 1.06857; -0.248727
+Amplitud:[386]: 1.03569Valor esperado: 1.03569
+Modulo y fase[387]: 1.06518; -0.25181
+Amplitud:[387]: 1.03159Valor esperado: 1.03159
+Modulo y fase[388]: 1.06218; -0.254928
+Amplitud:[388]: 1.02785Valor esperado: 1.02785
+Modulo y fase[389]: 1.05956; -0.258077
+Amplitud:[389]: 1.02447Valor esperado: 1.02447
+Modulo y fase[390]: 1.05731; -0.261251
+Amplitud:[390]: 1.02144Valor esperado: 1.02144
+Modulo y fase[391]: 1.05545; -0.264444
+Amplitud:[391]: 1.01876Valor esperado: 1.01876
+Modulo y fase[392]: 1.05397; -0.267652
+Amplitud:[392]: 1.01644Valor esperado: 1.01644
+Modulo y fase[393]: 1.05287; -0.270869
+Amplitud:[393]: 1.01448Valor esperado: 1.01448
+Modulo y fase[394]: 1.05214; -0.27409
+Amplitud:[394]: 1.01287Valor esperado: 1.01287
+Modulo y fase[395]: 1.05179; -0.277312
+Amplitud:[395]: 1.0116Valor esperado: 1.0116
+Modulo y fase[396]: 1.0518; -0.280527
+Amplitud:[396]: 1.01069Valor esperado: 1.01069
+Modulo y fase[397]: 1.05218; -0.283733
+Amplitud:[397]: 1.01011Valor esperado: 1.01011
+Modulo y fase[398]: 1.05292; -0.286923
+Amplitud:[398]: 1.00988Valor esperado: 1.00988
+Modulo y fase[399]: 1.05402; -0.290094
+Amplitud:[399]: 1.00998Valor esperado: 1.00998
+Modulo y fase[400]: 1.05547; -0.293241
+Amplitud:[400]: 1.01041Valor esperado: 1.01041
+Modulo y fase[401]: 1.05726; -0.296357
+Amplitud:[401]: 1.01117Valor esperado: 1.01117
+Modulo y fase[402]: 1.05938; -0.29944
+Amplitud:[402]: 1.01224Valor esperado: 1.01224
+Modulo y fase[403]: 1.06184; -0.302483
+Amplitud:[403]: 1.01363Valor esperado: 1.01363
+Modulo y fase[404]: 1.06461; -0.305483
+Amplitud:[404]: 1.01532Valor esperado: 1.01532
+Modulo y fase[405]: 1.06771; -0.308434
+Amplitud:[405]: 1.01732Valor esperado: 1.01732
+Modulo y fase[406]: 1.0711; -0.311332
+Amplitud:[406]: 1.01961Valor esperado: 1.01961
+Modulo y fase[407]: 1.0748; -0.31417
+Amplitud:[407]: 1.02219Valor esperado: 1.02219
+Modulo y fase[408]: 1.07879; -0.316944
+Amplitud:[408]: 1.02505Valor esperado: 1.02505
+Modulo y fase[409]: 1.08305; -0.319649
+Amplitud:[409]: 1.02819Valor esperado: 1.02819
+Modulo y fase[410]: 1.08759; -0.322278
+Amplitud:[410]: 1.0316Valor esperado: 1.0316
+Modulo y fase[411]: 1.09239; -0.324827
+Amplitud:[411]: 1.03526Valor esperado: 1.03526
+Modulo y fase[412]: 1.09744; -0.32729
+Amplitud:[412]: 1.03919Valor esperado: 1.03919
+Modulo y fase[413]: 1.10274; -0.32966
+Amplitud:[413]: 1.04336Valor esperado: 1.04336
+Modulo y fase[414]: 1.10826; -0.331932
+Amplitud:[414]: 1.04777Valor esperado: 1.04777
+Modulo y fase[415]: 1.11401; -0.334099
+Amplitud:[415]: 1.05242Valor esperado: 1.05242
+Modulo y fase[416]: 1.11998; -0.336155
+Amplitud:[416]: 1.05729Valor esperado: 1.05729
+Modulo y fase[417]: 1.12614; -0.338094
+Amplitud:[417]: 1.06239Valor esperado: 1.06239
+Modulo y fase[418]: 1.1325; -0.339908
+Amplitud:[418]: 1.0677Valor esperado: 1.0677
+Modulo y fase[419]: 1.13903; -0.341592
+Amplitud:[419]: 1.07322Valor esperado: 1.07322
+Modulo y fase[420]: 1.14574; -0.343137
+Amplitud:[420]: 1.07895Valor esperado: 1.07895
+Modulo y fase[421]: 1.15261; -0.344537
+Amplitud:[421]: 1.08487Valor esperado: 1.08487
+Modulo y fase[422]: 1.15962; -0.345785
+Amplitud:[422]: 1.09098Valor esperado: 1.09098
+Modulo y fase[423]: 1.16677; -0.346874
+Amplitud:[423]: 1.09728Valor esperado: 1.09728
+Modulo y fase[424]: 1.17405; -0.347795
+Amplitud:[424]: 1.10375Valor esperado: 1.10375
+Modulo y fase[425]: 1.18143; -0.348542
+Amplitud:[425]: 1.1104Valor esperado: 1.1104
+Modulo y fase[426]: 1.18892; -0.349108
+Amplitud:[426]: 1.11721Valor esperado: 1.11721
+Modulo y fase[427]: 1.1965; -0.349484
+Amplitud:[427]: 1.12417Valor esperado: 1.12417
+Modulo y fase[428]: 1.20416; -0.349664
+Amplitud:[428]: 1.13129Valor esperado: 1.13129
+Modulo y fase[429]: 1.21188; -0.34964
+Amplitud:[429]: 1.13856Valor esperado: 1.13856
+Modulo y fase[430]: 1.21965; -0.349405
+Amplitud:[430]: 1.14596Valor esperado: 1.14596
+Modulo y fase[431]: 1.22747; -0.348952
+Amplitud:[431]: 1.15349Valor esperado: 1.15349
+Modulo y fase[432]: 1.23531; -0.348274
+Amplitud:[432]: 1.16114Valor esperado: 1.16114
+Modulo y fase[433]: 1.24316; -0.347365
+Amplitud:[433]: 1.16891Valor esperado: 1.16891
+Modulo y fase[434]: 1.25102; -0.346218
+Amplitud:[434]: 1.17678Valor esperado: 1.17678
+Modulo y fase[435]: 1.25886; -0.344828
+Amplitud:[435]: 1.18475Valor esperado: 1.18475
+Modulo y fase[436]: 1.26668; -0.343188
+Amplitud:[436]: 1.19281Valor esperado: 1.19281
+Modulo y fase[437]: 1.27445; -0.341293
+Amplitud:[437]: 1.20095Valor esperado: 1.20095
+Modulo y fase[438]: 1.28218; -0.339139
+Amplitud:[438]: 1.20915Valor esperado: 1.20915
+Modulo y fase[439]: 1.28983; -0.33672
+Amplitud:[439]: 1.2174Valor esperado: 1.2174
+Modulo y fase[440]: 1.29741; -0.334033
+Amplitud:[440]: 1.2257Valor esperado: 1.2257
+Modulo y fase[441]: 1.30489; -0.331075
+Amplitud:[441]: 1.23403Valor esperado: 1.23403
+Modulo y fase[442]: 1.31226; -0.327842
+Amplitud:[442]: 1.24237Valor esperado: 1.24237
+Modulo y fase[443]: 1.31951; -0.324333
+Amplitud:[443]: 1.25072Valor esperado: 1.25072
+Modulo y fase[444]: 1.32663; -0.320547
+Amplitud:[444]: 1.25905Valor esperado: 1.25905
+Modulo y fase[445]: 1.33359; -0.316482
+Amplitud:[445]: 1.26736Valor esperado: 1.26736
+Modulo y fase[446]: 1.34039; -0.312139
+Amplitud:[446]: 1.27562Valor esperado: 1.27562
+Modulo y fase[447]: 1.34701; -0.307517
+Amplitud:[447]: 1.28382Valor esperado: 1.28382
+Modulo y fase[448]: 1.35343; -0.30262
+Amplitud:[448]: 1.29193Valor esperado: 1.29193
+Modulo y fase[449]: 1.35966; -0.297448
+Amplitud:[449]: 1.29995Valor esperado: 1.29995
+Modulo y fase[450]: 1.36566; -0.292006
+Amplitud:[450]: 1.30785Valor esperado: 1.30785
+Modulo y fase[451]: 1.37143; -0.286297
+Amplitud:[451]: 1.31561Valor esperado: 1.31561
+Modulo y fase[452]: 1.37696; -0.280326
+Amplitud:[452]: 1.32321Valor esperado: 1.32321
+Modulo y fase[453]: 1.38223; -0.274099
+Amplitud:[453]: 1.33063Valor esperado: 1.33063
+Modulo y fase[454]: 1.38724; -0.267622
+Amplitud:[454]: 1.33785Valor esperado: 1.33785
+Modulo y fase[455]: 1.39196; -0.260903
+Amplitud:[455]: 1.34485Valor esperado: 1.34485
+Modulo y fase[456]: 1.39639; -0.253951
+Amplitud:[456]: 1.35161Valor esperado: 1.35161
+Modulo y fase[457]: 1.40053; -0.246774
+Amplitud:[457]: 1.3581Valor esperado: 1.3581
+Modulo y fase[458]: 1.40435; -0.239382
+Amplitud:[458]: 1.3643Valor esperado: 1.3643
+Modulo y fase[459]: 1.40785; -0.231786
+Amplitud:[459]: 1.3702Valor esperado: 1.3702
+Modulo y fase[460]: 1.41103; -0.223998
+Amplitud:[460]: 1.37577Valor esperado: 1.37577
+Modulo y fase[461]: 1.41386; -0.216031
+Amplitud:[461]: 1.381Valor esperado: 1.381
+Modulo y fase[462]: 1.41636; -0.207896
+Amplitud:[462]: 1.38586Valor esperado: 1.38586
+Modulo y fase[463]: 1.41851; -0.199609
+Amplitud:[463]: 1.39034Valor esperado: 1.39034
+Modulo y fase[464]: 1.4203; -0.191184
+Amplitud:[464]: 1.39442Valor esperado: 1.39442
+Modulo y fase[465]: 1.42173; -0.182635
+Amplitud:[465]: 1.39808Valor esperado: 1.39808
+Modulo y fase[466]: 1.4228; -0.173979
+Amplitud:[466]: 1.40132Valor esperado: 1.40132
+Modulo y fase[467]: 1.42351; -0.165231
+Amplitud:[467]: 1.40412Valor esperado: 1.40412
+Modulo y fase[468]: 1.42385; -0.156409
+Amplitud:[468]: 1.40647Valor esperado: 1.40647
+Modulo y fase[469]: 1.42382; -0.147528
+Amplitud:[469]: 1.40835Valor esperado: 1.40835
+Modulo y fase[470]: 1.42342; -0.138607
+Amplitud:[470]: 1.40977Valor esperado: 1.40977
+Modulo y fase[471]: 1.42266; -0.129662
+Amplitud:[471]: 1.41072Valor esperado: 1.41072
+Modulo y fase[472]: 1.42154; -0.120713
+Amplitud:[472]: 1.4112Valor esperado: 1.4112
+Modulo y fase[473]: 1.42006; -0.111775
+Amplitud:[473]: 1.4112Valor esperado: 1.4112
+Modulo y fase[474]: 1.41823; -0.102868
+Amplitud:[474]: 1.41073Valor esperado: 1.41073
+Modulo y fase[475]: 1.41604; -0.0940098
+Amplitud:[475]: 1.40979Valor esperado: 1.40979
+Modulo y fase[476]: 1.41351; -0.0852172
+Amplitud:[476]: 1.40838Valor esperado: 1.40838
+Modulo y fase[477]: 1.41065; -0.0765081
+Amplitud:[477]: 1.40653Valor esperado: 1.40653
+Modulo y fase[478]: 1.40747; -0.0678997
+Amplitud:[478]: 1.40422Valor esperado: 1.40422
+Modulo y fase[479]: 1.40397; -0.0594088
+Amplitud:[479]: 1.40149Valor esperado: 1.40149
+Modulo y fase[480]: 1.40016; -0.0510522
+Amplitud:[480]: 1.39834Valor esperado: 1.39834
+Modulo y fase[481]: 1.39606; -0.0428461
+Amplitud:[481]: 1.39478Valor esperado: 1.39478
+Modulo y fase[482]: 1.39168; -0.0348057
+Amplitud:[482]: 1.39084Valor esperado: 1.39084
+Modulo y fase[483]: 1.38703; -0.026946
+Amplitud:[483]: 1.38653Valor esperado: 1.38653
+Modulo y fase[484]: 1.38213; -0.0192818
+Amplitud:[484]: 1.38187Valor esperado: 1.38187
+Modulo y fase[485]: 1.37699; -0.011826
+Amplitud:[485]: 1.3769Valor esperado: 1.3769
+Modulo y fase[486]: 1.37163; -0.00459135
+Amplitud:[486]: 1.37162Valor esperado: 1.37162
+Modulo y fase[487]: 1.36607; 0.00241081
+Amplitud:[487]: 1.36606Valor esperado: 1.36606
+Modulo y fase[488]: 1.36031; 0.00916942
+Amplitud:[488]: 1.36025Valor esperado: 1.36025
+Modulo y fase[489]: 1.35439; 0.0156745
+Amplitud:[489]: 1.35422Valor esperado: 1.35422
+Modulo y fase[490]: 1.34831; 0.0219172
+Amplitud:[490]: 1.34798Valor esperado: 1.34798
+Modulo y fase[491]: 1.34209; 0.0278898
+Amplitud:[491]: 1.34157Valor esperado: 1.34157
+Modulo y fase[492]: 1.33576; 0.0335855
+Amplitud:[492]: 1.33501Valor esperado: 1.33501
+Modulo y fase[493]: 1.32934; 0.0389988
+Amplitud:[493]: 1.32833Valor esperado: 1.32833
+Modulo y fase[494]: 1.32283; 0.0441252
+Amplitud:[494]: 1.32154Valor esperado: 1.32154
+Modulo y fase[495]: 1.31627; 0.0489618
+Amplitud:[495]: 1.31469Valor esperado: 1.31469
+Modulo y fase[496]: 1.30967; 0.0535063
+Amplitud:[496]: 1.30779Valor esperado: 1.30779
+Modulo y fase[497]: 1.30304; 0.0577581
+Amplitud:[497]: 1.30087Valor esperado: 1.30087
+Modulo y fase[498]: 1.29642; 0.0617172
+Amplitud:[498]: 1.29395Valor esperado: 1.29395
+Modulo y fase[499]: 1.28981; 0.065385
+Amplitud:[499]: 1.28706Valor esperado: 1.28706
+Modulo y fase[500]: 1.28324; 0.0687642
+Amplitud:[500]: 1.28021Valor esperado: 1.28021
+Modulo y fase[501]: 1.27673; 0.0718585
+Amplitud:[501]: 1.27343Valor esperado: 1.27343
+Modulo y fase[502]: 1.27028; 0.0746733
+Amplitud:[502]: 1.26674Valor esperado: 1.26674
+Modulo y fase[503]: 1.26393; 0.0772139
+Amplitud:[503]: 1.26016Valor esperado: 1.26016
+Modulo y fase[504]: 1.25768; 0.079488
+Amplitud:[504]: 1.25371Valor esperado: 1.25371
+Modulo y fase[505]: 1.25155; 0.081503
+Amplitud:[505]: 1.2474Valor esperado: 1.2474
+Modulo y fase[506]: 1.24556; 0.0832684
+Amplitud:[506]: 1.24124Valor esperado: 1.24124
+Modulo y fase[507]: 1.23972; 0.084794
+Amplitud:[507]: 1.23527Valor esperado: 1.23527
+Modulo y fase[508]: 1.23405; 0.0860903
+Amplitud:[508]: 1.22948Valor esperado: 1.22948
+Modulo y fase[509]: 1.22855; 0.087169
+Amplitud:[509]: 1.22388Valor esperado: 1.22388
+Modulo y fase[510]: 1.22324; 0.0880424
+Amplitud:[510]: 1.2185Valor esperado: 1.2185
+Modulo y fase[511]: 1.21813; 0.0887235
+Amplitud:[511]: 1.21334Valor esperado: 1.21334
+Modulo y fase[512]: 1.21324; 0.0892259
+Amplitud:[512]: 1.20841Valor esperado: 1.20841
+Modulo y fase[513]: 1.20856; 0.0895632
+Amplitud:[513]: 1.20371Valor esperado: 1.20371
+Modulo y fase[514]: 1.2041; 0.0897504
+Amplitud:[514]: 1.19926Valor esperado: 1.19926
+Modulo y fase[515]: 1.19988; 0.0898021
+Amplitud:[515]: 1.19505Valor esperado: 1.19505
+Modulo y fase[516]: 1.1959; 0.0897333
+Amplitud:[516]: 1.19109Valor esperado: 1.19109
+Modulo y fase[517]: 1.19216; 0.0895593
+Amplitud:[517]: 1.18739Valor esperado: 1.18739
+Modulo y fase[518]: 1.18867; 0.0892957
+Amplitud:[518]: 1.18394Valor esperado: 1.18394
+Modulo y fase[519]: 1.18543; 0.0889579
+Amplitud:[519]: 1.18074Valor esperado: 1.18074
+Modulo y fase[520]: 1.18243; 0.0885611
+Amplitud:[520]: 1.1778Valor esperado: 1.1778
+Modulo y fase[521]: 1.17969; 0.08812
+Amplitud:[521]: 1.17511Valor esperado: 1.17511
+Modulo y fase[522]: 1.17719; 0.0876505
+Amplitud:[522]: 1.17267Valor esperado: 1.17267
+Modulo y fase[523]: 1.17494; 0.0871667
+Amplitud:[523]: 1.17048Valor esperado: 1.17048
+Modulo y fase[524]: 1.17293; 0.086683
+Amplitud:[524]: 1.16852Valor esperado: 1.16852
+Modulo y fase[525]: 1.17116; 0.0862133
+Amplitud:[525]: 1.16681Valor esperado: 1.16681
+Modulo y fase[526]: 1.16962; 0.0857708
+Amplitud:[526]: 1.16532Valor esperado: 1.16532
+Modulo y fase[527]: 1.16832; 0.0853683
+Amplitud:[527]: 1.16406Valor esperado: 1.16406
+Modulo y fase[528]: 1.16723; 0.0850173
+Amplitud:[528]: 1.16302Valor esperado: 1.16302
+Modulo y fase[529]: 1.16636; 0.0847301
+Amplitud:[529]: 1.16218Valor esperado: 1.16218
+Modulo y fase[530]: 1.1657; 0.0845169
+Amplitud:[530]: 1.16154Valor esperado: 1.16154
+Modulo y fase[531]: 1.16523; 0.0843873
+Amplitud:[531]: 1.16108Valor esperado: 1.16108
+Modulo y fase[532]: 1.16495; 0.0843504
+Amplitud:[532]: 1.16081Valor esperado: 1.16081
+Modulo y fase[533]: 1.16485; 0.0844142
+Amplitud:[533]: 1.1607Valor esperado: 1.1607
+Modulo y fase[534]: 1.16492; 0.0845856
+Amplitud:[534]: 1.16075Valor esperado: 1.16075
+Modulo y fase[535]: 1.16514; 0.084871
+Amplitud:[535]: 1.16095Valor esperado: 1.16095
+Modulo y fase[536]: 1.16551; 0.0852752
+Amplitud:[536]: 1.16127Valor esperado: 1.16127
+Modulo y fase[537]: 1.16601; 0.0858026
+Amplitud:[537]: 1.16172Valor esperado: 1.16172
+Modulo y fase[538]: 1.16664; 0.0864563
+Amplitud:[538]: 1.16228Valor esperado: 1.16228
+Modulo y fase[539]: 1.16738; 0.0872385
+Amplitud:[539]: 1.16294Valor esperado: 1.16294
+Modulo y fase[540]: 1.16822; 0.0881502
+Amplitud:[540]: 1.16369Valor esperado: 1.16369
+Modulo y fase[541]: 1.16915; 0.0891916
+Amplitud:[541]: 1.16451Valor esperado: 1.16451
+Modulo y fase[542]: 1.17016; 0.0903619
+Amplitud:[542]: 1.16539Valor esperado: 1.16539
+Modulo y fase[543]: 1.17124; 0.0916593
+Amplitud:[543]: 1.16632Valor esperado: 1.16632
+Modulo y fase[544]: 1.17237; 0.0930812
+Amplitud:[544]: 1.16729Valor esperado: 1.16729
+Modulo y fase[545]: 1.17355; 0.094624
+Amplitud:[545]: 1.1683Valor esperado: 1.1683
+Modulo y fase[546]: 1.17476; 0.0962834
+Amplitud:[546]: 1.16932Valor esperado: 1.16932
+Modulo y fase[547]: 1.176; 0.0980539
+Amplitud:[547]: 1.17035Valor esperado: 1.17035
+Modulo y fase[548]: 1.17725; 0.0999297
+Amplitud:[548]: 1.17138Valor esperado: 1.17138
+Modulo y fase[549]: 1.17852; 0.101904
+Amplitud:[549]: 1.1724Valor esperado: 1.1724
+Modulo y fase[550]: 1.17978; 0.103969
+Amplitud:[550]: 1.17341Valor esperado: 1.17341
+Modulo y fase[551]: 1.18104; 0.106117
+Amplitud:[551]: 1.1744Valor esperado: 1.1744
+Modulo y fase[552]: 1.18228; 0.10834
+Amplitud:[552]: 1.17535Valor esperado: 1.17535
+Modulo y fase[553]: 1.18351; 0.110628
+Amplitud:[553]: 1.17627Valor esperado: 1.17627
+Modulo y fase[554]: 1.1847; 0.112974
+Amplitud:[554]: 1.17715Valor esperado: 1.17715
+Modulo y fase[555]: 1.18587; 0.115365
+Amplitud:[555]: 1.17799Valor esperado: 1.17799
+Modulo y fase[556]: 1.18701; 0.117794
+Amplitud:[556]: 1.17878Valor esperado: 1.17878
+Modulo y fase[557]: 1.1881; 0.120248
+Amplitud:[557]: 1.17953Valor esperado: 1.17953
+Modulo y fase[558]: 1.18916; 0.122719
+Amplitud:[558]: 1.18022Valor esperado: 1.18022
+Modulo y fase[559]: 1.19018; 0.125197
+Amplitud:[559]: 1.18087Valor esperado: 1.18087
+Modulo y fase[560]: 1.19116; 0.12767
+Amplitud:[560]: 1.18146Valor esperado: 1.18146
+Modulo y fase[561]: 1.19209; 0.130129
+Amplitud:[561]: 1.18201Valor esperado: 1.18201
+Modulo y fase[562]: 1.19298; 0.132563
+Amplitud:[562]: 1.18252Valor esperado: 1.18252
+Modulo y fase[563]: 1.19384; 0.134964
+Amplitud:[563]: 1.18298Valor esperado: 1.18298
+Modulo y fase[564]: 1.19465; 0.137321
+Amplitud:[564]: 1.18341Valor esperado: 1.18341
+Modulo y fase[565]: 1.19543; 0.139626
+Amplitud:[565]: 1.1838Valor esperado: 1.1838
+Modulo y fase[566]: 1.19618; 0.14187
+Amplitud:[566]: 1.18416Valor esperado: 1.18416
+Modulo y fase[567]: 1.1969; 0.144045
+Amplitud:[567]: 1.1845Valor esperado: 1.1845
+Modulo y fase[568]: 1.19759; 0.146143
+Amplitud:[568]: 1.18482Valor esperado: 1.18482
+Modulo y fase[569]: 1.19826; 0.148158
+Amplitud:[569]: 1.18514Valor esperado: 1.18514
+Modulo y fase[570]: 1.19892; 0.150082
+Amplitud:[570]: 1.18545Valor esperado: 1.18545
+Modulo y fase[571]: 1.19957; 0.151912
+Amplitud:[571]: 1.18576Valor esperado: 1.18576
+Modulo y fase[572]: 1.20022; 0.15364
+Amplitud:[572]: 1.18608Valor esperado: 1.18608
+Modulo y fase[573]: 1.20087; 0.155264
+Amplitud:[573]: 1.18642Valor esperado: 1.18642
+Modulo y fase[574]: 1.20153; 0.156779
+Amplitud:[574]: 1.18679Valor esperado: 1.18679
+Modulo y fase[575]: 1.2022; 0.158184
+Amplitud:[575]: 1.18719Valor esperado: 1.18719
+Modulo y fase[576]: 1.20289; 0.159475
+Amplitud:[576]: 1.18763Valor esperado: 1.18763
+Modulo y fase[577]: 1.20361; 0.160653
+Amplitud:[577]: 1.18811Valor esperado: 1.18811
+Modulo y fase[578]: 1.20437; 0.161716
+Amplitud:[578]: 1.18865Valor esperado: 1.18865
+Modulo y fase[579]: 1.20516; 0.162666
+Amplitud:[579]: 1.18925Valor esperado: 1.18925
+Modulo y fase[580]: 1.206; 0.163503
+Amplitud:[580]: 1.18992Valor esperado: 1.18992
+Modulo y fase[581]: 1.2069; 0.16423
+Amplitud:[581]: 1.19066Valor esperado: 1.19066
+Modulo y fase[582]: 1.20785; 0.16485
+Amplitud:[582]: 1.19147Valor esperado: 1.19147
+Modulo y fase[583]: 1.20886; 0.165366
+Amplitud:[583]: 1.19237Valor esperado: 1.19237
+Modulo y fase[584]: 1.20995; 0.165782
+Amplitud:[584]: 1.19336Valor esperado: 1.19336
+Modulo y fase[585]: 1.2111; 0.166104
+Amplitud:[585]: 1.19443Valor esperado: 1.19443
+Modulo y fase[586]: 1.21234; 0.166337
+Amplitud:[586]: 1.1956Valor esperado: 1.1956
+Modulo y fase[587]: 1.21365; 0.166487
+Amplitud:[587]: 1.19687Valor esperado: 1.19687
+Modulo y fase[588]: 1.21505; 0.166562
+Amplitud:[588]: 1.19823Valor esperado: 1.19823
+Modulo y fase[589]: 1.21653; 0.166568
+Amplitud:[589]: 1.1997Valor esperado: 1.1997
+Modulo y fase[590]: 1.21811; 0.166513
+Amplitud:[590]: 1.20126Valor esperado: 1.20126
+Modulo y fase[591]: 1.21977; 0.166406
+Amplitud:[591]: 1.20292Valor esperado: 1.20292
+Modulo y fase[592]: 1.22153; 0.166255
+Amplitud:[592]: 1.20468Valor esperado: 1.20468
+Modulo y fase[593]: 1.22338; 0.166069
+Amplitud:[593]: 1.20654Valor esperado: 1.20654
+Modulo y fase[594]: 1.22531; 0.165857
+Amplitud:[594]: 1.2085Valor esperado: 1.2085
+Modulo y fase[595]: 1.22734; 0.165628
+Amplitud:[595]: 1.21055Valor esperado: 1.21055
+Modulo y fase[596]: 1.22946; 0.165393
+Amplitud:[596]: 1.21269Valor esperado: 1.21269
+Modulo y fase[597]: 1.23167; 0.165159
+Amplitud:[597]: 1.21491Valor esperado: 1.21491
+Modulo y fase[598]: 1.23396; 0.164937
+Amplitud:[598]: 1.21722Valor esperado: 1.21722
+Modulo y fase[599]: 1.23633; 0.164737
+Amplitud:[599]: 1.2196Valor esperado: 1.2196
+Modulo y fase[600]: 1.23879; 0.164567
+Amplitud:[600]: 1.22205Valor esperado: 1.22205
+Modulo y fase[601]: 1.24131; 0.164437
+Amplitud:[601]: 1.22456Valor esperado: 1.22456
+Modulo y fase[602]: 1.2439; 0.164355
+Amplitud:[602]: 1.22714Valor esperado: 1.22714
+Modulo y fase[603]: 1.24656; 0.164331
+Amplitud:[603]: 1.22976Valor esperado: 1.22976
+Modulo y fase[604]: 1.24927; 0.164372
+Amplitud:[604]: 1.23243Valor esperado: 1.23243
+Modulo y fase[605]: 1.25204; 0.164487
+Amplitud:[605]: 1.23514Valor esperado: 1.23514
+Modulo y fase[606]: 1.25485; 0.164683
+Amplitud:[606]: 1.23787Valor esperado: 1.23787
+Modulo y fase[607]: 1.25769; 0.164968
+Amplitud:[607]: 1.24062Valor esperado: 1.24062
+Modulo y fase[608]: 1.26057; 0.165347
+Amplitud:[608]: 1.24338Valor esperado: 1.24338
+Modulo y fase[609]: 1.26348; 0.165827
+Amplitud:[609]: 1.24615Valor esperado: 1.24615
+Modulo y fase[610]: 1.2664; 0.166414
+Amplitud:[610]: 1.2489Valor esperado: 1.2489
+Modulo y fase[611]: 1.26933; 0.167112
+Amplitud:[611]: 1.25165Valor esperado: 1.25165
+Modulo y fase[612]: 1.27226; 0.167926
+Amplitud:[612]: 1.25436Valor esperado: 1.25436
+Modulo y fase[613]: 1.27518; 0.168859
+Amplitud:[613]: 1.25705Valor esperado: 1.25705
+Modulo y fase[614]: 1.2781; 0.169915
+Amplitud:[614]: 1.25969Valor esperado: 1.25969
+Modulo y fase[615]: 1.28099; 0.171096
+Amplitud:[615]: 1.26228Valor esperado: 1.26228
+Modulo y fase[616]: 1.28385; 0.172403
+Amplitud:[616]: 1.26481Valor esperado: 1.26481
+Modulo y fase[617]: 1.28667; 0.173838
+Amplitud:[617]: 1.26728Valor esperado: 1.26728
+Modulo y fase[618]: 1.28946; 0.175401
+Amplitud:[618]: 1.26967Valor esperado: 1.26967
+Modulo y fase[619]: 1.29219; 0.177093
+Amplitud:[619]: 1.27198Valor esperado: 1.27198
+Modulo y fase[620]: 1.29486; 0.178912
+Amplitud:[620]: 1.2742Valor esperado: 1.2742
+Modulo y fase[621]: 1.29748; 0.180856
+Amplitud:[621]: 1.27632Valor esperado: 1.27632
+Modulo y fase[622]: 1.30002; 0.182924
+Amplitud:[622]: 1.27833Valor esperado: 1.27833
+Modulo y fase[623]: 1.30249; 0.185113
+Amplitud:[623]: 1.28024Valor esperado: 1.28024
+Modulo y fase[624]: 1.30489; 0.18742
+Amplitud:[624]: 1.28204Valor esperado: 1.28204
+Modulo y fase[625]: 1.3072; 0.189842
+Amplitud:[625]: 1.28371Valor esperado: 1.28371
+Modulo y fase[626]: 1.30942; 0.192373
+Amplitud:[626]: 1.28527Valor esperado: 1.28527
+Modulo y fase[627]: 1.31156; 0.19501
+Amplitud:[627]: 1.2867Valor esperado: 1.2867
+Modulo y fase[628]: 1.3136; 0.197748
+Amplitud:[628]: 1.288Valor esperado: 1.288
+Modulo y fase[629]: 1.31554; 0.20058
+Amplitud:[629]: 1.28917Valor esperado: 1.28917
+Modulo y fase[630]: 1.31739; 0.203502
+Amplitud:[630]: 1.29021Valor esperado: 1.29021
+Modulo y fase[631]: 1.31914; 0.206507
+Amplitud:[631]: 1.29111Valor esperado: 1.29111
+Modulo y fase[632]: 1.32079; 0.209589
+Amplitud:[632]: 1.29189Valor esperado: 1.29189
+Modulo y fase[633]: 1.32235; 0.212742
+Amplitud:[633]: 1.29253Valor esperado: 1.29253
+Modulo y fase[634]: 1.3238; 0.215958
+Amplitud:[634]: 1.29305Valor esperado: 1.29305
+Modulo y fase[635]: 1.32516; 0.219231
+Amplitud:[635]: 1.29344Valor esperado: 1.29344
+Modulo y fase[636]: 1.32642; 0.222555
+Amplitud:[636]: 1.29371Valor esperado: 1.29371
+Modulo y fase[637]: 1.32759; 0.225921
+Amplitud:[637]: 1.29386Valor esperado: 1.29386
+Modulo y fase[638]: 1.32867; 0.229324
+Amplitud:[638]: 1.29389Valor esperado: 1.29389
+Modulo y fase[639]: 1.32967; 0.232757
+Amplitud:[639]: 1.29381Valor esperado: 1.29381
+Modulo y fase[640]: 1.33058; 0.236212
+Amplitud:[640]: 1.29363Valor esperado: 1.29363
+Modulo y fase[641]: 1.33141; 0.239684
+Amplitud:[641]: 1.29335Valor esperado: 1.29335
+Modulo y fase[642]: 1.33217; 0.243165
+Amplitud:[642]: 1.29298Valor esperado: 1.29298
+Modulo y fase[643]: 1.33286; 0.246649
+Amplitud:[643]: 1.29252Valor esperado: 1.29252
+Modulo y fase[644]: 1.33348; 0.250132
+Amplitud:[644]: 1.29198Valor esperado: 1.29198
+Modulo y fase[645]: 1.33405; 0.253606
+Amplitud:[645]: 1.29138Valor esperado: 1.29138
+Modulo y fase[646]: 1.33457; 0.257066
+Amplitud:[646]: 1.29071Valor esperado: 1.29071
+Modulo y fase[647]: 1.33504; 0.260508
+Amplitud:[647]: 1.28999Valor esperado: 1.28999
+Modulo y fase[648]: 1.33547; 0.263926
+Amplitud:[648]: 1.28923Valor esperado: 1.28923
+Modulo y fase[649]: 1.33587; 0.267317
+Amplitud:[649]: 1.28843Valor esperado: 1.28843
+Modulo y fase[650]: 1.33625; 0.270676
+Amplitud:[650]: 1.2876Valor esperado: 1.2876
+Modulo y fase[651]: 1.33661; 0.274
+Amplitud:[651]: 1.28675Valor esperado: 1.28675
+Modulo y fase[652]: 1.33695; 0.277285
+Amplitud:[652]: 1.28588Valor esperado: 1.28588
+Modulo y fase[653]: 1.3373; 0.28053
+Amplitud:[653]: 1.28502Valor esperado: 1.28502
+Modulo y fase[654]: 1.33764; 0.283732
+Amplitud:[654]: 1.28416Valor esperado: 1.28416
+Modulo y fase[655]: 1.338; 0.286889
+Amplitud:[655]: 1.28332Valor esperado: 1.28332
+Modulo y fase[656]: 1.33838; 0.289999
+Amplitud:[656]: 1.28249Valor esperado: 1.28249
+Modulo y fase[657]: 1.33878; 0.293063
+Amplitud:[657]: 1.2817Valor esperado: 1.2817
+Modulo y fase[658]: 1.33921; 0.29608
+Amplitud:[658]: 1.28094Valor esperado: 1.28094
+Modulo y fase[659]: 1.33968; 0.299049
+Amplitud:[659]: 1.28022Valor esperado: 1.28022
+Modulo y fase[660]: 1.34019; 0.301972
+Amplitud:[660]: 1.27955Valor esperado: 1.27955
+Modulo y fase[661]: 1.34075; 0.304849
+Amplitud:[661]: 1.27893Valor esperado: 1.27893
+Modulo y fase[662]: 1.34137; 0.307682
+Amplitud:[662]: 1.27838Valor esperado: 1.27838
+Modulo y fase[663]: 1.34205; 0.310472
+Amplitud:[663]: 1.27789Valor esperado: 1.27789
+Modulo y fase[664]: 1.3428; 0.313221
+Amplitud:[664]: 1.27747Valor esperado: 1.27747
+Modulo y fase[665]: 1.34362; 0.315933
+Amplitud:[665]: 1.27712Valor esperado: 1.27712
+Modulo y fase[666]: 1.34452; 0.318611
+Amplitud:[666]: 1.27685Valor esperado: 1.27685
+Modulo y fase[667]: 1.3455; 0.321256
+Amplitud:[667]: 1.27666Valor esperado: 1.27666
+Modulo y fase[668]: 1.34656; 0.323874
+Amplitud:[668]: 1.27655Valor esperado: 1.27655
+Modulo y fase[669]: 1.34772; 0.326468
+Amplitud:[669]: 1.27653Valor esperado: 1.27653
+Modulo y fase[670]: 1.34896; 0.329043
+Amplitud:[670]: 1.27659Valor esperado: 1.27659
+Modulo y fase[671]: 1.3503; 0.331602
+Amplitud:[671]: 1.27674Valor esperado: 1.27674
+Modulo y fase[672]: 1.35174; 0.33415
+Amplitud:[672]: 1.27697Valor esperado: 1.27697
+Modulo y fase[673]: 1.35327; 0.336694
+Amplitud:[673]: 1.27729Valor esperado: 1.27729
+Modulo y fase[674]: 1.35491; 0.339237
+Amplitud:[674]: 1.2777Valor esperado: 1.2777
+Modulo y fase[675]: 1.35666; 0.341786
+Amplitud:[675]: 1.27818Valor esperado: 1.27818
+Modulo y fase[676]: 1.3585; 0.344345
+Amplitud:[676]: 1.27875Valor esperado: 1.27875
+Modulo y fase[677]: 1.36045; 0.346921
+Amplitud:[677]: 1.2794Valor esperado: 1.2794
+Modulo y fase[678]: 1.3625; 0.349519
+Amplitud:[678]: 1.28012Valor esperado: 1.28012
+Modulo y fase[679]: 1.36466; 0.352145
+Amplitud:[679]: 1.28092Valor esperado: 1.28092
+Modulo y fase[680]: 1.36693; 0.354806
+Amplitud:[680]: 1.28179Valor esperado: 1.28179
+Modulo y fase[681]: 1.36929; 0.357507
+Amplitud:[681]: 1.28272Valor esperado: 1.28272
+Modulo y fase[682]: 1.37176; 0.360254
+Amplitud:[682]: 1.28371Valor esperado: 1.28371
+Modulo y fase[683]: 1.37433; 0.363055
+Amplitud:[683]: 1.28475Valor esperado: 1.28475
+Modulo y fase[684]: 1.377; 0.365915
+Amplitud:[684]: 1.28584Valor esperado: 1.28584
+Modulo y fase[685]: 1.37977; 0.36884
+Amplitud:[685]: 1.28698Valor esperado: 1.28698
+Modulo y fase[686]: 1.38264; 0.371836
+Amplitud:[686]: 1.28815Valor esperado: 1.28815
+Modulo y fase[687]: 1.38559; 0.374911
+Amplitud:[687]: 1.28935Valor esperado: 1.28935
+Modulo y fase[688]: 1.38864; 0.378069
+Amplitud:[688]: 1.29057Valor esperado: 1.29057
+Modulo y fase[689]: 1.39177; 0.381319
+Amplitud:[689]: 1.29181Valor esperado: 1.29181
+Modulo y fase[690]: 1.39499; 0.384665
+Amplitud:[690]: 1.29305Valor esperado: 1.29305
+Modulo y fase[691]: 1.39828; 0.388113
+Amplitud:[691]: 1.29429Valor esperado: 1.29429
+Modulo y fase[692]: 1.40166; 0.391671
+Amplitud:[692]: 1.29551Valor esperado: 1.29551
+Modulo y fase[693]: 1.4051; 0.395344
+Amplitud:[693]: 1.29672Valor esperado: 1.29672
+Modulo y fase[694]: 1.40862; 0.399137
+Amplitud:[694]: 1.2979Valor esperado: 1.2979
+Modulo y fase[695]: 1.4122; 0.403058
+Amplitud:[695]: 1.29903Valor esperado: 1.29903
+Modulo y fase[696]: 1.41584; 0.407112
+Amplitud:[696]: 1.30012Valor esperado: 1.30012
+Modulo y fase[697]: 1.41953; 0.411304
+Amplitud:[697]: 1.30114Valor esperado: 1.30114
+Modulo y fase[698]: 1.42328; 0.415641
+Amplitud:[698]: 1.3021Valor esperado: 1.3021
+Modulo y fase[699]: 1.42707; 0.420128
+Amplitud:[699]: 1.30296Valor esperado: 1.30296
+Modulo y fase[700]: 1.4309; 0.424771
+Amplitud:[700]: 1.30374Valor esperado: 1.30374
+Modulo y fase[701]: 1.43476; 0.429575
+Amplitud:[701]: 1.3044Valor esperado: 1.3044
+Modulo y fase[702]: 1.43865; 0.434545
+Amplitud:[702]: 1.30495Valor esperado: 1.30495
+Modulo y fase[703]: 1.44257; 0.439687
+Amplitud:[703]: 1.30536Valor esperado: 1.30536
+Modulo y fase[704]: 1.4465; 0.445007
+Amplitud:[704]: 1.30562Valor esperado: 1.30562
+Modulo y fase[705]: 1.45044; 0.450508
+Amplitud:[705]: 1.30573Valor esperado: 1.30573
+Modulo y fase[706]: 1.45439; 0.456196
+Amplitud:[706]: 1.30566Valor esperado: 1.30566
+Modulo y fase[707]: 1.45833; 0.462077
+Amplitud:[707]: 1.30539Valor esperado: 1.30539
+Modulo y fase[708]: 1.46227; 0.468154
+Amplitud:[708]: 1.30493Valor esperado: 1.30493
+Modulo y fase[709]: 1.46618; 0.474432
+Amplitud:[709]: 1.30425Valor esperado: 1.30425
+Modulo y fase[710]: 1.47008; 0.480916
+Amplitud:[710]: 1.30333Valor esperado: 1.30333
+Modulo y fase[711]: 1.47394; 0.487609
+Amplitud:[711]: 1.30216Valor esperado: 1.30216
+Modulo y fase[712]: 1.47776; 0.494517
+Amplitud:[712]: 1.30072Valor esperado: 1.30072
+Modulo y fase[713]: 1.48153; 0.501643
+Amplitud:[713]: 1.299Valor esperado: 1.299
+Modulo y fase[714]: 1.48525; 0.50899
+Amplitud:[714]: 1.29697Valor esperado: 1.29697
+Modulo y fase[715]: 1.4889; 0.516561
+Amplitud:[715]: 1.29463Valor esperado: 1.29463
+Modulo y fase[716]: 1.49248; 0.524362
+Amplitud:[716]: 1.29195Valor esperado: 1.29195
+Modulo y fase[717]: 1.49597; 0.532394
+Amplitud:[717]: 1.28892Valor esperado: 1.28892
+Modulo y fase[718]: 1.49938; 0.540659
+Amplitud:[718]: 1.28552Valor esperado: 1.28552
+Modulo y fase[719]: 1.50268; 0.549162
+Amplitud:[719]: 1.28173Valor esperado: 1.28173
+Modulo y fase[720]: 1.50587; 0.557903
+Amplitud:[720]: 1.27753Valor esperado: 1.27753
+Modulo y fase[721]: 1.50894; 0.566885
+Amplitud:[721]: 1.27291Valor esperado: 1.27291
+Modulo y fase[722]: 1.51188; 0.576109
+Amplitud:[722]: 1.26785Valor esperado: 1.26785
+Modulo y fase[723]: 1.51468; 0.585577
+Amplitud:[723]: 1.26232Valor esperado: 1.26232
+Modulo y fase[724]: 1.51732; 0.595289
+Amplitud:[724]: 1.25632Valor esperado: 1.25632
+Modulo y fase[725]: 1.51981; 0.605246
+Amplitud:[725]: 1.24983Valor esperado: 1.24983
+Modulo y fase[726]: 1.52211; 0.615448
+Amplitud:[726]: 1.24283Valor esperado: 1.24283
+Modulo y fase[727]: 1.52424; 0.625894
+Amplitud:[727]: 1.2353Valor esperado: 1.2353
+Modulo y fase[728]: 1.52617; 0.636584
+Amplitud:[728]: 1.22724Valor esperado: 1.22724
+Modulo y fase[729]: 1.52789; 0.647518
+Amplitud:[729]: 1.21862Valor esperado: 1.21862
+Modulo y fase[730]: 1.52939; 0.658692
+Amplitud:[730]: 1.20943Valor esperado: 1.20943
+Modulo y fase[731]: 1.53067; 0.670104
+Amplitud:[731]: 1.19967Valor esperado: 1.19967
+Modulo y fase[732]: 1.5317; 0.681753
+Amplitud:[732]: 1.18932Valor esperado: 1.18932
+Modulo y fase[733]: 1.53248; 0.693635
+Amplitud:[733]: 1.17836Valor esperado: 1.17836
+Modulo y fase[734]: 1.533; 0.705746
+Amplitud:[734]: 1.16681Valor esperado: 1.16681
+Modulo y fase[735]: 1.53324; 0.718083
+Amplitud:[735]: 1.15464Valor esperado: 1.15464
+Modulo y fase[736]: 1.5332; 0.730639
+Amplitud:[736]: 1.14185Valor esperado: 1.14185
+Modulo y fase[737]: 1.53287; 0.743411
+Amplitud:[737]: 1.12844Valor esperado: 1.12844
+Modulo y fase[738]: 1.53223; 0.756392
+Amplitud:[738]: 1.11441Valor esperado: 1.11441
+Modulo y fase[739]: 1.53127; 0.769576
+Amplitud:[739]: 1.09977Valor esperado: 1.09977
+Modulo y fase[740]: 1.52998; 0.782955
+Amplitud:[740]: 1.0845Valor esperado: 1.0845
+Modulo y fase[741]: 1.52837; 0.796523
+Amplitud:[741]: 1.06863Valor esperado: 1.06863
+Modulo y fase[742]: 1.5264; 0.810272
+Amplitud:[742]: 1.05215Valor esperado: 1.05215
+Modulo y fase[743]: 1.52409; 0.824192
+Amplitud:[743]: 1.03508Valor esperado: 1.03508
+Modulo y fase[744]: 1.52141; 0.838274
+Amplitud:[744]: 1.01744Valor esperado: 1.01744
+Modulo y fase[745]: 1.51836; 0.852509
+Amplitud:[745]: 0.999227Valor esperado: 0.999227
+Modulo y fase[746]: 1.51494; 0.866888
+Amplitud:[746]: 0.980471Valor esperado: 0.980471
+Modulo y fase[747]: 1.51113; 0.881398
+Amplitud:[747]: 0.96119Valor esperado: 0.96119
+Modulo y fase[748]: 1.50694; 0.896029
+Amplitud:[748]: 0.941406Valor esperado: 0.941406
+Modulo y fase[749]: 1.50235; 0.91077
+Amplitud:[749]: 0.921146Valor esperado: 0.921146
+Modulo y fase[750]: 1.49736; 0.925609
+Amplitud:[750]: 0.900435Valor esperado: 0.900435
+Modulo y fase[751]: 1.49197; 0.940532
+Amplitud:[751]: 0.879305Valor esperado: 0.879305
+Modulo y fase[752]: 1.48618; 0.955528
+Amplitud:[752]: 0.857788Valor esperado: 0.857788
+Modulo y fase[753]: 1.47997; 0.970583
+Amplitud:[753]: 0.835916Valor esperado: 0.835916
+Modulo y fase[754]: 1.47336; 0.985684
+Amplitud:[754]: 0.813728Valor esperado: 0.813728
+Modulo y fase[755]: 1.46634; 1.00082
+Amplitud:[755]: 0.79126Valor esperado: 0.79126
+Modulo y fase[756]: 1.45891; 1.01597
+Amplitud:[756]: 0.768551Valor esperado: 0.768551
+Modulo y fase[757]: 1.45107; 1.03112
+Amplitud:[757]: 0.745644Valor esperado: 0.745644
+Modulo y fase[758]: 1.44283; 1.04627
+Amplitud:[758]: 0.722579Valor esperado: 0.722579
+Modulo y fase[759]: 1.43418; 1.06139
+Amplitud:[759]: 0.699398Valor esperado: 0.699398
+Modulo y fase[760]: 1.42514; 1.07647
+Amplitud:[760]: 0.676147Valor esperado: 0.676147
+Modulo y fase[761]: 1.4157; 1.09149
+Amplitud:[761]: 0.652869Valor esperado: 0.652869
+Modulo y fase[762]: 1.40587; 1.10645
+Amplitud:[762]: 0.629607Valor esperado: 0.629607
+Modulo y fase[763]: 1.39566; 1.12132
+Amplitud:[763]: 0.606407Valor esperado: 0.606407
+Modulo y fase[764]: 1.38508; 1.13609
+Amplitud:[764]: 0.583311Valor esperado: 0.583311
+Modulo y fase[765]: 1.37413; 1.15076
+Amplitud:[765]: 0.560364Valor esperado: 0.560364
+Modulo y fase[766]: 1.36282; 1.16529
+Amplitud:[766]: 0.537607Valor esperado: 0.537607
+Modulo y fase[767]: 1.35117; 1.17969
+Amplitud:[767]: 0.515083Valor esperado: 0.515083
+Modulo y fase[768]: 1.33918; 1.19393
+Amplitud:[768]: 0.492831Valor esperado: 0.492831
+Modulo y fase[769]: 1.32687; 1.208
+Amplitud:[769]: 0.47089Valor esperado: 0.47089
+Modulo y fase[770]: 1.31425; 1.2219
+Amplitud:[770]: 0.449296Valor esperado: 0.449296
+Modulo y fase[771]: 1.30133; 1.23559
+Amplitud:[771]: 0.428086Valor esperado: 0.428086
+Modulo y fase[772]: 1.28813; 1.24909
+Amplitud:[772]: 0.407293Valor esperado: 0.407293
+Modulo y fase[773]: 1.27466; 1.26236
+Amplitud:[773]: 0.386946Valor esperado: 0.386946
+Modulo y fase[774]: 1.26093; 1.27541
+Amplitud:[774]: 0.367075Valor esperado: 0.367075
+Modulo y fase[775]: 1.24697; 1.28821
+Amplitud:[775]: 0.347705Valor esperado: 0.347705
+Modulo y fase[776]: 1.23279; 1.30076
+Amplitud:[776]: 0.32886Valor esperado: 0.32886
+Modulo y fase[777]: 1.2184; 1.31306
+Amplitud:[777]: 0.310562Valor esperado: 0.310562
+Modulo y fase[778]: 1.20382; 1.32508
+Amplitud:[778]: 0.292828Valor esperado: 0.292828
+Modulo y fase[779]: 1.18907; 1.33683
+Amplitud:[779]: 0.275674Valor esperado: 0.275674
+Modulo y fase[780]: 1.17417; 1.34829
+Amplitud:[780]: 0.259113Valor esperado: 0.259113
+Modulo y fase[781]: 1.15914; 1.35945
+Amplitud:[781]: 0.243155Valor esperado: 0.243155
+Modulo y fase[782]: 1.14399; 1.37032
+Amplitud:[782]: 0.227808Valor esperado: 0.227808
+Modulo y fase[783]: 1.12874; 1.38088
+Amplitud:[783]: 0.213076Valor esperado: 0.213076
+Modulo y fase[784]: 1.11341; 1.39113
+Amplitud:[784]: 0.198964Valor esperado: 0.198964
+Modulo y fase[785]: 1.09802; 1.40107
+Amplitud:[785]: 0.18547Valor esperado: 0.18547
+Modulo y fase[786]: 1.08259; 1.41069
+Amplitud:[786]: 0.172593Valor esperado: 0.172593
+Modulo y fase[787]: 1.06714; 1.41998
+Amplitud:[787]: 0.160328Valor esperado: 0.160328
+Modulo y fase[788]: 1.05168; 1.42896
+Amplitud:[788]: 0.14867Valor esperado: 0.14867
+Modulo y fase[789]: 1.03623; 1.4376
+Amplitud:[789]: 0.13761Valor esperado: 0.13761
+Modulo y fase[790]: 1.02081; 1.44593
+Amplitud:[790]: 0.127138Valor esperado: 0.127138
+Modulo y fase[791]: 1.00544; 1.45392
+Amplitud:[791]: 0.117242Valor esperado: 0.117242
+Modulo y fase[792]: 0.990132; 1.46159
+Amplitud:[792]: 0.10791Valor esperado: 0.10791
+Modulo y fase[793]: 0.974904; 1.46894
+Amplitud:[793]: 0.0991268Valor esperado: 0.0991268
+Modulo y fase[794]: 0.959773; 1.47597
+Amplitud:[794]: 0.0908768Valor esperado: 0.0908768
+Modulo y fase[795]: 0.944753; 1.48268
+Amplitud:[795]: 0.0831441Valor esperado: 0.0831441
+Modulo y fase[796]: 0.929859; 1.48907
+Amplitud:[796]: 0.0759107Valor esperado: 0.0759107
+Modulo y fase[797]: 0.915106; 1.49515
+Amplitud:[797]: 0.0691587Valor esperado: 0.0691587
+Modulo y fase[798]: 0.900507; 1.50092
+Amplitud:[798]: 0.0628698Valor esperado: 0.0628698
+Modulo y fase[799]: 0.886075; 1.5064
+Amplitud:[799]: 0.0570242Valor esperado: 0.0570242
+Modulo y fase[800]: 0.871823; 1.51157
+Amplitud:[800]: 0.0516029Valor esperado: 0.0516029
+Modulo y fase[801]: 0.857761; 1.51646
+Amplitud:[801]: 0.0465866Valor esperado: 0.0465866
+Modulo y fase[802]: 0.843902; 1.52106
+Amplitud:[802]: 0.0419551Valor esperado: 0.0419551
+Modulo y fase[803]: 0.830253; 1.52539
+Amplitud:[803]: 0.037689Valor esperado: 0.037689
+Modulo y fase[804]: 0.816826; 1.52944
+Amplitud:[804]: 0.0337685Valor esperado: 0.0337685
+Modulo y fase[805]: 0.803627; 1.53324
+Amplitud:[805]: 0.030175Valor esperado: 0.030175
+Modulo y fase[806]: 0.790666; 1.53678
+Amplitud:[806]: 0.0268893Valor esperado: 0.0268893
+Modulo y fase[807]: 0.777947; 1.54008
+Amplitud:[807]: 0.0238927Valor esperado: 0.0238927
+Modulo y fase[808]: 0.765478; 1.54314
+Amplitud:[808]: 0.0211672Valor esperado: 0.0211672
+Modulo y fase[809]: 0.753262; 1.54597
+Amplitud:[809]: 0.0186953Valor esperado: 0.0186953
+Modulo y fase[810]: 0.741306; 1.54859
+Amplitud:[810]: 0.0164603Valor esperado: 0.0164603
+Modulo y fase[811]: 0.729611; 1.551
+Amplitud:[811]: 0.0144453Valor esperado: 0.0144453
+Modulo y fase[812]: 0.718181; 1.5532
+Amplitud:[812]: 0.0126346Valor esperado: 0.0126346
+Modulo y fase[813]: 0.707018; 1.55522
+Amplitud:[813]: 0.0110132Valor esperado: 0.0110132
+Modulo y fase[814]: 0.696123; 1.55705
+Amplitud:[814]: 0.0095666Valor esperado: 0.0095666
+Modulo y fase[815]: 0.685496; 1.55872
+Amplitud:[815]: 0.00828086Valor esperado: 0.00828086
+Modulo y fase[816]: 0.675137; 1.56022
+Amplitud:[816]: 0.00714283Valor esperado: 0.00714283
+Modulo y fase[817]: 0.665045; 1.56156
+Amplitud:[817]: 0.00614017Valor esperado: 0.00614017
+Modulo y fase[818]: 0.655219; 1.56277
+Amplitud:[818]: 0.00526144Valor esperado: 0.00526144
+Modulo y fase[819]: 0.645655; 1.56383
+Amplitud:[819]: 0.0044948Valor esperado: 0.0044948
+Modulo y fase[820]: 0.636352; 1.56478
+Amplitud:[820]: 0.00383038Valor esperado: 0.00383038
+Modulo y fase[821]: 0.627305; 1.5656
+Amplitud:[821]: 0.00325837Valor esperado: 0.00325837
+Modulo y fase[822]: 0.618511; 1.56632
+Amplitud:[822]: 0.0027695Valor esperado: 0.0027695
+Modulo y fase[823]: 0.609966; 1.56694
+Amplitud:[823]: 0.00235516Valor esperado: 0.00235516
+Modulo y fase[824]: 0.601664; 1.56746
+Amplitud:[824]: 0.00200752Valor esperado: 0.00200752
+Modulo y fase[825]: 0.593601; 1.5679
+Amplitud:[825]: 0.00171922Valor esperado: 0.00171922
+Modulo y fase[826]: 0.58577; 1.56826
+Amplitud:[826]: 0.00148335Valor esperado: 0.00148335
+Modulo y fase[827]: 0.578165; 1.56856
+Amplitud:[827]: 0.00129351Valor esperado: 0.00129351
+Modulo y fase[828]: 0.570781; 1.56879
+Amplitud:[828]: 0.00114404Valor esperado: 0.00114404
+Modulo y fase[829]: 0.56361; 1.56897
+Amplitud:[829]: 0.00102962Valor esperado: 0.00102962
+Modulo y fase[830]: 0.556645; 1.5691
+Amplitud:[830]: 0.000945168Valor esperado: 0.000945168
+Modulo y fase[831]: 0.54988; 1.56918
+Amplitud:[831]: 0.000886354Valor esperado: 0.000886354
+Modulo y fase[832]: 0.543308; 1.56923
+Amplitud:[832]: 0.00084914Valor esperado: 0.00084914
+Modulo y fase[833]: 0.53692; 1.56925
+Amplitud:[833]: 0.000829428Valor esperado: 0.000829428
+Modulo y fase[834]: 0.53071; 1.56924
+Amplitud:[834]: 0.000824264Valor esperado: 0.000824264
+Modulo y fase[835]: 0.52467; 1.56921
+Amplitud:[835]: 0.000830519Valor esperado: 0.000830519
+Modulo y fase[836]: 0.518793; 1.56917
+Amplitud:[836]: 0.000845521Valor esperado: 0.000845521
+Modulo y fase[837]: 0.513071; 1.56911
+Amplitud:[837]: 0.000866899Valor esperado: 0.000866899
+Modulo y fase[838]: 0.507497; 1.56904
+Amplitud:[838]: 0.000892569Valor esperado: 0.000892569
+Modulo y fase[839]: 0.502063; 1.56896
+Amplitud:[839]: 0.000920479Valor esperado: 0.000920479
+Modulo y fase[840]: 0.496762; 1.56889
+Amplitud:[840]: 0.000949016Valor esperado: 0.000949016
+Modulo y fase[841]: 0.491588; 1.56881
+Amplitud:[841]: 0.000976753Valor esperado: 0.000976753
+Modulo y fase[842]: 0.486533; 1.56874
+Amplitud:[842]: 0.00100255Valor esperado: 0.00100255
+Modulo y fase[843]: 0.48159; 1.56867
+Amplitud:[843]: 0.00102532Valor esperado: 0.00102532
+Modulo y fase[844]: 0.476753; 1.56861
+Amplitud:[844]: 0.00104406Valor esperado: 0.00104406
+Modulo y fase[845]: 0.472015; 1.56855
+Amplitud:[845]: 0.00105805Valor esperado: 0.00105805
+Modulo y fase[846]: 0.467371; 1.56851
+Amplitud:[846]: 0.00106686Valor esperado: 0.00106686
+Modulo y fase[847]: 0.462813; 1.56848
+Amplitud:[847]: 0.00107003Valor esperado: 0.00107003
+Modulo y fase[848]: 0.458337; 1.56847
+Amplitud:[848]: 0.00106728Valor esperado: 0.00106728
+Modulo y fase[849]: 0.453937; 1.56846
+Amplitud:[849]: 0.00105844Valor esperado: 0.00105844
+Modulo y fase[850]: 0.449608; 1.56848
+Amplitud:[850]: 0.00104336Valor esperado: 0.00104336
+Modulo y fase[851]: 0.445345; 1.5685
+Amplitud:[851]: 0.001022Valor esperado: 0.001022
+Modulo y fase[852]: 0.441143; 1.56854
+Amplitud:[852]: 0.000994478Valor esperado: 0.000994478
+Modulo y fase[853]: 0.436998; 1.5686
+Amplitud:[853]: 0.000960963Valor esperado: 0.000960963
+Modulo y fase[854]: 0.432907; 1.56867
+Amplitud:[854]: 0.000921569Valor esperado: 0.000921569
+Modulo y fase[855]: 0.428864; 1.56875
+Amplitud:[855]: 0.000876664Valor esperado: 0.000876664
+Modulo y fase[856]: 0.424867; 1.56885
+Amplitud:[856]: 0.000826608Valor esperado: 0.000826608
+Modulo y fase[857]: 0.420912; 1.56896
+Amplitud:[857]: 0.000771546Valor esperado: 0.000771546
+Modulo y fase[858]: 0.416996; 1.56909
+Amplitud:[858]: 0.000712074Valor esperado: 0.000712074
+Modulo y fase[859]: 0.413117; 1.56923
+Amplitud:[859]: 0.000648569Valor esperado: 0.000648569
+Modulo y fase[860]: 0.409272; 1.56938
+Amplitud:[860]: 0.0005814Valor esperado: 0.0005814
+Modulo y fase[861]: 0.405458; 1.56954
+Amplitud:[861]: 0.00051107Valor esperado: 0.00051107
+Modulo y fase[862]: 0.401675; 1.56971
+Amplitud:[862]: 0.000438068Valor esperado: 0.000438068
+Modulo y fase[863]: 0.39792; 1.56988
+Amplitud:[863]: 0.000362724Valor esperado: 0.000362724
+Modulo y fase[864]: 0.394191; 1.57007
+Amplitud:[864]: 0.000285689Valor esperado: 0.000285689
+Modulo y fase[865]: 0.390487; 1.57026
+Amplitud:[865]: 0.000207501Valor esperado: 0.000207501
+Modulo y fase[866]: 0.386807; 1.57046
+Amplitud:[866]: 0.000128448Valor esperado: 0.000128448
+Modulo y fase[867]: 0.38315; 1.57067
+Amplitud:[867]: 4.91753e-05Valor esperado: 4.91753e-05
+Modulo y fase[868]: 0.379515; 1.57088
+Amplitud:[868]: -2.98761e-05Valor esperado: -2.98761e-05
+Modulo y fase[869]: 0.375902; 1.57108
+Amplitud:[869]: -0.000108325Valor esperado: -0.000108325
+Modulo y fase[870]: 0.37231; 1.5713
+Amplitud:[870]: -0.000185847Valor esperado: -0.000185847
+Modulo y fase[871]: 0.368739; 1.57151
+Amplitud:[871]: -0.000261869Valor esperado: -0.000261869
+Modulo y fase[872]: 0.365188; 1.57172
+Amplitud:[872]: -0.000335966Valor esperado: -0.000335966
+Modulo y fase[873]: 0.361658; 1.57192
+Amplitud:[873]: -0.000407735Valor esperado: -0.000407735
+Modulo y fase[874]: 0.358147; 1.57213
+Amplitud:[874]: -0.000476998Valor esperado: -0.000476998
+Modulo y fase[875]: 0.354657; 1.57233
+Amplitud:[875]: -0.000543209Valor esperado: -0.000543209
+Modulo y fase[876]: 0.351188; 1.57252
+Amplitud:[876]: -0.000606218Valor esperado: -0.000606218
+Modulo y fase[877]: 0.347739; 1.57271
+Amplitud:[877]: -0.000665595Valor esperado: -0.000665595
+Modulo y fase[878]: 0.344311; 1.57289
+Amplitud:[878]: -0.000721053Valor esperado: -0.000721053
+Modulo y fase[879]: 0.340904; 1.57306
+Amplitud:[879]: -0.000772519Valor esperado: -0.000772519
+Modulo y fase[880]: 0.337518; 1.57322
+Amplitud:[880]: -0.000819526Valor esperado: -0.000819526
+Modulo y fase[881]: 0.334154; 1.57338
+Amplitud:[881]: -0.000862107Valor esperado: -0.000862107
+Modulo y fase[882]: 0.330812; 1.57352
+Amplitud:[882]: -0.000899861Valor esperado: -0.000899861
+Modulo y fase[883]: 0.327493; 1.57364
+Amplitud:[883]: -0.000932839Valor esperado: -0.000932839
+Modulo y fase[884]: 0.324196; 1.57376
+Amplitud:[884]: -0.000960742Valor esperado: -0.000960742
+Modulo y fase[885]: 0.320922; 1.57386
+Amplitud:[885]: -0.00098352Valor esperado: -0.00098352
+Modulo y fase[886]: 0.317671; 1.57395
+Amplitud:[886]: -0.00100105Valor esperado: -0.00100105
+Modulo y fase[887]: 0.314444; 1.57402
+Amplitud:[887]: -0.0010133Valor esperado: -0.0010133
+Modulo y fase[888]: 0.311241; 1.57407
+Amplitud:[888]: -0.00102015Valor esperado: -0.00102015
+Modulo y fase[889]: 0.308063; 1.57411
+Amplitud:[889]: -0.00102156Valor esperado: -0.00102156
+Modulo y fase[890]: 0.304908; 1.57413
+Amplitud:[890]: -0.00101772Valor esperado: -0.00101772
+Modulo y fase[891]: 0.301778; 1.57414
+Amplitud:[891]: -0.00100849Valor esperado: -0.00100849
+Modulo y fase[892]: 0.298673; 1.57412
+Amplitud:[892]: -0.000993915Valor esperado: -0.000993915
+Modulo y fase[893]: 0.295593; 1.57409
+Amplitud:[893]: -0.000974221Valor esperado: -0.000974221
+Modulo y fase[894]: 0.292538; 1.57404
+Amplitud:[894]: -0.000949365Valor esperado: -0.000949365
+Modulo y fase[895]: 0.289507; 1.57397
+Amplitud:[895]: -0.000919478Valor esperado: -0.000919478
+Modulo y fase[896]: 0.286501; 1.57388
+Amplitud:[896]: -0.000884693Valor esperado: -0.000884693
+Modulo y fase[897]: 0.283521; 1.57378
+Amplitud:[897]: -0.000845171Valor esperado: -0.000845171
+Modulo y fase[898]: 0.280564; 1.57365
+Amplitud:[898]: -0.000801107Valor esperado: -0.000801107
+Modulo y fase[899]: 0.277633; 1.57351
+Amplitud:[899]: -0.000752689Valor esperado: -0.000752689
+Modulo y fase[900]: 0.274725; 1.57334
+Amplitud:[900]: -0.00070017Valor esperado: -0.00070017
+Modulo y fase[901]: 0.271842; 1.57316
+Amplitud:[901]: -0.000643791Valor esperado: -0.000643791
+Modulo y fase[902]: 0.268983; 1.57297
+Amplitud:[902]: -0.000583791Valor esperado: -0.000583791
+Modulo y fase[903]: 0.266147; 1.57275
+Amplitud:[903]: -0.000520496Valor esperado: -0.000520496
+Modulo y fase[904]: 0.263334; 1.57252
+Amplitud:[904]: -0.00045419Valor esperado: -0.00045419
+Modulo y fase[905]: 0.260545; 1.57227
+Amplitud:[905]: -0.000385209Valor esperado: -0.000385209
+Modulo y fase[906]: 0.257778; 1.57201
+Amplitud:[906]: -0.000313882Valor esperado: -0.000313882
+Modulo y fase[907]: 0.255033; 1.57174
+Amplitud:[907]: -0.000240554Valor esperado: -0.000240554
+Modulo y fase[908]: 0.252309; 1.57145
+Amplitud:[908]: -0.000165678Valor esperado: -0.000165678
+Modulo y fase[909]: 0.249607; 1.57116
+Amplitud:[909]: -8.95748e-05Valor esperado: -8.95748e-05
+Modulo y fase[910]: 0.246925; 1.57085
+Amplitud:[910]: -1.2727e-05Valor esperado: -1.2727e-05
+Modulo y fase[911]: 0.244264; 1.57053
+Amplitud:[911]: 6.45451e-05Valor esperado: 6.45451e-05
+Modulo y fase[912]: 0.241622; 1.57021
+Amplitud:[912]: 0.000141761Valor esperado: 0.000141761
+Modulo y fase[913]: 0.239; 1.56988
+Amplitud:[913]: 0.000218487Valor esperado: 0.000218487
+Modulo y fase[914]: 0.236397; 1.56955
+Amplitud:[914]: 0.000294224Valor esperado: 0.000294224
+Modulo y fase[915]: 0.233811; 1.56922
+Amplitud:[915]: 0.000368631Valor esperado: 0.000368631
+Modulo y fase[916]: 0.231243; 1.56889
+Amplitud:[916]: 0.000441217Valor esperado: 0.000441217
+Modulo y fase[917]: 0.228693; 1.56856
+Amplitud:[917]: 0.000511567Valor esperado: 0.000511567
+Modulo y fase[918]: 0.226159; 1.56824
+Amplitud:[918]: 0.000579231Valor esperado: 0.000579231
+Modulo y fase[919]: 0.223642; 1.56792
+Amplitud:[919]: 0.000643752Valor esperado: 0.000643752
+Modulo y fase[920]: 0.221139; 1.56761
+Amplitud:[920]: 0.000704774Valor esperado: 0.000704774
+Modulo y fase[921]: 0.218652; 1.56731
+Amplitud:[921]: 0.00076188Valor esperado: 0.00076188
+Modulo y fase[922]: 0.21618; 1.56703
+Amplitud:[922]: 0.000814651Valor esperado: 0.000814651
+Modulo y fase[923]: 0.213722; 1.56676
+Amplitud:[923]: 0.000862787Valor esperado: 0.000862787
+Modulo y fase[924]: 0.211277; 1.56651
+Amplitud:[924]: 0.000905985Valor esperado: 0.000905985
+Modulo y fase[925]: 0.208845; 1.56628
+Amplitud:[925]: 0.000943907Valor esperado: 0.000943907
+Modulo y fase[926]: 0.206427; 1.56607
+Amplitud:[926]: 0.000976236Valor esperado: 0.000976236
+Modulo y fase[927]: 0.20402; 1.56588
+Amplitud:[927]: 0.00100279Valor esperado: 0.00100279
+Modulo y fase[928]: 0.201625; 1.56572
+Amplitud:[928]: 0.00102345Valor esperado: 0.00102345
+Modulo y fase[929]: 0.199242; 1.56559
+Amplitud:[929]: 0.00103802Valor esperado: 0.00103802
+Modulo y fase[930]: 0.19687; 1.56548
+Amplitud:[930]: 0.00104639Valor esperado: 0.00104639
+Modulo y fase[931]: 0.194508; 1.56541
+Amplitud:[931]: 0.00104853Valor esperado: 0.00104853
+Modulo y fase[932]: 0.192157; 1.56536
+Amplitud:[932]: 0.00104449Valor esperado: 0.00104449
+Modulo y fase[933]: 0.189815; 1.56535
+Amplitud:[933]: 0.0010343Valor esperado: 0.0010343
+Modulo y fase[934]: 0.187484; 1.56537
+Amplitud:[934]: 0.00101806Valor esperado: 0.00101806
+Modulo y fase[935]: 0.185161; 1.56542
+Amplitud:[935]: 0.000996026Valor esperado: 0.000996026
+Modulo y fase[936]: 0.182847; 1.5655
+Amplitud:[936]: 0.000968431Valor esperado: 0.000968431
+Modulo y fase[937]: 0.180542; 1.56561
+Amplitud:[937]: 0.000935519Valor esperado: 0.000935519
+Modulo y fase[938]: 0.178245; 1.56576
+Amplitud:[938]: 0.000897737Valor esperado: 0.000897737
+Modulo y fase[939]: 0.175956; 1.56593
+Amplitud:[939]: 0.000855543Valor esperado: 0.000855543
+Modulo y fase[940]: 0.173676; 1.56614
+Amplitud:[940]: 0.000809423Valor esperado: 0.000809423
+Modulo y fase[941]: 0.171402; 1.56636
+Amplitud:[941]: 0.000759944Valor esperado: 0.000759944
+Modulo y fase[942]: 0.169136; 1.56661
+Amplitud:[942]: 0.000707778Valor esperado: 0.000707778
+Modulo y fase[943]: 0.166877; 1.56688
+Amplitud:[943]: 0.000653586Valor esperado: 0.000653586
+Modulo y fase[944]: 0.164625; 1.56716
+Amplitud:[944]: 0.000598157Valor esperado: 0.000598157
+Modulo y fase[945]: 0.16238; 1.56746
+Amplitud:[945]: 0.000542323Valor esperado: 0.000542323
+Modulo y fase[946]: 0.160141; 1.56776
+Amplitud:[946]: 0.000486968Valor esperado: 0.000486968
+Modulo y fase[947]: 0.157909; 1.56805
+Amplitud:[947]: 0.000433007Valor esperado: 0.000433007
+Modulo y fase[948]: 0.155683; 1.56835
+Amplitud:[948]: 0.000381415Valor esperado: 0.000381415
+Modulo y fase[949]: 0.153464; 1.56863
+Amplitud:[949]: 0.000333205Valor esperado: 0.000333205
+Modulo y fase[950]: 0.15125; 1.56888
+Amplitud:[950]: 0.000289453Valor esperado: 0.000289453
+Modulo y fase[951]: 0.149042; 1.56911
+Amplitud:[951]: 0.000251257Valor esperado: 0.000251257
+Modulo y fase[952]: 0.14684; 1.5693
+Amplitud:[952]: 0.00021973Valor esperado: 0.00021973
+Modulo y fase[953]: 0.144643; 1.56944
+Amplitud:[953]: 0.00019601Valor esperado: 0.00019601
+Modulo y fase[954]: 0.142453; 1.56952
+Amplitud:[954]: 0.000181256Valor esperado: 0.000181256
+Modulo y fase[955]: 0.140268; 1.56954
+Amplitud:[955]: 0.000176604Valor esperado: 0.000176604
+Modulo y fase[956]: 0.138089; 1.56947
+Amplitud:[956]: 0.00018321Valor esperado: 0.00018321
+Modulo y fase[957]: 0.135915; 1.56931
+Amplitud:[957]: 0.0002022Valor esperado: 0.0002022
+Modulo y fase[958]: 0.133748; 1.56904
+Amplitud:[958]: 0.000234705Valor esperado: 0.000234705
+Modulo y fase[959]: 0.131586; 1.56865
+Amplitud:[959]: 0.000281782Valor esperado: 0.000281782
+Modulo y fase[960]: 0.129429; 1.56813
+Amplitud:[960]: 0.000344497Valor esperado: 0.000344497
+Modulo y fase[961]: 0.127279; 1.56747
+Amplitud:[961]: 0.000423847Valor esperado: 0.000423847
+Modulo y fase[962]: 0.125134; 1.56663
+Amplitud:[962]: 0.000520796Valor esperado: 0.000520796
+Modulo y fase[963]: 0.122996; 1.56562
+Amplitud:[963]: 0.000636214Valor esperado: 0.000636214
+Modulo y fase[964]: 0.120863; 1.56442
+Amplitud:[964]: 0.00077089Valor esperado: 0.00077089
+Modulo y fase[965]: 0.118737; 1.563
+Amplitud:[965]: 0.00092558Valor esperado: 0.00092558
+Modulo y fase[966]: 0.116617; 1.56136
+Amplitud:[966]: 0.00110085Valor esperado: 0.00110085
+Modulo y fase[967]: 0.114504; 1.55947
+Amplitud:[967]: 0.00129731Valor esperado: 0.00129731
+Modulo y fase[968]: 0.112397; 1.55731
+Amplitud:[968]: 0.00151534Valor esperado: 0.00151534
+Modulo y fase[969]: 0.110297; 1.55488
+Amplitud:[969]: 0.00175528Valor esperado: 0.00175528
+Modulo y fase[970]: 0.108205; 1.55215
+Amplitud:[970]: 0.00201732Valor esperado: 0.00201732
+Modulo y fase[971]: 0.10612; 1.54911
+Amplitud:[971]: 0.00230149Valor esperado: 0.00230149
+Modulo y fase[972]: 0.104043; 1.54573
+Amplitud:[972]: 0.00260774Valor esperado: 0.00260774
+Modulo y fase[973]: 0.101974; 1.542
+Amplitud:[973]: 0.00293587Valor esperado: 0.00293587
+Modulo y fase[974]: 0.0999134; 1.53791
+Amplitud:[974]: 0.00328554Valor esperado: 0.00328554
+Modulo y fase[975]: 0.0978615; 1.53343
+Amplitud:[975]: 0.00365624Valor esperado: 0.00365624
+Modulo y fase[976]: 0.0958187; 1.52854
+Amplitud:[976]: 0.00404732Valor esperado: 0.00404732
+Modulo y fase[977]: 0.0937854; 1.52324
+Amplitud:[977]: 0.00445802Valor esperado: 0.00445802
+Modulo y fase[978]: 0.0917621; 1.51751
+Amplitud:[978]: 0.00488738Valor esperado: 0.00488738
+Modulo y fase[979]: 0.089749; 1.51133
+Amplitud:[979]: 0.00533433Valor esperado: 0.00533433
+Modulo y fase[980]: 0.0877467; 1.50468
+Amplitud:[980]: 0.00579762Valor esperado: 0.00579762
+Modulo y fase[981]: 0.0857557; 1.49755
+Amplitud:[981]: 0.00627589Valor esperado: 0.00627589
+Modulo y fase[982]: 0.0837764; 1.48993
+Amplitud:[982]: 0.00676761Valor esperado: 0.00676761
+Modulo y fase[983]: 0.0818093; 1.4818
+Amplitud:[983]: 0.00727115Valor esperado: 0.00727115
+Modulo y fase[984]: 0.0798551; 1.47316
+Amplitud:[984]: 0.0077847Valor esperado: 0.0077847
+Modulo y fase[985]: 0.0779141; 1.46398
+Amplitud:[985]: 0.00830639Valor esperado: 0.00830639
+Modulo y fase[986]: 0.075987; 1.45427
+Amplitud:[986]: 0.00883418Valor esperado: 0.00883418
+Modulo y fase[987]: 0.0740743; 1.44402
+Amplitud:[987]: 0.00936597Valor esperado: 0.00936597
+Modulo y fase[988]: 0.0721767; 1.43321
+Amplitud:[988]: 0.00989955Valor esperado: 0.00989955
+Modulo y fase[989]: 0.0702947; 1.42183
+Amplitud:[989]: 0.0104326Valor esperado: 0.0104326
+Modulo y fase[990]: 0.0684289; 1.4099
+Amplitud:[990]: 0.0109628Valor esperado: 0.0109628
+Modulo y fase[991]: 0.06658; 1.39739
+Amplitud:[991]: 0.0114878Valor esperado: 0.0114878
+Modulo y fase[992]: 0.0647486; 1.38431
+Amplitud:[992]: 0.012005Valor esperado: 0.012005
+Modulo y fase[993]: 0.0629353; 1.37065
+Amplitud:[993]: 0.0125121Valor esperado: 0.0125121
+Modulo y fase[994]: 0.0611407; 1.35643
+Amplitud:[994]: 0.0130065Valor esperado: 0.0130065
+Modulo y fase[995]: 0.0593656; 1.34163
+Amplitud:[995]: 0.0134858Valor esperado: 0.0134858
+Modulo y fase[996]: 0.0576104; 1.32627
+Amplitud:[996]: 0.0139475Valor esperado: 0.0139475
+Modulo y fase[997]: 0.055876; 1.31034
+Amplitud:[997]: 0.0143894Valor esperado: 0.0143894
+Modulo y fase[998]: 0.0541628; 1.29385
+Amplitud:[998]: 0.0148089Valor esperado: 0.0148089
+Modulo y fase[999]: 0.0524716; 1.27682
+Amplitud:[999]: 0.0152041Valor esperado: 0.0152041
+Modulo y fase[1000]: 0.050803; 1.25925
+Amplitud:[1000]: 0.0155727Valor esperado: 0.0155727
+Modulo y fase[1001]: 0.0491576; 1.24115
+Amplitud:[1001]: 0.0159126Valor esperado: 0.0159126
+Modulo y fase[1002]: 0.0475359; 1.22254
+Amplitud:[1002]: 0.0162222Valor esperado: 0.0162222
+Modulo y fase[1003]: 0.0459387; 1.20342
+Amplitud:[1003]: 0.0164997Valor esperado: 0.0164997
+Modulo y fase[1004]: 0.0443664; 1.18382
+Amplitud:[1004]: 0.0167435Valor esperado: 0.0167435
+Modulo y fase[1005]: 0.0428196; 1.16375
+Amplitud:[1005]: 0.0169523Valor esperado: 0.0169523
+Modulo y fase[1006]: 0.041299; 1.14323
+Amplitud:[1006]: 0.017125Valor esperado: 0.017125
+Modulo y fase[1007]: 0.0398049; 1.12228
+Amplitud:[1007]: 0.0172607Valor esperado: 0.0172607
+Modulo y fase[1008]: 0.038338; 1.10091
+Amplitud:[1008]: 0.0173587Valor esperado: 0.0173587
+Modulo y fase[1009]: 0.0368986; 1.07916
+Amplitud:[1009]: 0.0174185Valor esperado: 0.0174185
+Modulo y fase[1010]: 0.0354874; 1.05705
+Amplitud:[1010]: 0.01744Valor esperado: 0.01744
+Modulo y fase[1011]: 0.0341046; 1.0346
+Amplitud:[1011]: 0.017423Valor esperado: 0.017423
+Modulo y fase[1012]: 0.0327507; 1.01184
+Amplitud:[1012]: 0.0173679Valor esperado: 0.0173679
+Modulo y fase[1013]: 0.0314261; 0.988784
+Amplitud:[1013]: 0.0172751Valor esperado: 0.0172751
+Modulo y fase[1014]: 0.0301311; 0.965473
+Amplitud:[1014]: 0.0171455Valor esperado: 0.0171455
+Modulo y fase[1015]: 0.0288661; 0.941932
+Amplitud:[1015]: 0.0169798Valor esperado: 0.0169798
+Modulo y fase[1016]: 0.0276313; 0.918189
+Amplitud:[1016]: 0.0167794Valor esperado: 0.0167794
+Modulo y fase[1017]: 0.0264269; 0.894275
+Amplitud:[1017]: 0.0165455Valor esperado: 0.0165455
+Modulo y fase[1018]: 0.0252532; 0.87022
+Amplitud:[1018]: 0.0162797Valor esperado: 0.0162797
+Modulo y fase[1019]: 0.0241104; 0.846055
+Amplitud:[1019]: 0.0159838Valor esperado: 0.0159838
+Modulo y fase[1020]: 0.0229985; 0.821811
+Amplitud:[1020]: 0.0156596Valor esperado: 0.0156596
+Modulo y fase[1021]: 0.0219178; 0.79752
+Amplitud:[1021]: 0.0153092Valor esperado: 0.0153092
+Modulo y fase[1022]: 0.0208682; 0.773213
+Amplitud:[1022]: 0.0149347Valor esperado: 0.0149347
+Modulo y fase[1023]: 0.0198498; 0.748922
+Amplitud:[1023]: 0.0145384Valor esperado: 0.0145384
+Testbench exitoso!
+The maximum depth reached by any of the 3 hls::stream() instances in the design is 1024
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

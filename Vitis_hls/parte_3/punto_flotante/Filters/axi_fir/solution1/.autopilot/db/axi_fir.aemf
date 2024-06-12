@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717346794598">
+  <ports id="1" name="in_data_V" type="PortType" originalName="in_data" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_fir_data_V" type="PortType" originalName="out_fir_data" coreId="49" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="86" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="89" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="101" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="108" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="109" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0" is_back_edge="1"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.2/@node_objs.0" is_back_edge="1"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="114" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="117" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="120" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="125" source_obj="//@ports.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="127" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="132" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="134" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="137" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="140" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="141" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="142" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="144" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="145" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="146" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="148" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="149" source_obj="//@regions.1/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="150" source_obj="//@regions.1/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <edges id="152" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="153" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="158" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0"/>
+  <edges id="162" source_obj="//@regions.2/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1"/>
+  <edges id="166" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.2"/>
+  <edges id="168" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3"/>
+  <edges id="170" source_obj="//@regions.2/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="173" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.0"/>
+  <edges id="174" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.1"/>
+  <edges id="176" source_obj="//@regions.2/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.1"/>
+  <edges id="177" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.2"/>
+  <edges id="178" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.3"/>
+  <edges id="180" source_obj="//@regions.2/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.3"/>
+  <edges id="181" source_obj="//@regions.2/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.4"/>
+  <edges id="182" source_obj="//@regions.2/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.5"/>
+  <edges id="183" source_obj="//@regions.2/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.5"/>
+  <edges id="184" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.6"/>
+  <edges id="188" source_obj="//@regions.2/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.7"/>
+  <edges id="189" source_obj="//@regions.2/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.7"/>
+  <edges id="190" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.8"/>
+  <edges id="191" source_obj="//@regions.2/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="194" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="195" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="310" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="311" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.6"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="319" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.2/@basic_blocks.0"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="323" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.2" is_back_edge="1"/>
+  <blocks id="13" name="block_13" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_20</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln9" lineNumber="9" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="axi_fir" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <controlInputObjs>block_20</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>9</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="28" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_20</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln14" lineNumber="14" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="544500000" contextFuncName="axi_fir" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="14" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name=".preheader" type="BlockType">
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlInputObjs>block_81</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_83</controlOutputObjs>
+    <controlOutputObjs>.split4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="j" originalName="j" coreId="901578592" bitwidth="11" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>block_81</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="j_1" lineNumber="14" originalName="j" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="j_1_fu_226_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_fir" bitwidth="11" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.63" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="14" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="icmp_ln14" lineNumber="14" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="icmp_ln14_fu_232_p2" opType="icmp" coreId="0" contextFuncName="axi_fir" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.88" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="14" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln14" lineNumber="14" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="132" contextFuncName="axi_fir" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="14" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>block_83</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="38" name=".split4" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_44</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="in_data_V_read" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="read"/>
+      <dataInputObjs>in_data_V</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln25" lineNumber="25" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="62" contextFuncName="axi_fir" opcode="br" nodeLabel="3.0" m_display="0" m_delay="1.58" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <controlInputObjs>block_44</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>145</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="58" name="block_58" type="BlockType">
+    <controlInputObjs>block_44</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_65</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="tmp" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="shift_reg_a_d1" coreId="901726728" contextFuncName="read" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="read"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="0_write_ln28" lineNumber="28" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="axi_fir" opcode="store" nodeLabel="6.0" m_display="0" m_delay="3.25" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="28" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln30" lineNumber="30" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="132" contextFuncName="axi_fir" opcode="br" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+      <controlInputObjs>block_65</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>30</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>145</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="81" name="block_81" type="BlockType">
+    <controlInputObjs>block_65</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="bitcast_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="out_fir_data_V_TDATA_int_regslice" coreId="132" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="write"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="out_fir_data_V_write_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="19.0" nodeLatency="1" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="write"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>out_fir_data_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln0" coreId="132" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>174</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="83" name="block_83" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln38" lineNumber="38" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="901746120" contextFuncName="axi_fir" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="38" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+      <validLinenumbers>38</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="321" pipe_depth="1" RegionName="VITIS_LOOP_9_1">
+    <basic_blocks id="20" name="block_20" type="BlockType">
+      <controlInputObjs>block_13</controlInputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+      <controlOutputObjs>.split6</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i" lineNumber="9" originalName="i" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="337" contextFuncName="axi_fir" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split6</controlInputObjs>
+        <controlInputObjs>block_13</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln9" lineNumber="9" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="add_ln9_fu_209_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_fir" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="icmp_ln9" lineNumber="9" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="icmp_ln9_fu_215_p2" opType="icmp" coreId="0" contextFuncName="axi_fir" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln9" lineNumber="9" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_fir" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split6</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="26" name=".split6" type="BlockType">
+      <controlInputObjs>block_20</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_20</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_cast" lineNumber="9" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="i_cast_fu_221_p1" coreId="901755984" contextFuncName="axi_fir" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="9" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="shift_reg_a_addr" lineNumber="10" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_fir" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="10" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="shift_reg_a_addr_write_ln10" lineNumber="10" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="axi_fir" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="10" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_20</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>9</validLinenumbers>
+        <validLinenumbers>10</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="322" pipe_depth="2" RegionName="loop_taps">
+    <basic_blocks id="44" name="block_44" type="BlockType">
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_58</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="i_1" lineNumber="25" originalName="i" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_fir" bitwidth="9" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="icmp_ln25" lineNumber="25" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_238_p2" opType="icmp" coreId="901614504" contextFuncName="axi_fir" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.66" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln25" lineNumber="25" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="49" contextFuncName="axi_fir" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_58</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>25</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="54" name=".split" type="BlockType">
+      <controlInputObjs>block_44</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_44</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="add_ln25" lineNumber="25" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="add_ln25_fu_244_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_fir" bitwidth="9" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.82" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="i_1_cast1" lineNumber="25" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="i_1_cast1_fu_255_p1" coreId="1006633088" contextFuncName="axi_fir" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="25" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln26" lineNumber="26" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="zext_ln26_fu_250_p1" coreId="901722296" contextFuncName="axi_fir" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="shift_reg_a_addr_1" lineNumber="26" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_fir" bitwidth="9" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="shift_reg_a_load" lineNumber="26" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="axi_fir" bitwidth="32" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="shift_reg_a_addr_2" lineNumber="26" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="30225" contextFuncName="axi_fir" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="shift_reg_a_addr_2_write_ln26" lineNumber="26" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="axi_fir" opcode="store" nodeLabel="5.0" m_display="0" m_delay="3.25" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="26" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="br_ln0" coreId="132" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_44</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>25</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="323" pipe_depth="12" RegionName="loop_result">
+    <basic_blocks id="65" name="block_65" type="BlockType">
+      <controlInputObjs>block_58</controlInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_81</controlOutputObjs>
+      <controlOutputObjs>.split2</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="i_2" lineNumber="30" originalName="i" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="0" contextFuncName="axi_fir" bitwidth="9" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>block_58</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="result" originalName="result" coreId="1006633088" bitwidth="32" opcode="phi" nodeLabel="18.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <dataInputObjs>facc</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>block_58</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln30" lineNumber="30" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="add_ln30_fu_264_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="axi_fir" bitwidth="9" opcode="add" nodeLabel="7.0" m_display="0" m_delay="1.82" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="icmp_ln30" lineNumber="30" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="icmp_ln30_fu_270_p2" opType="icmp" coreId="0" contextFuncName="axi_fir" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="1.66" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln30" lineNumber="30" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="901732928" contextFuncName="axi_fir" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>block_81</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>30</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="77" name=".split2" type="BlockType">
+      <controlInputObjs>block_65</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_65</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln30" lineNumber="30" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="zext_ln30_fu_276_p1" coreId="11" contextFuncName="axi_fir" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="30" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="shift_reg_a_addr_3" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="1006633088" contextFuncName="axi_fir" bitwidth="9" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="shift_reg_a_load_1" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="axi_fir" bitwidth="32" opcode="load" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="taps_addr" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreId="901737312" contextFuncName="axi_fir" bitwidth="9" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="taps_load" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="95" contextFuncName="axi_fir" bitwidth="32" opcode="load" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="mul" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U1" coreName="FMul_maxdsp" implIndex="maxdsp" control="auto" opType="fmul" coreId="30" contextFuncName="axi_fir" bitwidth="32" opcode="fmul" nodeLabel="9.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>facc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="icmp_ln32" lineNumber="32" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="icmp_ln32_fu_282_p2" opType="icmp" coreId="1006633088" contextFuncName="axi_fir" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="1.66" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>facc</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="result_1" lineNumber="32" originalName="result" fileName="axi_fir/axi_fir.cpp" fileDirectory=".." rtlName="facc_32ns_32ns_1ns_32_6_no_dsp_1_U2" coreName="FAcc_nodsp" implIndex="fabric" control="auto" coreId="11" contextFuncName="axi_fir" bitwidth="32" opcode="facc" nodeLabel="13.0" nodeLatency="5" m_display="0" m_delay="6.53" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="axi_fir/axi_fir.cpp" linenumber="32" fileDirectory="/home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters" functionName="axi_fir"/>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln0" coreId="0" opcode="br" nodeLabel="18.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_65</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axi_fir/axi_fir.cpp">
+        <validLinenumbers>30</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <regnodes realName="shift_reg_a_addr_3_reg_344">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln174_reg_379">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_reg_369">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="shift_reg_a_load_1_reg_354">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln25_reg_320">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="result_1_reg_374">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_159">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="in_data_V_read_reg_315">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln14_reg_311">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_148">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="taps_load_reg_359">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln9_reg_298">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_182">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln32_reg_364">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln25_reg_324">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="result_reg_193">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_170">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln30_reg_334">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="shift_reg_a_addr_1_reg_329">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_306">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln30_reg_340">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="taps_addr_reg_349">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <expressionNodes realName="shift_reg_a_addr_2_gep_fu_117">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln32_fu_282">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln26_fu_250">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_phi_fu_174">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_226">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_163">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shift_reg_a_addr_1_gep_fu_105">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_phi_fu_186">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln25_fu_244">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln30_fu_264">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_152">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln25_fu_238">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln30_fu_270">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shift_reg_a_addr_gep_fu_91">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln174_fu_293">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="result_phi_fu_197">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln9_fu_209">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_260">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_fu_232">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="taps_addr_gep_fu_135">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_cast1_fu_255">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_215">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shift_reg_a_addr_3_gep_fu_127">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_221">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln30_fu_276">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_205">
+    <nodeIds>73</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_287">
+    <nodeIds>75</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="in_data_V_read_read_fu_78">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_84">
+    <nodeIds>79</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="shift_reg_a">
+    <nodeIds>24</nodeIds>
+    <nodeIds>52</nodeIds>
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="shift_reg_a" portID="1">
+    <nodeIds>50</nodeIds>
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="taps">
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <ioPorts name="in_data_V">
+    <contents name="read">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_fir_data_V">
+    <contents name="write">
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="2"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="74" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="73" stage="4" latency="4"/>
+    </states>
+    <states id="11">
+      <operations id="73" stage="3" latency="4"/>
+    </states>
+    <states id="12">
+      <operations id="73" stage="2" latency="4"/>
+    </states>
+    <states id="13">
+      <operations id="73" stage="1" latency="4"/>
+    </states>
+    <states id="14">
+      <operations id="75" stage="6" latency="6"/>
+    </states>
+    <states id="15">
+      <operations id="75" stage="5" latency="6"/>
+    </states>
+    <states id="16">
+      <operations id="75" stage="4" latency="6"/>
+    </states>
+    <states id="17">
+      <operations id="75" stage="3" latency="6"/>
+    </states>
+    <states id="18">
+      <operations id="75" stage="2" latency="6"/>
+    </states>
+    <states id="19">
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="6"/>
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <states id="20">
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="2" latency="2"/>
+    </states>
+    <states id="21">
+      <operations id="79" stage="1" latency="2"/>
+      <operations id="80" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="axi_fir" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1023336" mMaxLatency="1023336">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>11</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>13</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_9_1" mII="1" mDepth="1" mMinTripCount="409" mMaxTripCount="409" mMinLatency="409" mMaxLatency="409" mType="1">
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="loop_stream" mII="-1" mDepth="-1" mMinTripCount="1228" mMaxTripCount="1228" mMinLatency="1022924" mMaxLatency="1022924" mType="1">
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="loop_taps" mII="1" mDepth="2" mMinTripCount="408" mMaxTripCount="408" mMinLatency="408" mMaxLatency="408" mType="1">
+      <basicBlocks>44</basicBlocks>
+      <basicBlocks>54</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>58</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="loop_result" mII="1" mDepth="12" mMinTripCount="409" mMaxTripCount="409" mMinLatency="419" mMaxLatency="419" mType="1">
+      <basicBlocks>65</basicBlocks>
+      <basicBlocks>77</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>81</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="11" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>83</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

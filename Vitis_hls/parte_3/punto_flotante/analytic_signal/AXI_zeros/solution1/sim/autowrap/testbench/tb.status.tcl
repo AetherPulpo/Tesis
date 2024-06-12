@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/analytic_signal/AXI_zeros/solution1/./sim/autowrap/testbench/AXI_zeros.cpp_pre.cpp.tb.cpp

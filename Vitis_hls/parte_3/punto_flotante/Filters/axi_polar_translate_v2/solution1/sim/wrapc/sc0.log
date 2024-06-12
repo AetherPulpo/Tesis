@@ -1,0 +1,7 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_axi_polar_translatev2.cpp
+   Compiling axi_polar_translate_v2_tb.cpp_pre.cpp.tb.cpp
+   Compiling axi_polar_translate_v2.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axi_polar_translatev2_util.cpp
+   Compiling apatb_axi_polar_translatev2_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 11 13:14:28 2024
+# Process ID: 21724
+# Current directory: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_modulus/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/axi_modulus/xsim_script.tcl}
+# Log file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_modulus/solution1/sim/vhdl/xsim.log
+# Journal file: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_modulus/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/axi_modulus/xsim_script.tcl
+# xsim {axi_modulus} -autoloadwcfg -tclbatch {axi_modulus.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source axi_modulus.tcl
+## run all
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 165 ns  Iteration: 13  Process: /apatb_axi_modulus_top/AESL_inst_axi_modulus/fadd_32ns_32ns_32_5_full_dsp_1_U1/axi_modulus_ap_fadd_3_full_dsp_32_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Note: simulation done!
+Time: 10695 ns  Iteration: 1  Process: /apatb_axi_modulus_top/generate_sim_done_proc  File: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_modulus/solution1/sim/vhdl/axi_modulus.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 10695 ns  Iteration: 1  Process: /apatb_axi_modulus_top/generate_sim_done_proc  File: /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_modulus/solution1/sim/vhdl/axi_modulus.autotb.vhd
+$finish called at time : 10695 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Jun 11 13:14:58 2024...

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/usuario/Escritorio/Tesis/IP_V3/punto_flotante/Filters/axi_fir/solution1/./sim/autowrap/testbench/axi_fir.cpp_pre.cpp.tb.cpp

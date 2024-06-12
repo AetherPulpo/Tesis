@@ -1,0 +1,4 @@
+axi_bottle_regslice_both
+axi_bottle_regslice_both
+axi_bottle_regslice_both
+axi_bottle
