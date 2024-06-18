@@ -6,10 +6,10 @@ void AXI_zeros(ap_uint<64> in_zeros, hls::stream<axi_stream>& out_stream){
 	axi_stream tmp;
 	static int counter = 0;
 	bool last = false;
-	loop: do{
+	loop_stream : for(int j = 0; j < ZERO_SIZE ; j++){
 #pragma HLS PIPELINE II=1
 		tmp.data = in_zeros;
-		if (counter == 255){
+		if (j == 255){
 			tmp.last = 1;
 		}
 		else{
@@ -22,6 +22,5 @@ void AXI_zeros(ap_uint<64> in_zeros, hls::stream<axi_stream>& out_stream){
 		if (tmp.last){
 			last = true;
 		}
-	}while (last == false );
-	counter = 0;
+	}
 }
