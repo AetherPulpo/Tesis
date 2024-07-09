@@ -19,7 +19,7 @@ void butterworth_double(hls::stream<float, 1024>& in_amplitude_data,
 		static double w11 = 0.0;
 		static double w12 = 0.0;
 		loop_stream : for(int j = 0; j < NEW_DATA_SIZE ; j++){
-#pragma HLS pipeline II=21
+#pragma HLS pipeline II=22
 			//Leo la muestra
 			x = in_amplitude_data.read();
 
@@ -39,6 +39,16 @@ void butterworth_double(hls::stream<float, 1024>& in_amplitude_data,
 			// Escribo el resultado
 			out_iir_data.write(static_cast<float>(y));
 		}
+		y_0 = 0.0;
 
+		//Seccion 1
+		w00 = 0.0;
+		w01 = 0.0;
+		w02 = 0.0;
+
+		//Seccion 2
+		w10 = 0.0;
+		w11 = 0.0;
+		w12 = 0.0;
 }
 
