@@ -4,11 +4,13 @@
 void axi_prediction(hls::stream<float, 512>& in_data,
 			 hls::stream<float, 1>&  in_amp_data,
 			 hls::stream<float, 1>& in_max_data,
+			 hls::stream<float, 512>& out_tremor_data,
 			 hls::stream<int> & out_current_tremor,
 			 hls::stream<int>& out_predict_tremor){
 #pragma HLS INTERFACE axis port=in_data
 #pragma HLS INTERFACE axis port=in_amp_data
 #pragma HLS INTERFACE axis port=in_max_data
+#pragma HLS INTERFACE axis port=out_tremor_data
 #pragma HLS INTERFACE axis port=out_current_tremor
 #pragma HLS INTERFACE axis port=out_predict_tremor
 		//Declaro variables
@@ -31,24 +33,22 @@ void axi_prediction(hls::stream<float, 512>& in_data,
 		float prediction_temp[MEM_SIZE];
 		static float tmp_b = 0.0;
 
+		Loop_stream_diagnosis : for( int i = 0; i < DATA_SIZE; i++){
+			 tmp = in_data.read();
+			 tremor[i] = tmp;
+			 out_tremor_data.write(tmp);
+		}
+
 		tmp_amp = in_amp_data.read();
 		tmp_max = in_max_data.read();
 		condition = tmp_max *0.05;
 		if (tmp_amp < threshold){
 			out_predict_tremor.write(0);
 			out_current_tremor.write(0);
-			for( int i = 0; i < DATA_SIZE; i++){
-			 tmp = in_data.read();
-			}
 			return;
 		}
 		else{
-			loop_stream_diagnosis : for(int j = 0; j < DATA_SIZE ; j++){
-				//Leo la muestra
-				tmp = in_data.read();
-				//se almacena en un arreglo
-				tremor[j] = tmp;
-			}
+
 			loop_ibi : for (int t = 1; t < (DATA_SIZE-1) ; t++){
 				if ( (tremor[t-1] <= tremor[t]) && (tremor[t] > tremor[t + 1]) && (tremor[t] > condition) ){
 					burst_cnt +=  1;
