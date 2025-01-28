@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling tb_rect_float.cpp_pre.cpp.tb.cpp
+   Compiling apatb_rect_float.cpp
+   Compiling rect_float.cpp_pre.cpp.tb.cpp
+   Compiling apatb_rect_float_ir.ll
+   Generating cosim.tv.exe

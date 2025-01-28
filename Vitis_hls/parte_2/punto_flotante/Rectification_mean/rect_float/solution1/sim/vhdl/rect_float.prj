@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv xil_defaultlib "ip/xil_defaultlib/rect_float_ap_fcmp_0_no_dsp_32.v"
+sv work "glbl.v"
+vhdl xil_defaultlib "rect_float.autotb.vhd"
+vhdl xil_defaultlib "rect_float_fcmp_32ns_32ns_1_2_no_dsp_1.vhd"
+vhdl xil_defaultlib "rect_float.vhd"
+
