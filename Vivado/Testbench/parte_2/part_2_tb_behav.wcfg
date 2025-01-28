@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="part_2_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="part_2_tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="17188334fs"></ZoomStartTime>
+      <ZoomEndTime time="27788335fs"></ZoomEndTime>
+      <Cursor1Time time="24125000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="305"></NameColumnWidth>
+      <ValueColumnWidth column_width="137"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject type="logic" fp_name="/part_2_tb/aclk_0">
+      <obj_property name="ElementShortName">aclk_0</obj_property>
+      <obj_property name="ObjectShortName">aclk_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/aresetn_0">
+      <obj_property name="ElementShortName">aresetn_0</obj_property>
+      <obj_property name="ObjectShortName">aresetn_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/part_2_tb/s_axis_config_tdata_0">
+      <obj_property name="ElementShortName">s_axis_config_tdata_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tdata_0[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/s_axis_config_tvalid_0">
+      <obj_property name="ElementShortName">s_axis_config_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/part_2_tb/s_axis_data_tdata_0">
+      <obj_property name="ElementShortName">s_axis_data_tdata_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/s_axis_data_tlast_0">
+      <obj_property name="ElementShortName">s_axis_data_tlast_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tlast_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/s_axis_data_tvalid_0">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/part_2_tb/uut/test_part_2_i/xfft_0/m_axis_data_tdata">
+      <obj_property name="ElementShortName">m_axis_data_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/m_axis_data_tvalid_0">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/m_axis_data_tlast_0">
+      <obj_property name="ElementShortName">m_axis_data_tlast_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/part_2_tb/m_axis_data_tuser_0">
+      <obj_property name="ElementShortName">m_axis_data_tuser_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tuser_0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/ap_start_0">
+      <obj_property name="ElementShortName">ap_start_0</obj_property>
+      <obj_property name="ObjectShortName">ap_start_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/TLAST_0">
+      <obj_property name="ElementShortName">TLAST_0</obj_property>
+      <obj_property name="ObjectShortName">TLAST_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/ap_done_0">
+      <obj_property name="ElementShortName">ap_done_0</obj_property>
+      <obj_property name="ObjectShortName">ap_done_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/ap_idle_0">
+      <obj_property name="ElementShortName">ap_idle_0</obj_property>
+      <obj_property name="ObjectShortName">ap_idle_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/ap_ready_0">
+      <obj_property name="ElementShortName">ap_ready_0</obj_property>
+      <obj_property name="ObjectShortName">ap_ready_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/part_2_tb/out_data_V_TDATA_0">
+      <obj_property name="ElementShortName">out_data_V_TDATA_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data_V_TDATA_0[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/out_data_V_TREADY_0">
+      <obj_property name="ElementShortName">out_data_V_TREADY_0</obj_property>
+      <obj_property name="ObjectShortName">out_data_V_TREADY_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/out_data_V_TVALID_0">
+      <obj_property name="ElementShortName">out_data_V_TVALID_0</obj_property>
+      <obj_property name="ObjectShortName">out_data_V_TVALID_0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/s_axis_config_tready_0">
+      <obj_property name="ElementShortName">s_axis_config_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tready_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/s_axis_data_tready_0">
+      <obj_property name="ElementShortName">s_axis_data_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_tlast_unexpected_0">
+      <obj_property name="ElementShortName">event_tlast_unexpected_0</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_unexpected_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_tlast_missing_0">
+      <obj_property name="ElementShortName">event_tlast_missing_0</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_missing_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_status_channel_halt_0">
+      <obj_property name="ElementShortName">event_status_channel_halt_0</obj_property>
+      <obj_property name="ObjectShortName">event_status_channel_halt_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_frame_started_0">
+      <obj_property name="ElementShortName">event_frame_started_0</obj_property>
+      <obj_property name="ObjectShortName">event_frame_started_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_data_out_channel_halt_0">
+      <obj_property name="ElementShortName">event_data_out_channel_halt_0</obj_property>
+      <obj_property name="ObjectShortName">event_data_out_channel_halt_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/part_2_tb/event_data_in_channel_halt_0">
+      <obj_property name="ElementShortName">event_data_in_channel_halt_0</obj_property>
+      <obj_property name="ObjectShortName">event_data_in_channel_halt_0</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/part_2_tb/clock_period">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+</wave_config>
