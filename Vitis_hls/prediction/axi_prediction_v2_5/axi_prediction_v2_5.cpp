@@ -46,9 +46,12 @@ void axi_prediction_v2_5(hls::stream<float, 512>& in_data,
 		tmp_amp = in_amp_data.read();
 		tmp_max = in_max_data.read();
 		condition = tmp_max *0.05;
+		//axi_tmp_ptremor.keep = -1;
+		//axi_tmp_notremor.keep = -1;
 		if (tmp_amp < threshold){
 			axi_tmp_notremor.data = 0;
 			axi_tmp_notremor.last = 1;
+			axi_tmp_notremor.keep = -1;
 			out_predict_tremor.write(axi_tmp_notremor);
 			//out_current_tremor.write(axi_tmp_notremor);
 		}
@@ -98,6 +101,9 @@ void axi_prediction_v2_5(hls::stream<float, 512>& in_data,
 			   //Tengo que buscarle la vuelta
 
 			   time_next_burst[0] = static_cast<int>(hls::roundf(tmp_b/sum_weight));
+			 //  axi_tmp_ptremor.data = time_next_burst[0];
+			 //  axi_tmp_ptremor.last = 1;
+			 //  out_predict_tremor.write(axi_tmp_ptremor);
 		   }
 
 		   //Calcula time for next_bursts
@@ -105,6 +111,8 @@ void axi_prediction_v2_5(hls::stream<float, 512>& in_data,
 		   #pragma HLS pipeline II=32
 			   time_next_burst[i] = static_cast<int>(hls::roundf(static_cast<float>(time_next_burst[0]) + (mean_ibi * i)));
 			   next_burst_cnt =  next_burst_cnt + 1 ;
+			 //  axi_tmp_ptremor.data = time_next_burst[i];
+			 //  out_predict_tremor.write(axi_tmp_ptremor);
 		   }
 
 		  // loop_escritura_ctremor : for (int i = 0; i < burst_cnt; i++){
@@ -121,6 +129,7 @@ void axi_prediction_v2_5(hls::stream<float, 512>& in_data,
 		   loop_escritura_ptremor : for (int i = 0; i < next_burst_cnt+1; i++){
 		   #pragma HLS loop_tripcount min=1 max=512
 			   axi_tmp_ptremor.data = time_next_burst[i];
+			   axi_tmp_ptremor.keep = -1;
 			   if(i == next_burst_cnt){
 				   axi_tmp_ptremor.last = 1;
 			   }
